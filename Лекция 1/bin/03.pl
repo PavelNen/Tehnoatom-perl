@@ -25,14 +25,20 @@ run(1, 2, 2) - печатает "1, 2\n"
 
 sub run {
     my ($x, $y, $z) = @_;
-    my $min = undef;
-    my $max = undef;
+    my $min = $x;
+    my $max = $y;
 
     # ...
     # Вычисление минимума и максимума
     # ...
 
+    if ($y < $min) {$min = $y;}
+    if ($z < $min) {$min = $z;}
+
+    if ($x > $max) {$max = $x;}
+    if ($z > $max) {$max = $z;}
+
     print "$min, $max\n";
 }
-
+#run(5,2,1);
 1;
