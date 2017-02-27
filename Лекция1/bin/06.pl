@@ -26,9 +26,20 @@ sub encode {
     # ...
     # Алгоритм шифрования
     # ...
-
+    
+    my $l = length $str;
+    my $a = '';
+    
+    for (my $i = 0; $i<$l; $i++) {
+     $a = ord(substr $str, $i, 1);   #Посимвольно считываем строку и
+     $a = ($a + $key) % 256;                 #"сдвигаем" аски код каждого символа
+     $encoded_str = $encoded_str . chr($a);
+    }
+    
     print "$encoded_str\n";
 }
+
+encode("Hello world!",3 );
 
 =head1 decode ($encoded_str, $key)
 
@@ -48,8 +59,17 @@ sub decode {
     # ...
     # Алгоритм дешифрования
     # ...
-
+    
+    my $l = length $encoded_str;
+    my $a = '';
+    
+    for (my $i = 0; $i<$l; $i++) {
+     $a = ord(substr $encoded_str, $i, 1);
+     $a = ($a - $key + 256) % 256;
+     $str = $str . chr($a);
+    }
     print "$str\n";
 }
 
+#decode("aBCcd!",1 );
 1;
