@@ -39,7 +39,7 @@ sub encode {
     print "$encoded_str\n";
 }
 
-encode("Hello world!",3 );
+#encode("Hello world!",3 );
 
 =head1 decode ($encoded_str, $key)
 
