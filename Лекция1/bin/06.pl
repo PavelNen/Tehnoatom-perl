@@ -32,7 +32,7 @@ sub encode {
     
     for (my $i = 0; $i<$l; $i++) {
      $a = ord(substr $str, $i, 1);   #Посимвольно считываем строку и
-     $a = ($a + $key) % 256;                 #"сдвигаем" аски код каждого символа
+     $a = ($a + $key) % 128;                 #"сдвигаем" аски код каждого символа
      $encoded_str = $encoded_str . chr($a);
     }
     
@@ -65,7 +65,7 @@ sub decode {
     
     for (my $i = 0; $i<$l; $i++) {
      $a = ord(substr $encoded_str, $i, 1);
-     $a = ($a - $key + 256) % 256;
+     $a = ($a - $key + 128) % 128;
      $str = $str . chr($a);
     }
     print "$str\n";
