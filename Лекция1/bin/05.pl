@@ -49,5 +49,5 @@ sub run {
 
     print "$num\n";
 }
-run("aaababaa", "ab");
+#run("aaababaa", "ab");
 1;
