@@ -24,15 +24,18 @@ use lib "$FindBin::Bin/../lib";
 use SecretSanta;
 use DDP;
 
+#say "one";
 my @list = map {
 	my @v = split /\s+/, $_;
 	@v == 1 ? $v[0] : \@v;
 } grep { chomp; /\S+/ } <>;
 
+#say "two";
 my @names = map {
 	ref() ? @$_ : $_
 } @list;
 
+#say "three";
 my %uniq;
 
 #p @list;
@@ -40,6 +43,7 @@ my %uniq;
 my @members = 'A'..'Z';
 my %members; @members{@members} = ();
 my @pairs;
+
 for (1..@members/4) {
 	my ($one,$two) = keys %members;
 	delete $members{$one};
@@ -47,10 +51,18 @@ for (1..@members/4) {
 	push @pairs, [ $one, $two ];
 }
 
-my @list = sort { int(rand 3)-1 } @pairs, keys %members;
+@list = sort { int(rand 3)-1 } @pairs, keys %members;
+
+#say scalar (@list);
+#p @list;
 
 my @res = SecretSanta::calculate(@list);
+
+say 0+@res;
+say $#members+1;
 
 for (@res) {
 	say join "→", @$_;
 }
+
+p @res;
