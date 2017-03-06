@@ -43,9 +43,12 @@ sub anagram {
     my $words_list = shift;
     my %result;
 
-    #
-    # Поиск анограмм
-    #
+    my @word;
+    %result{@$words_list[0]} = ();
+    
+    for my $i (@$words_list){
+	@word = @$words_list =~ /(.)/g
+    }
 
     return \%result;
 }
