@@ -8,10 +8,7 @@ use DDP;
 sub calculate {
 	my @members = @_;
 	my @res;
-	# ...
-	#	push @res,[ "from_name", "to_name" ];
-	# ...
-	
+		
 	#Рассчёт итогового количества пар, оно равно количеству всех участников
 	my $k = 0;
 #	p @members;
@@ -71,23 +68,23 @@ sub calculate {
 			if (!$f1 && !$f3 && ($i<$k-2 || $f2)) {
 				$hash{$from_name} = $to_name;
 				$i++; #Счётчик прибавляется только после успешного образования пары
-				p %hash if $i==5;
+				#p %hash if $i==5;
 			}
-			    elsif (!$f1 && !$f2 && $i == $k-2) {say "one"; $i = 0; %hash = (); p %hash; goto START;}    #Когда остаётся заполнить одну или две пары,
-				elsif (!$f1 && !$f2 && $i == $k-1) {say "two"; $i = 0; %hash = (); goto START;}#появляются специальные ограничения для претендентов
-				    else {say "error 1 i = $i $f1 $f2 $f3";}
+			    elsif ((!$f1 && !$f2 || $f3) && $i == $k-2) {$i = 0; %hash = (); goto START;}#Когда остаётся заполнить одну или две пары,
+				elsif ((!$f1 && !$f2 || $f3) && $i == $k-1) {$i = 0; %hash = (); goto START;}#появляются специальные ограничения для претендентов
+			
 	
 		}
 		    elsif ($i == $k-1 && $from == $to) { # Обрабатывем случаи, когда претенденты оказались из одной ячейки
 		    
-			    say "three";
+		
 			    if (ref $members[$from] eq ''){
 				    if (exists $hash{$from}) {$f1 = 1;}
 				    for my $value (values %hash) {if ($value eq $to) {$f1 = 1;}}
 				    
 				    if (exists $hash{$from}) {$f2 = 1;}
 				    for my $value (values %hash) {if ($value eq $to) {$f2 = 1;}}
-				    if (!$f1) {$i = 0; %hash = (); goto START;} else {say "error 2 i = $i $f1 $f2";}
+				    if (!$f1) {$i = 0; %hash = (); goto START;}
 			    }
 				else{
 					$from_name = $members[$from][0];
@@ -99,7 +96,7 @@ sub calculate {
 					if (exists $hash{$to_name}) {$f2 = 1;}
 					for my $value (values %hash) {if ($value eq $from_name) {$f2 = 1;}}
 					
-					if (!$f1 && !$f2) {$i = 0; %hash = (); goto START;} else {say "error 3 i = $i $f1 $f2";}
+					if (!$f1 && !$f2) {$i = 0; %hash = (); goto START;}
 				}
 		    }
 			elsif ($i == $k-2  && $from == $to && ref $members[$from] eq 'ARRAY') {
@@ -113,7 +110,7 @@ sub calculate {
 				if (exists $hash{$to_name}) {$f2 = 1;}
 				for my $value (values %hash) {if ($value eq $from_name) {$f2 = 1;}}
 		  
-				if (!$f1 && !$f2){$i = 0; %hash = (); goto START;} else {say "error 4 i = $i $f1 $f2";}
+				if (!$f1 && !$f2){$i = 0; %hash = (); goto START;}
 			}
 		
 	}
