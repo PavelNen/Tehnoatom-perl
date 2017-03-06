@@ -46,7 +46,7 @@ sub calculate {
 	    
 		my $f1 = 0; # Флаг наличия дарителя в хэше в своей роли, а принимателя в своей
 		my $f2 = 0; # Флаг наличия дарителя в хэше в роли принимателя, а принимателя в другой
-
+		my $f3 = 0; # Флаг, дарил ли второй первому подарок?
 		    
 		if ($from != $to){	#Проверяем претендентов из разных ячеек @members
 	    
@@ -61,29 +61,33 @@ sub calculate {
 			if (exists $hash{$from_name}) {$f1 = 1;} #Если этот даритель уже дарил
 			for my $value (values %hash) {if ($value eq $to_name) {$f1 = 1;}} #Если этот получатель уже получал
 		    		    
-			if (exists $hash{$to_name}) {$f2 = 1;} # Если этот получатель уже дарил
+			if (exists $hash{$to_name}) {
+				$f2 = 1; # Если этот получатель уже дарил
+				if ($hash{$to_name} eq $from_name) {$f3 = 1;} #Если дарил текущему дарителю
+			}
 			for my $value (values %hash) {if ($value eq $from_name) {$f2 = 1;}} #Если этот даритель уже получал
 			
 		    
-			if (!$f1 && ($i<$k-2 || $f2)) {
+			if (!$f1 && !$f3 && ($i<$k-2 || $f2)) {
 				$hash{$from_name} = $to_name;
 				$i++; #Счётчик прибавляется только после успешного образования пары
+				p %hash if $i==5;
 			}
-			    elsif (!$f1 && !$f2 && $i == $k-2) {$i = 0; %hash = (); goto START;}    #Когда остаётся заполнить одну или две пары,
-				elsif (!$f1 && !$f2 && $i == $k-1) {$i = 0; %hash = (); goto START;}#появляются специальные ограничения для претендентов
-		
+			    elsif (!$f1 && !$f2 && $i == $k-2) {say "one"; $i = 0; %hash = (); p %hash; goto START;}    #Когда остаётся заполнить одну или две пары,
+				elsif (!$f1 && !$f2 && $i == $k-1) {say "two"; $i = 0; %hash = (); goto START;}#появляются специальные ограничения для претендентов
+				    else {say "error 1 i = $i $f1 $f2 $f3";}
 	
 		}
 		    elsif ($i == $k-1 && $from == $to) { # Обрабатывем случаи, когда претенденты оказались из одной ячейки
 		    
-			   # say "three";
+			    say "three";
 			    if (ref $members[$from] eq ''){
 				    if (exists $hash{$from}) {$f1 = 1;}
 				    for my $value (values %hash) {if ($value eq $to) {$f1 = 1;}}
 				    
 				    if (exists $hash{$from}) {$f2 = 1;}
 				    for my $value (values %hash) {if ($value eq $to) {$f2 = 1;}}
-				    if (!$f1) {$i = 0; %hash = (); goto START;}
+				    if (!$f1) {$i = 0; %hash = (); goto START;} else {say "error 2 i = $i $f1 $f2";}
 			    }
 				else{
 					$from_name = $members[$from][0];
@@ -95,7 +99,7 @@ sub calculate {
 					if (exists $hash{$to_name}) {$f2 = 1;}
 					for my $value (values %hash) {if ($value eq $from_name) {$f2 = 1;}}
 					
-					if (!$f1 && !$f2) {$i = 0; %hash = (); goto START;}
+					if (!$f1 && !$f2) {$i = 0; %hash = (); goto START;} else {say "error 3 i = $i $f1 $f2";}
 				}
 		    }
 			elsif ($i == $k-2  && $from == $to && ref $members[$from] eq 'ARRAY') {
@@ -109,7 +113,7 @@ sub calculate {
 				if (exists $hash{$to_name}) {$f2 = 1;}
 				for my $value (values %hash) {if ($value eq $from_name) {$f2 = 1;}}
 		  
-				if (!$f1 && !$f2){$i = 0; %hash = (); goto START;}
+				if (!$f1 && !$f2){$i = 0; %hash = (); goto START;} else {say "error 4 i = $i $f1 $f2";}
 			}
 		
 	}
