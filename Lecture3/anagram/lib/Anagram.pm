@@ -4,7 +4,8 @@ use 5.010;
 use strict;
 use warnings;
 
-=encoding UTF8
+#=encoding utf8
+use utf8;
 
 =head1 SYNOPSIS
 
@@ -43,11 +44,20 @@ sub anagram {
     my $words_list = shift;
     my %result;
 
-    my @word;
-    %result{@$words_list[0]} = ();
+    my @word_dic;	#Массив для букв слова из словаря
+    my @word_key;	#Массив для букв ключа
+    
+    my $c_word;	#Для перевода слова в асски
+    $result{@$words_list[0]} = ();	#Создаём первый ключ, закладываем фундамент
     
     for my $i (@$words_list){
-	@word = @$words_list =~ /(.)/g
+	@word_dic = ();
+	$c_word = Encode::decode_utf8(@$words_list[0]);
+
+	say $c_word;
+	push @word, lc( $c_word =~ /(.)/g);
+	say @word;
+	
     }
 
     return \%result;
