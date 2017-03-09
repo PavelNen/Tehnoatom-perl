@@ -109,6 +109,12 @@ sub anagram {
 	
 	
     }
+    
+    for my $key (keys %result) {
+#     say $#{%result->{$key}}+1;
+	if ($#{@result{$key}} == 0) {delete $result{$key};}
+	else {@{@result{$key}} = sort @{@result{$key}};}
+    }
     #p %result;
     return \%result;
 }
