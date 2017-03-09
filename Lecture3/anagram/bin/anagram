@@ -34,5 +34,5 @@ my @list = map {
 close($fh);
 
 my $result = Anagram::anagram(\@list);
-#say "$_: @{$result->{$_}}" foreach (sort keys %$result);
+say "$_: @{$result->{$_}}" foreach (sort keys %$result);
 
