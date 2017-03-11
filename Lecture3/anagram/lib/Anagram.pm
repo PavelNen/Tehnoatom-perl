@@ -54,44 +54,36 @@ anagram(['пятак', 'ЛиСток', 'пятка', 'стул', 'ПяТаК', '
 sub anagram {
     my $words_list = shift;
     my %result;
-
+    
     my $word_dic;	#Массив для букв слова из словаря
     my $word_key;	#Массив для букв ключа
     
     my $c_word;	#Для перевода слова в асски
-    @result{decode('utf8', $$words_list[0])} = [decode('utf8', $$words_list[0])];	#Создаём первый ключ, закладываем фундамент
     
     for my $i (@$words_list)	#идём по списку слов из словаря
     {
-	$word_dic = '';
 	$c_word = lc( decode('utf8', $i)); #current word
 	
-	my $f_glob = 0; # $c_word ещё нет в %result (0) или оно уже там есть (1)
-	
-	for my $key (keys %result)	#Просматриваем целевой хэш
-	{    
-	    my $e = 0; #Есть ли уже слово в массиве анаграмм слова $key (1) или нет (0)
-	    
-	    if (length $c_word == length $key)
-	    {
 		my $c_w_o_r_d = join ',', sort split //, $c_word;
-		my $k_e_y = join ',', sort split //, $key;
-# 		say $k_e_y;	
 		
-		if ($k_e_y eq $c_w_o_r_d && !($c_word ~~ @{@result{$key}}))
+		if (exists $result{$c_w_o_r_d} && !($c_word ~~ @{@result{$c_w_o_r_d}}))
 		{
-		      push @result{$key}, $c_word;
-		      $f_glob = 1;
+		      push @result{$c_w_o_r_d}, $c_word;
+
 		}
-	    }
-	 }    
-	if (!$f_glob) {@result{$c_word} = []; push @result{$c_word}, $c_word;}
+		else {@result{$c_w_o_r_d} = []; push @result{$c_w_o_r_d}, $c_word;}
     }
     
     for my $key (keys %result)
     {
 	if ($#{@result{$key}} == 0) {delete $result{$key};}
-	else {@{@result{$key}} = sort @{@result{$key}};}
+	else
+	{
+	    @{@result{$key}} = sort @{@result{$key}};
+	    $result{$result{$key}->[0]} = $result{$key};
+	    delete $result{$key};
+	}
+	
     }
 
     return \%result;
