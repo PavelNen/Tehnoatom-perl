@@ -37,18 +37,28 @@ use DDP;
 =cut
 
 our $i;
+our %refarr=(); # массив со ссылками
+our $k = 0;	#была ли ссылка на функцию
 
 sub clone {
 	my $orig = shift;
 	my $cloned;
 	
+	if ($k ==1) {return undef; exit;}
 	
 	switch(ref $orig)
 	{
 		case ''           {$cloned = $orig; }
-		case 'ARRAY'      {for $i (@$orig) {push @$cloned, clone($i);} }
-		case 'HASH'       {for $i (keys %{$orig}) {$cloned->{$i} = clone($orig->{$i});}}
-		else              { say "Такой тип данных не принимаю" }
+		
+		case 'ARRAY'      {if (!(exists $refarr{$orig}))
+					  {$refarr{$orig} = 1; for $i (@$orig) {push @$cloned, clone($i);} }
+				   else {$cloned = $orig;}}
+				   
+		case 'HASH'       {if (!(exists $refarr{$orig}))
+					  {$refarr{$orig} = 1; for $i (keys %{$orig}) {$cloned->{$i} = clone($orig->{$i});}}
+				   else {$cloned = $orig;}}
+													   
+		else              {$k = 1; $cloned = undef;}
 	}
 	
 	return $cloned;
