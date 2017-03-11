@@ -36,6 +36,8 @@ use DDP;
 
 =cut
 
+our $i;
+
 sub clone {
 	my $orig = shift;
 	my $cloned;
@@ -44,8 +46,8 @@ sub clone {
 	switch(ref $orig)
 	{
 		case ''           {$cloned = $orig; }
-		case 'ARRAY'      {for my $i (@$orig) {push @$cloned, clone($i);} }
-		case 'HASH'       { for my $i (keys %{$orig}) {$cloned->{$i} = clone($orig->{$i});}}
+		case 'ARRAY'      {for $i (@$orig) {push @$cloned, clone($i);} }
+		case 'HASH'       {for $i (keys %{$orig}) {$cloned->{$i} = clone($orig->{$i});}}
 		else              { say "Такой тип данных не принимаю" }
 	}
 	
