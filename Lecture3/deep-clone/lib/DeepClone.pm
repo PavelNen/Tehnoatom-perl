@@ -3,6 +3,8 @@ package DeepClone;
 use 5.010;
 use strict;
 use warnings;
+use Switch;
+use DDP;
 
 =encoding UTF8
 
@@ -37,9 +39,16 @@ use warnings;
 sub clone {
 	my $orig = shift;
 	my $cloned;
-	# ...
-	# deep clone algorith here
-	# ...
+	
+	
+	switch(ref $orig)
+	{
+		case ''           {$cloned = $orig; }
+		case 'ARRAY'      {for my $i (@$orig) {push @$cloned, clone($i);} }
+		case 'HASH'       { for my $i (keys %{$orig}) {$cloned->{$i} = clone($orig->{$i});}}
+		else              { say "Такой тип данных не принимаю" }
+	}
+	
 	return $cloned;
 }
 
