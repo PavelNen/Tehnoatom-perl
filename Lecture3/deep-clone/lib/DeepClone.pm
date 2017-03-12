@@ -36,7 +36,6 @@ use DDP;
 
 =cut
 
-our $i;
 our %refarr=(); # массив со ссылками
 our $k = 0;	#была ли ссылка на функцию
 
@@ -44,24 +43,25 @@ sub clone {
 	my $orig = shift;
 	my $cloned;
 	
-	if ($k ==1) {return undef; exit;} 
+	if ($k ==1) {return undef;} 
 	
+
 	switch(ref $orig)
 	{
-		case ''           {$cloned = $orig; }
+		case ''           {$cloned = $orig;}
 		
 		case 'ARRAY'      {if (!(exists $refarr{$orig}))
-					  {$refarr{$orig} = 1; for $i (@$orig) {push @$cloned, clone($i);} }
+					  {$refarr{$orig} = 1; for my $i (@$orig) {push @$cloned, clone($i);} }
 				   else {$cloned = $orig;}}
 				   
 		case 'HASH'       {if (!(exists $refarr{$orig}))
-					  {$refarr{$orig} = 1; for $i (keys %{$orig}) {$cloned->{$i} = clone($orig->{$i});}}
+					  {$refarr{$orig} = 1; for my $i (keys %{$orig}) {$cloned->{$i} = clone($orig->{$i});}}
 				   else {$cloned = $orig;}}
 													   
-		else              {$k = 1; $cloned = undef;}
+		else              {$k = 1; return undef;}
 	}
 	
-	if ($k ==1) {return undef; exit;} # Last fix
+	if ($k ==1) {return undef;} # Last fix
 	
 	return $cloned;
 }

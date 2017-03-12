@@ -73,6 +73,11 @@ $CYCLE_HASH->{d} = $CYCLE_HASH;
 
 my $TESTS = [
     {
+        name => 'sub ref',
+        orig => sub {},
+        want_undef => 1,
+    },
+    {
         name => 'simple undef',
         orig => undef,
     },
@@ -152,11 +157,7 @@ my $TESTS = [
         orig => $CYCLE_HASH,
         modifier => sub { $_[0]->{new_key} = 10 },
     },
-    {
-        name => 'sub ref',
-        orig => sub {},
-        want_undef => 1,
-    },
+   
     {
         name => 'complex with sub ref',
         orig => [ 1, 2, 3, { a => 1, b => 2, c => [ qw/x y z/, sub {} ] } ],
