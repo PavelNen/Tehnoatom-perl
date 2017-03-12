@@ -44,7 +44,7 @@ sub clone {
 	my $orig = shift;
 	my $cloned;
 	
-	if ($k ==1) {return undef; exit;}
+	if ($k ==1) {return undef; exit;} 
 	
 	switch(ref $orig)
 	{
@@ -60,6 +60,8 @@ sub clone {
 													   
 		else              {$k = 1; $cloned = undef;}
 	}
+	
+	if ($k ==1) {return undef; exit;} # Last fix
 	
 	return $cloned;
 }
