@@ -3,6 +3,7 @@ package DeepClone;
 use 5.010;
 use strict;
 use warnings;
+use diagnostics;
 use Switch;
 use DDP;
 
@@ -38,12 +39,14 @@ use DDP;
 
 our %refarr=(); # массив со ссылками
 our $k = 0;	#была ли ссылка на функцию
+our $s = 0; 	# 1 - если программа вызывалась с нулевого уровня рекурсий, 0 - если нет или функция окончила дозор
 
 sub clone {
 	my $orig = shift;
 	my $cloned;
-	
-	if ($k ==1) {return undef;} 
+
+#	say " "x$s . "1)$s";
+	$s++;
 	
 
 	switch(ref $orig)
@@ -58,11 +61,18 @@ sub clone {
 					  {$refarr{$orig} = 1; for my $i (keys %{$orig}) {$cloned->{$i} = clone($orig->{$i});}}
 				   else {$cloned = $orig;}}
 													   
-		else              {$k = 1; return undef;}
+		else              {$k = 1; $cloned = undef;}
 	}
 	
-	if ($k ==1) {return undef;} # Last fix
+
 	
+	$s--;
+#	say " "x$s . "2)$s";
+	
+	if ($k == 1) {if ($s == 0) {%refarr = (); $k = 0;}
+		      return undef;} # 
+	
+	if ($s == 0) {%refarr = (); $k = 0;}
 	return $cloned;
 }
 
