@@ -102,21 +102,22 @@ sub parse_file {
 sub report {
     my $result = shift;
     #say join "\t", keys %{$result->{'total'}} ;
-    say "IP\tcount\tavg\tdata\tdata_" . join "\tdata_",
+    printf '%-15s %-s %-6s  %-4s  %-5s', "IP","count","avg","data","data_";
+    say join "\tdata_",
       sort keys %{$result->{'total'}{'data_code'}};
     my $i = 0;
 
     for my $key (sort {$result->{$b}{'count'} <=>  $result->{$a}{'count'}} keys %{$result}) {
       $i++;
       #IP count avg data
-      print "$key\t" . $result->{$key}{'count'}; print "\t";
-      print $result->{$key}{'avg'} =~ /(\d+\.?\d?\d?)/; print "\t";
-      if (exists $result->{$key}{'data'}) {print $result->{$key}{'data'} =~ /(\d+\.?\d?\d?)/; print "\t";}
-        else {print "0\t";}
+      printf '%-15s %d',"$key", $result->{$key}{'count'};
+      printf '  %6d', $result->{$key}{'avg'} =~ /(\d+\.?\d?\d?)/;
+      if (exists $result->{$key}{'data'}) {printf ' %7d', $result->{$key}{'data'} =~ /(\d+\.?\d?\d?)/;}
+        else {print "\t0";}
       #data_xxx data_xxx data_xxx....
       for my $data_key (sort keys %{$result->{'total'}{'data_code'}}){
-        if (exists $result->{$key}{$data_key}) {print $result->{$key}{$data_key} =~ /(\d+\.?\d?\d?)/; print "\t";}
-          else {print "0\t";}
+        if (exists $result->{$key}{$data_key}) { print "\t"; print $result->{$key}{$data_key} =~ /(\d+\.?\d?\d?)/;}
+          else {print "\t0";}
       }
       print "\n";
       exit if $i == 10;
