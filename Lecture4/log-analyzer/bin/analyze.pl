@@ -64,13 +64,15 @@ sub parse_file {
       if ($cratio eq '-') {$cratio = 1;}
 
       $mo = mtod($mon);
+      #$day = 0 + $day;
+      say join " ", (0 + $hh, 0 + $mm, 0+$ss, 0+$day, 0+$mo, $year);
       $time = timelocal($ss, $mm, $hh, $day, $mo, $year);
 
       $result->{'total'}{'count'} += 1;
     #  p $result->{'total'}{'count'};
       $result->{$IP}{'count'} += 1;
 
-      if ($result->{'total'}{'count'} == 1 || $timemax == $timemin) {
+      if ($result->{'total'}{'count'} == 1) {
         $timemin = $time; $timemax = $time;
         $result->{'total'}{'avg'} = 0;
         $result->{$IP}{'avg'} = 0;
@@ -78,21 +80,28 @@ sub parse_file {
       else {
         if ($time < $timemin) {$timemin = $time;}
         if ($time > $timemax) {$timemax = $time;}
-        $result->{'total'}{'avg'} = 60 * $result->{'total'}{'count'} / ($timemax - $timemin);
-        $result->{$IP}{'avg'} = 60 * $result->{$IP}{'count'} / ($timemax - $timemin);
+        if ($timemax == $timemin) {
+          $result->{'total'}{'avg'} = 0;
+          $result->{$IP}{'avg'} = 0;
+        }
+        else {$result->{'total'}{'avg'} = 60 * $result->{'total'}{'count'} / ($timemax - $timemin);
+        $result->{$IP}{'avg'} = 60 * $result->{$IP}{'count'} / ($timemax - $timemin);}
+        say "$timemin $timemax $result->{'total'}{'avg'} $result->{$IP}{'avg'}";
       }
 
       if ($code == 200) {
         $result->{'total'}{'data'} += $nofbytes * $cratio / 1024;
         $result->{$IP}{'data'} += $nofbytes * $cratio / 1024;
       }
-      else {
-        $result->{'total'}{'data_code'}{$code} += $nofbytes / 1024;
-        $result->{$IP}{$code} += $nofbytes / 1024;
-      }
+
+      $result->{'total'}{'data_code'}{$code} += $nofbytes / 1024;
+      $result->{$IP}{$code} += $nofbytes / 1024;
+  #say "$timemin $timemax";
     }
 
     close $fd;
+
+
 
     # you can put your advt here
 
@@ -102,7 +111,7 @@ sub parse_file {
 sub report {
     my $result = shift;
     #say join "\t", keys %{$result->{'total'}} ;
-    printf '%-15s %-s %-6s  %-4s  %-5s', "IP","count","avg","data","data_";
+    print "IP\tcount\tavg\tdata\tdata_";
     say join "\tdata_",
       sort keys %{$result->{'total'}{'data_code'}};
     my $i = 0;
@@ -110,17 +119,18 @@ sub report {
     for my $key (sort {$result->{$b}{'count'} <=>  $result->{$a}{'count'}} keys %{$result}) {
       $i++;
       #IP count avg data
-      printf '%-15s %d',"$key", $result->{$key}{'count'};
-      printf '  %6d', $result->{$key}{'avg'} =~ /(\d+\.?\d?\d?)/;
-      if (exists $result->{$key}{'data'}) {printf ' %7d', $result->{$key}{'data'} =~ /(\d+\.?\d?\d?)/;}
+      print "$key\t" . $result->{$key}{'count'};
+      print "\t";
+      printf "%.2f" , $result->{$key}{'avg'};;
+      if (exists $result->{$key}{'data'}) {print "\t" . int($result->{$key}{'data'});}
         else {print "\t0";}
       #data_xxx data_xxx data_xxx....
       for my $data_key (sort keys %{$result->{'total'}{'data_code'}}){
-        if (exists $result->{$key}{$data_key}) { print "\t"; print $result->{$key}{$data_key} =~ /(\d+\.?\d?\d?)/;}
+        if (exists $result->{$key}{$data_key}) { print "\t"; print int($result->{$key}{$data_key});}
           else {print "\t0";}
       }
       print "\n";
-      exit if $i == 10;
+      exit if $i == 11;
     }
 
     # you can put your advt here
