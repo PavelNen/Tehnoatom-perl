@@ -18,22 +18,6 @@ report($parsed_data);
 exit;
 
 # Функция замены названия месяца на его номер
-sub mtod {
-  switch (shift){
-    case 'Jan' {return 1;}
-    case 'Feb' {return 2;}
-    case 'Mar' {return 3;}
-    case 'Apr' {return 4;}
-    case 'May' {return 5;}
-    case 'Jun' {return 6;}
-    case 'Jul' {return 7;}
-    case 'Aug' {return 8;}
-    case 'Sep' {return 9;}
-    case 'Oct' {return 10;}
-    case 'Nov' {return 11;}
-    case 'Dec' {return 12;}
-  }
-}
 
 =head1 parse_file(file)
   Функция записывает результат парса в хеш %{$result}.
@@ -45,9 +29,11 @@ sub mtod {
 sub parse_file {
     my $file = shift;
 
+    my %abbr = qw(Jan 0 Feb 1 Mar 2 Apr 3 May 4 Jun 5 Jul 6 Aug 7 Sep 8 Oct 9 Nov 10 Dec 11);
+
     my $result; # Ссылка на хеш
     my $time; my $timemin; my $timemax;
-    my ($IP, $day, $mon, $mo, $year, $hh, $mm, $ss, $tzone, $req, $code, $nofbytes,$refferer, $uagent);
+    my ($IP, $day, $mon, $year, $hh, $mm, $ss, $tzone, $req, $code, $nofbytes,$refferer, $uagent);
     my $cratio = 1;
 
     open my $fd, "-|", "bunzip2 < $file" or die "Can't open '$file': $!";
@@ -63,13 +49,12 @@ sub parse_file {
 		  $log_line =~ /^(\d+\.\d+\.\d+\.\d+) \[(\d{2})\/(\w{3})\/(\d{4}):(\d{2}):(\d{2}):(\d{2}) (\+\d{4})\] "(.+)" (\d{3}) (\d+) "(.+)" "(.+)" "(.+)"$/;
       if ($cratio eq '-') {$cratio = 1;}
 
-      $mo = mtod($mon);
-      #$day = 0 + $day;
-      #say join " ", (0 + $hh, 0 + $mm, 0+$ss, 0+$day, 0+$mo, $year);
-      $time = timelocal($ss, $mm, $hh, $day, $mo, $year);
+#      say join " ", ($IP, "$hh:$mm:$ss/$day-$mon-$year", $code, $nofbytes, $cratio); # проверка корректности считывания строк
+
+     $time = timelocal(0+$ss, 0+$mm, 0+$hh, 0+$day, $abbr{$mon}, 0+$year);
 
       $result->{'total'}{'count'} += 1;
-    #  p $result->{'total'}{'count'};
+
       $result->{$IP}{'count'} += 1;
 
       if ($result->{'total'}{'count'} == 1) {
@@ -79,9 +64,9 @@ sub parse_file {
         if ($time < $timemin) {$timemin = $time;}
         if ($time > $timemax) {$timemax = $time;}
 
-      #  say "$timemin $timemax $result->{'total'}{'avg'} $result->{$IP}{'avg'}";
-      }
 
+      }
+         #say localtime($timemin) . " -- " . localtime ($timemax);
       if ($code == 200) {
         $result->{'total'}{'data'} += $nofbytes * $cratio / 1024;
         $result->{$IP}{'data'} += $nofbytes * $cratio / 1024;
@@ -93,7 +78,7 @@ sub parse_file {
     }
 
     close $fd;
-#    say "$timemin $timemax";
+#    say "\n" . localtime($timemin) . " -- " . localtime ($timemax);
 
     for my $keyIP (keys %{$result}) {
       if ($timemax == $timemin) {
@@ -118,11 +103,11 @@ sub report {
     for my $key (sort {$result->{$b}{'count'} <=>  $result->{$a}{'count'}} keys %{$result}) {
       $i++;
       #IP count avg data
-      print "$key\t" . $result->{$key}{'count'};
-      print "\t";
-      printf "%.2f" , $result->{$key}{'avg'};;
+      print "$key\t" . $result->{$key}{'count'}; print "\t";
+      printf "%.2f" , $result->{$key}{'avg'};
       if (exists $result->{$key}{'data'}) {print "\t" . int($result->{$key}{'data'});}
         else {print "\t0";}
+
       #data_xxx data_xxx data_xxx....
       for my $data_key (sort keys %{$result->{'total'}{'data_code'}}){
         if (exists $result->{$key}{$data_key}) { print "\t"; print int($result->{$key}{$data_key});}
