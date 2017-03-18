@@ -65,7 +65,7 @@ sub parse_file {
 
       $mo = mtod($mon);
       #$day = 0 + $day;
-      say join " ", (0 + $hh, 0 + $mm, 0+$ss, 0+$day, 0+$mo, $year);
+      #say join " ", (0 + $hh, 0 + $mm, 0+$ss, 0+$day, 0+$mo, $year);
       $time = timelocal($ss, $mm, $hh, $day, $mo, $year);
 
       $result->{'total'}{'count'} += 1;
@@ -74,19 +74,12 @@ sub parse_file {
 
       if ($result->{'total'}{'count'} == 1) {
         $timemin = $time; $timemax = $time;
-        $result->{'total'}{'avg'} = 0;
-        $result->{$IP}{'avg'} = 0;
       }
       else {
         if ($time < $timemin) {$timemin = $time;}
         if ($time > $timemax) {$timemax = $time;}
-        if ($timemax == $timemin) {
-          $result->{'total'}{'avg'} = 0;
-          $result->{$IP}{'avg'} = 0;
-        }
-        else {$result->{'total'}{'avg'} = 60 * $result->{'total'}{'count'} / ($timemax - $timemin);
-        $result->{$IP}{'avg'} = 60 * $result->{$IP}{'count'} / ($timemax - $timemin);}
-        say "$timemin $timemax $result->{'total'}{'avg'} $result->{$IP}{'avg'}";
+
+      #  say "$timemin $timemax $result->{'total'}{'avg'} $result->{$IP}{'avg'}";
       }
 
       if ($code == 200) {
@@ -100,8 +93,15 @@ sub parse_file {
     }
 
     close $fd;
+#    say "$timemin $timemax";
 
-
+    for my $keyIP (keys %{$result}) {
+      if ($timemax == $timemin) {
+        $result->{$keyIP}{'avg'} = 0;
+      }
+      else {
+      $result->{$keyIP}{'avg'} = 60 * $result->{$keyIP}{'count'} / ($timemax - $timemin);}
+    }
 
     # you can put your advt here
 
@@ -111,9 +111,8 @@ sub parse_file {
 sub report {
     my $result = shift;
     #say join "\t", keys %{$result->{'total'}} ;
-    print "IP\tcount\tavg\tdata\tdata_";
-    say join "\tdata_",
-      sort keys %{$result->{'total'}{'data_code'}};
+    print "IP\tcount\tavg\tdata\t";
+    say join "\t", sort keys %{$result->{'total'}{'data_code'}};
     my $i = 0;
 
     for my $key (sort {$result->{$b}{'count'} <=>  $result->{$a}{'count'}} keys %{$result}) {
@@ -127,7 +126,9 @@ sub report {
       #data_xxx data_xxx data_xxx....
       for my $data_key (sort keys %{$result->{'total'}{'data_code'}}){
         if (exists $result->{$key}{$data_key}) { print "\t"; print int($result->{$key}{$data_key});}
-          else {print "\t0";}
+          elsif (exists $result->{$key}{'data_code'}{$data_key}) {
+            print "\t"; print int($result->{$key}{'data_code'}{$data_key});}
+              else {print "\t0";}
       }
       print "\n";
       exit if $i == 11;
