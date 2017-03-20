@@ -4,9 +4,10 @@ use 5.010;
 use strict;
 use warnings;
 use Time::Local;
-use diagnostics;
+#use diagnostics;
 use DDP;
 use Switch;
+use POSIX;
 
 
 my $filepath = $ARGV[0];
@@ -51,43 +52,52 @@ sub parse_file {
 
 #      say join " ", ($IP, "$hh:$mm:$ss/$day-$mon-$year", $code, $nofbytes, $cratio); # проверка корректности считывания строк
 
-     $time = timelocal(0+$ss, 0+$mm, 0+$hh, 0+$day, $abbr{$mon}, 0+$year);
+     $time = ceil(timelocal(0+$ss, 0+$mm, 0+$hh, 0+$day, $abbr{$mon}, 0+$year) / 60); #Время в минутах
 
       $result->{'total'}{'count'} += 1;
-
       $result->{$IP}{'count'} += 1;
 
       if ($result->{'total'}{'count'} == 1) {
-        $timemin = $time; $timemax = $time;
+        $result->{'total'}{'TIME'}{'timemin'} = $time;
+        $result->{'total'}{'TIME'}{'timemax'} = $time;
+        $result->{$IP}{'TIME'}{'timemin'} = $time;
+        $result->{$IP}{'TIME'}{'timemax'} = $time;
       }
       else {
-        if ($time < $timemin) {$timemin = $time;}
-        if ($time > $timemax) {$timemax = $time;}
-
-
+        if ($time < $result->{'total'}{'TIME'}{'timemin'}) {$result->{'total'}{'TIME'}{'timemin'} = $time;}
+        if ($time > $result->{'total'}{'TIME'}{'timemax'}) {$result->{'total'}{'TIME'}{'timemax'} = $time;}
+        if ($result->{$IP}{'count'} == 1) {
+          $result->{$IP}{'TIME'}{'timemin'} = $time;
+          $result->{$IP}{'TIME'}{'timemax'} = $time;
+        }
+          else {
+            if ($time < $result->{$IP}{'TIME'}{'timemin'}) {$result->{$IP}{'TIME'}{'timemin'} = $time;}
+            if ($time > $result->{$IP}{'TIME'}{'timemax'}) {$result->{$IP}{'TIME'}{'timemax'} = $time;}
+        }
       }
+
          #say localtime($timemin) . " -- " . localtime ($timemax);
       if ($code == 200) {
-        $result->{'total'}{'data'} += $nofbytes * $cratio / 1024;
-        $result->{$IP}{'data'} += $nofbytes * $cratio / 1024;
+        $result->{'total'}{'data'} += int($nofbytes * $cratio);
+        $result->{$IP}{'data'} += int($nofbytes * $cratio);
       }
 
-      $result->{'total'}{'data_code'}{$code} += $nofbytes / 1024;
-      $result->{$IP}{$code} += $nofbytes / 1024;
+      $result->{'total'}{'data_code'}{$code} += $nofbytes;
+      $result->{$IP}{$code} += $nofbytes;
   #say "$timemin $timemax";
+
     }
 
     close $fd;
-#    say "\n" . localtime($timemin) . " -- " . localtime ($timemax);
 
+    # Расчёт среднего, время в минутах
     for my $keyIP (keys %{$result}) {
-      if ($timemax == $timemin) {
-        $result->{$keyIP}{'avg'} = 0;
-      }
-      else {
-      $result->{$keyIP}{'avg'} = 60 * $result->{$keyIP}{'count'} / ($timemax - $timemin);}
-    }
 
+        $result->{$keyIP}{'avg'} =
+          $result->{$keyIP}{'count'} / ($result->{$keyIP}{'TIME'}{'timemax'}-$result->{$keyIP}{'TIME'}{'timemin'} + 1);
+
+
+    }
     # you can put your advt here
 
     return $result;
@@ -105,14 +115,14 @@ sub report {
       #IP count avg data
       print "$key\t" . $result->{$key}{'count'}; print "\t";
       printf "%.2f" , $result->{$key}{'avg'};
-      if (exists $result->{$key}{'data'}) {print "\t" . int($result->{$key}{'data'});}
+      if (exists $result->{$key}{'data'}) {print "\t" . int($result->{$key}{'data'}/1024);}
         else {print "\t0";}
 
       #data_xxx data_xxx data_xxx....
       for my $data_key (sort keys %{$result->{'total'}{'data_code'}}){
-        if (exists $result->{$key}{$data_key}) { print "\t"; print int($result->{$key}{$data_key});}
+        if (exists $result->{$key}{$data_key}) { print "\t"; print int($result->{$key}{$data_key}/1024);}
           elsif (exists $result->{$key}{'data_code'}{$data_key}) {
-            print "\t"; print int($result->{$key}{'data_code'}{$data_key});}
+            print "\t"; print int($result->{$key}{'data_code'}{$data_key}/1024);}
               else {print "\t0";}
       }
       print "\n";
