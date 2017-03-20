@@ -57,6 +57,7 @@ sub parse_file {
       $result->{'total'}{'count'} += 1;
       $result->{$IP}{'count'} += 1;
 
+      #Для каждого IP запишем свой диапазон минут
       if ($result->{'total'}{'count'} == 1) {
         $result->{'total'}{'TIME'}{'timemin'} = $time;
         $result->{'total'}{'TIME'}{'timemax'} = $time;
@@ -76,7 +77,7 @@ sub parse_file {
         }
       }
 
-         #say localtime($timemin) . " -- " . localtime ($timemax);
+
       if ($code == 200) {
         $result->{'total'}{'data'} += int($nofbytes * $cratio);
         $result->{$IP}{'data'} += int($nofbytes * $cratio);
@@ -84,7 +85,6 @@ sub parse_file {
 
       $result->{'total'}{'data_code'}{$code} += $nofbytes;
       $result->{$IP}{$code} += $nofbytes;
-  #say "$timemin $timemax";
 
     }
 
@@ -96,7 +96,6 @@ sub parse_file {
         $result->{$keyIP}{'avg'} =
           $result->{$keyIP}{'count'} / ($result->{$keyIP}{'TIME'}{'timemax'}-$result->{$keyIP}{'TIME'}{'timemin'} + 1);
 
-
     }
     # you can put your advt here
 
@@ -105,7 +104,7 @@ sub parse_file {
 
 sub report {
     my $result = shift;
-    #say join "\t", keys %{$result->{'total'}} ;
+    
     print "IP\tcount\tavg\tdata\t";
     say join "\t", sort keys %{$result->{'total'}{'data_code'}};
     my $i = 0;
