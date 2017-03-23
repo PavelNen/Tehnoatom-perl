@@ -4,6 +4,7 @@ use strict;
 use warnings;
 use Scalar::Util 'looks_like_number';
 
+use Exporter 'import';
 
 =encoding utf8
 
@@ -19,24 +20,12 @@ Version 1.00
 
 our $VERSION = '1.00';
 
-=head1 SYNOPSIS
-package aaa;
 
-use myconst math => {
-        PI => 3.14,
-        E => 2.7,
-    },
-    ZERO => 0,
-    EMPTY_STRING => '';
 
-package bbb;
+our @EXPORT = 'PI';
 
-use aaa qw/:math PI ZERO/;
-
-print ZERO;             # 0
-print PI;               # 3.14
-=cut
-
+sub PI {3.14}
+#our %EXPORT_TAGS = import();
 
 
 1;
