@@ -22,9 +22,11 @@ our $VERSION = '1.00';
 
 
 
-our @EXPORT = 'PI';
+our @EXPORT = 'PI()';
 
-sub PI {3.14}
+sub PI { shift }
+
+print @_;
 #our %EXPORT_TAGS = import();
 
 

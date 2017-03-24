@@ -1,11 +1,14 @@
 #!/usr/bin/perl
+use 5.010;
 
 use lib 'lib/';
+
 use strict;
+no strict 'subs';
 use warnings;
 
-use myconst PI;
+use myconst PI => 3.14;
 
-print PI;
+say PI;
 
 1;
