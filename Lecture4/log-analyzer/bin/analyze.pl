@@ -137,8 +137,7 @@ sub report {
             else { print "\t0"; }
         }
         print "\n";
-        goto END if $i == 11;
+        last if $i == 11;
     }
 
-    END:
 }
