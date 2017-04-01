@@ -24,9 +24,10 @@ sub import {
     my ( $class, %list ) = @_;
     my $caller = caller;
 
-    no strict 'refs';
-    push @{"$caller\::ISA"}, 'Exporter';
-
+    {
+      no strict 'refs';
+      push @{"$caller\::ISA"}, 'Exporter';
+    }
     #  p %list;
 
     # Пробегаем список (хэш) аргументов
@@ -47,22 +48,25 @@ sub import {
                 ref $list{$key}{$in_group} eq ''
                   and $list{$key}{$in_group} ne ''
                   or die;
+                {
+                  no strict 'refs';
+                  my $way = "$caller\::$in_group";
+                  *{$way} = sub () { $list{$key}{$in_group} };
 
-                my $way = "$caller\::$in_group";
-                *{$way} = sub () { $list{$key}{$in_group} };
-
-                push @{"$caller\::EXPORT_OK"}, "$in_group";
-                push @{ ${"$caller\::EXPORT_TAGS"}{$key} }, "$in_group";
-                push @{ ${"$caller\::EXPORT_TAGS"}{'all'} }, "$in_group";
+                  push @{"$caller\::EXPORT_OK"}, "$in_group";
+                  push @{ ${"$caller\::EXPORT_TAGS"}{$key} }, "$in_group";
+                  push @{ ${"$caller\::EXPORT_TAGS"}{'all'} }, "$in_group";
+                }
             }
         }
         elsif ( ref $list{$key} eq '' and $list{$key} ne '' ) {
+            {no strict 'refs';
+              my $way = "$caller\::$key";
+              *{$way} = sub () { $list{$key} };
 
-            my $way = "$caller\::$key";
-            *{$way} = sub () { $list{$key} };
-
-            push @{"$caller\::EXPORT_OK"}, "$key";
-            push @{ ${"$caller\::EXPORT_TAGS"}{'all'} }, "$key";
+              push @{"$caller\::EXPORT_OK"}, "$key";
+              push @{ ${"$caller\::EXPORT_TAGS"}{'all'} }, "$key";
+            }
         }
         else { die; }
     }
