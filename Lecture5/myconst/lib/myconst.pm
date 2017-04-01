@@ -60,7 +60,8 @@ sub import {
             }
         }
         elsif ( ref $list{$key} eq '' and $list{$key} ne '' ) {
-            {no strict 'refs';
+            {
+              no strict 'refs';
               my $way = "$caller\::$key";
               *{$way} = sub () { $list{$key} };
 
