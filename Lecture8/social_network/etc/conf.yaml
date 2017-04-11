@@ -1,4 +1,4 @@
 ---
-dsn: DBI:mysql:database=SocNetWorkDB;host=localhost
+dsn: DBI:mysql:SocNetWorkDB:localhost
 userDB: userPB
 password: password

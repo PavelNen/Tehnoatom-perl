@@ -9,6 +9,7 @@ use lib "$FindBin::Bin/../lib/";
 use Getopt::Long;
 use Switch;
 use DDP;
+use Encode qw(encode decode);
 
 use DBI;
 use YAML;
@@ -16,6 +17,23 @@ use JSON;
 
 require Local::SocialNetwork;
 
+=encoding utf8
+
+=head1 NAME
+
+social_network - main window
+
+=head1 VERSION
+
+Version 1.00
+
+=cut
+
+our $VERSION = '1.00';
+
+=head1 SYNOPSIS
+
+=cut
 
 my @user = ();
 GetOptions ( "user=s" => \@user );
@@ -23,21 +41,18 @@ GetOptions ( "user=s" => \@user );
 #p @ARGV;
 #p $config;
 #my $cmd = $ARGV[0];
+my $result;
 
 switch ($ARGV[0]) {
-    case 'friends' { Local::SocialNetwork::friends(@user) }
-    case 'nofriends' { Local::SocialNetwork::nofriends() }
-    case 'num_handshakes' { Local::SocialNetwork::num_handshakes(@user) }
+    case 'friends' { $result = Local::SocialNetwork::friends(@user) }
+    case 'nofriends' { $result = Local::SocialNetwork::nofriends() }
+    case 'num_handshakes' { $result = Local::SocialNetwork::num_handshakes(@user) }
     #case 'exit' { exit; }
     else { say 'I don\'t understand you, please, repeat'}
 }
 
-
-sub encodeJSON{
-	my($arrayRef) = @_;
-	my $JSONText= JSON->new->utf8->encode($arrayRef);
-	return $JSONText;
-}
+#p $result;
+say Local::SocialNetwork::encodeJSON($result);
 
 Local::SocialNetwork::discon();
 
