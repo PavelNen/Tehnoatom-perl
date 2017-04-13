@@ -38,6 +38,8 @@ our $VERSION = '1.00';
 my @user = ();
 GetOptions ( "user=s" => \@user );
 
+if ($#user > 0 && $user[0] eq $user[1] ) { die "Ошибка: Ты ввёл одного и того же человека"; }
+
 #p @ARGV;
 #p $config;
 #my $cmd = $ARGV[0];
@@ -48,7 +50,7 @@ switch ($ARGV[0]) {
     case 'nofriends' { $result = Local::SocialNetwork::nofriends() }
     case 'num_handshakes' { $result = Local::SocialNetwork::num_handshakes(@user) }
     #case 'exit' { exit; }
-    else { say 'I don\'t understand you, please, repeat'}
+    else { die 'I don\'t understand you, please, repeat'}
 }
 
 #p $result;

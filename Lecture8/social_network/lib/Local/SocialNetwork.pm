@@ -1,9 +1,13 @@
 package Local::SocialNetwork;
 
-use 5.010;
+use 5.020;
 use strict;
 use warnings;
+no warnings 'experimental';
 use Encode qw(encode decode);
+
+#use Data::Dumper;
+use Cache::Memcached::Fast;
 
 use DBI;
 use DDP;
@@ -54,7 +58,9 @@ sub friends {
     my @mutual_array_ID = (); #Массив списка ID общих друзей
     my @result = (); #Массив для итога в JSON
 
-    say "List of mutual friends for $firstID and $secondID in JSON:";
+    my $They_are_friends = 0; # А вдруг они друг другу друзья?
+
+    say "Список общих друзей для $firstID и $secondID в формате JSON:";
 
     #Собираем списки друзей для каждого отдельно
     #Сначала получаем все строки, содержащие любого из двух юзеров
@@ -67,7 +73,17 @@ sub friends {
     #Затем уже разделяем хэш на два
     for my $key (keys %{$hash_ref})
     {
+        # Проверка товарищей на дружбу
+        if ($hash_ref->{$key}{One} == $firstID
+              && $hash_ref->{$key}{Two} == $secondID
+                || $hash_ref->{$key}{One} == $secondID
+                  && $hash_ref->{$key}{Two} == $firstID) {
+            $They_are_friends = 1;
+        }
+
+        # Если не оказалось, что друзья, то продолжаем
         if ($hash_ref->{$key}{One} != $hash_ref->{$key}{Two}) {
+
             #составляем список друзей первого юзера
             if ($hash_ref->{$key}{One} == $firstID) {
                 $firstID_list{$hash_ref->{$key}{Two}} = $firstID;
@@ -80,10 +96,12 @@ sub friends {
                 $secondID_list{$hash_ref->{$key}{Two}} = $secondID;
             }
             if ($hash_ref->{$key}{Two} == $secondID) {
-                $secondID_list{$hash_ref->{$key}{Two}} = $secondID;
+                $secondID_list{$hash_ref->{$key}{One}} = $secondID;
             }
         }
     }
+
+    #p %firstID_list;
 
     #Поиск ID общих друзей
     for my $key (keys %firstID_list) {
@@ -91,11 +109,11 @@ sub friends {
             push @mutual_array_ID, $key;
         }
     }
-
+    #p @mutual_array_ID;
     #Сбор имени и фамилии для этих ID
-    if ($#mutual_array_ID > 0) {
-        my $query = "SELECT * FROM users where id = ? ";
-          for (1..$#mutual_array_ID) {
+    if ($#mutual_array_ID + 1 > 0) {
+        my $query = "SELECT * FROM users WHERE id = ? ";
+        for (1..$#mutual_array_ID) {
             $query .= " OR id = ?";
         }
         $sth = $dbh->prepare( $query ) or die $dbh->errstr;
@@ -106,14 +124,16 @@ sub friends {
             push @result, $hash_ref->{$key};
         }
     }
+
     #p @result;
+    if ($They_are_friends) {say "$firstID и $secondID друзья!";}
     return \@result;
 }
 
 sub nofriends {
    my @result = ();
   our $test;
-  say "Who doesn't have friends? It's them:";
+  say "Вот у кого нет друзей..:";
 
   my $query = "SELECT * FROM users
                   WHERE NOT id IN (SELECT DISTINCT One FROM users_relation)
@@ -131,81 +151,125 @@ sub nofriends {
   return \@result;
 }
 
-sub FindHisFriends {
-    # Для num_handshakes
-    # Рекурсивная функция поиска друзей и записи в соответствующих ключ
-    # Вернёт минимальное количество рукопожатий между целевыми юзерами firstID и secondID,
-    # либо -1, если ветвь не дойдёт до $secondID
-
-    my $bundle = shift;
-    my $rootID = shift;
-    my $secondID = shift;
-    my $subtree_of_friends = shift;
-    my $who_exists_in_tree = shift;
-    my $dbh = shift;
-
-    my $We_found_him = 0; # 0 - не нашли второго друга, 1 - нашли
-    my $Last_friend = 1;
-
-    $sth_rel->execute( $rootID, $rootID ) or die $dbh->errstr;
-    my $hash_ref = $sth_rel->fetchall_hashref('Two');
-    if ($We_found_him != 0) {
-        for my $key (keys %{$hash_ref}) {
-            if ( $hash_ref->{$key}{'Two'} == $rootID ) {
-                if (est($hash_ref->{$key}{'One'}, $who_exists_in_tree)) {
-                    $subtree_of_friends->{$rootID} =
-                }
-
-            }
-            elsif ( $hash_ref->{$key}{'One'} == $rootID ) {
-
-            }
-        }
-    }
-
-}
 
 sub num_handshakes {
-    say "It is num_handshakes";
+    # Здесь используется не дерево рукопожатий, а скорее пирамида
+    # На каждой ступени находятся друзя юзеров с предыдущей ступени
+    # Пирамида начинается с первого юзера $firstID,
+    # На следующей ступени все его друзья
 
-    my $firstID  = shift; #Первый юзер из параметров
-    my $secondID = shift; #Второй юзер
 
-    my $tree_of_friends = {
-        'bundle_num' => 0; #Номер узла дерева, то есть номер рукопожатия
-        $firstID => {} # Дерево друзей начиная с firstID
-    };
+    my $firstID  = shift; #Первый юзер из параметров, он будет меняться
+    my $lastID = shift; #Второй юзер
+    say "Количество рукопожатий между $firstID и $lastID:";
 
-    my $who_exists_in_tree = { $firstID => '0', }; #хэш со списком всехкто уже есть в дереве, чтобы не запутывались ветви и можно было дойти до конца
+    my $memd = Cache::Memcached::Fast->new({
+        servers => [
+            {address => 'localhost:11211', weight => 2.5},
+            '192.168.254.2:11211',
+            '/path/to/unix.sock'
+        ],
+        namespace => 'my:',
+        connect_timeout => 0.2,
+        # ...
+    });
 
-    #Выберем в базе данных все пары с юзером $firstID
-    my $query = "SELECT DISTINCT One, Two FROM users_realtion
-                    WHERE One = ? OR Two = ? ";
-    my $sth_rel = $dbh->prepare( $query ) or die $dbh->errstr;
-    $sth_rel->execute( $firstID, $firstID ) or die $dbh->errstr;
-    my $hash_ref = $sth_rel->fetchall_hashref('One');
 
-    # Пойдём по хэшу с полученными парами
-    for my $key (keys $hash_ref) {
-        # Выделим друга $rootID для юзера $firstID из пары $key,
-        # он будет ключом для хэша уже своих друзей
-        if ($hash_ref->{$key}{'Two'} == $firstID) {
-            my $rootID = $hash_ref->{$key}{'One'};
+    my $We_found_him = 0; # Когда lastID найден
+    my @gen_of_friends = ([$firstID]); # Матрица, в каждой строке люди одной степени знакомства с первым
+    say "YES" if defined $memd->get('firstID');
+    if ( defined $memd->get('firstID') &&
+        ($firstID eq $memd->get('firstID')
+          && $lastID eq $memd->get('lastID')
+           || $firstID eq $memd->get('lastID')
+                 && $lastID eq $memd->get('firstID') ) ) {
+        say "YES!!!";
+        @gen_of_friends = @{$memd->get('pyramid')};
+        $We_found_him = $memd->get('W_f_h');
+        goto FROM_MEMCACHED;
+    }
+    else {
+        $memd->flush_all;
+    }
+
+    my $genID = $firstID; #То есть, он будет меняться
+    my @all_friends = ($firstID); # Список всех найденых юзеров в пирамиде
+    my $This_is_the_end = 0; # Для выхода из цикла в нужный момент
+    my $cs = 0; # текущая строка, то есть номер поколения друзей
+
+    while ( $This_is_the_end == 0) {
+        my $current_gen = $gen_of_friends[$cs]; # ссылка на текущую строку
+        #say "$cs now ";
+        #p @gen_of_friends;
+        #Найдём всех друзей всех друзей одного поколения
+        my $query = "SELECT DISTINCT One, Two FROM users_relation
+                      WHERE One IN (" . (join ',', ("?") x ($#$current_gen + 1))
+                        . ") OR Two IN (" . (join ',', ("?") x ($#$current_gen + 1))
+                          . ");";
+
+        #Выберем в базе данных все пары с юзером $firstID
+
+        my $sth = $dbh->prepare( $query ) or die $dbh->errstr;
+
+        $sth->execute( @$current_gen, @$current_gen ) or die $dbh->errstr;
+
+        $gen_of_friends[$cs+1] = [];
+
+        while ( my $hash_ref = $sth->fetchrow_hashref ) {
+            my $nextID;
+            # Если человек
+            if ( $hash_ref->{'One'} ~~ @$current_gen ) {
+                $nextID = $hash_ref->{'Two'};
+            }
+            elsif ( $hash_ref->{'Two'} ~~ @$current_gen ) {
+                $nextID = $hash_ref->{'One'};
+            }
+            if ( ! ($nextID ~~ @all_friends)) {
+                push @all_friends, $nextID;
+                push @{$gen_of_friends[$cs+1]}, $nextID;
+            }
+            if ( $nextID == $lastID ) {
+                $This_is_the_end = 1;
+                $We_found_him = $cs+1;
+
+                last;
+            }
         }
-        else { my $rootID = $hash_ref->{$key}{'Two'}; }
 
-        # Запишем друга в хэш со всеми юзерами, которые нам встретятся в дереве
-        $who_exists_in_tree->{$rootID} = 1;
+        $sth->finish();
 
-        # Теперь будем строить хэш, - искать друзей, для друга юзера
-        FindHisFriends(0, $rootID, $secondID, $tree_of_friends, $who_exists_in_tree, $dbh);
+        if ($#{$gen_of_friends[$cs+1]} == -1) {
+          $This_is_the_end = 1;
+          $We_found_him = -1;
+        }
 
+        #say join ' ', @{$gen_of_friends[$cs]};
+        $cs++;
+
+    }
+    #say join ' ', @{$gen_of_friends[$cs]};
+    #print Data::Dumper @gen_of_friends;
+
+    #p @all_friends;
+
+    # реализация кэша
+
+    $memd->add_multi(['firstID', $firstID], ['lastID', $lastID],
+                      ['pyramid', \@gen_of_friends], ['W_f_h', $We_found_him]);
+
+    $memd->set_multi(['firstID', $firstID, 10], ['lastID', $lastID, 10],
+                      ['pyramid', \@gen_of_friends, 10], ['W_f_h', $We_found_him, 10]);
+
+    FROM_MEMCACHED:
+    if ( $We_found_him > 0 ) {
+        return {"Num_handshakes" => $We_found_him, };
+    }
+    else {
+        return {"Num_handshakes" => "Между ними НЕТ связи", };
     }
 
 
 
-
-    my $tree_of_friends->{$firstID};
 }
 
 sub discon { $dbh->disconnect; }

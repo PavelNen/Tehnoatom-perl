@@ -1,6 +1,122 @@
 
 #Неудачные дубли
+sub FindHisFriends {
+    # Для num_handshakes
+    # Рекурсивная функция поиска друзей и записи в соответствующих ключ
+    # Вернёт минимальное количество рукопожатий между целевыми юзерами firstID и secondID,
+    # либо -1, если ветвь не дойдёт до $secondID
 
+    my $bundle = shift;
+        $bundle++;
+    my $rootID = shift;
+    my $secondID = shift;
+    my $subtree_of_friends = shift;
+    my $who_exists_in_tree = shift;
+    my $dbh = shift;
+
+    print "$rootID -> ";
+
+    my $We_found_him = 0; # 0 - не нашли второго друга, 1 - нашли
+    my $Last_friend = 1; # Предположение, что юзер, которому будем искать друзей,
+    # последний в своей ветви, иначе присвои 0, когда поймём, что это не так
+
+    # Ищем всех друзей для $rootID
+    my $query = "SELECT DISTINCT One, Two FROM users_relation
+                    WHERE One = ? OR Two = ? ";
+    my $sth_rel = $dbh->prepare( $query ) or die $dbh->errstr;
+    $sth_rel->execute( $rootID, $rootID ) or die $dbh->errstr;
+    my $hash_ref = $sth_rel->fetchall_hashref('One');
+    # Для каждого его друга повторим операцию поиска друзей
+    for my $key (keys %{$hash_ref}) {
+            my $nextrootID;
+
+            if ( $hash_ref->{$key}{'Two'} == $rootID ) {
+                $nextrootID = $hash_ref->{$key}{'One'};
+            }
+            elsif ( $hash_ref->{$key}{'One'} == $rootID ) {
+                $nextrootID = $hash_ref->{$key}{'Two'};
+            }
+
+            if (! ( exists $who_exists_in_tree->{$hash_ref->{$key}{'One'}} ) ) {
+
+                $subtree_of_friends->{$nextrootID} = {};
+                $who_exists_in_tree->{$nextrootID} = $bundle;
+                if ( $nextrootID != $secondID ) {
+                    $We_found_him =
+                        FindHisFriends($bundle, $nextrootID, $secondID, $subtree_of_friends->{$nextrootID}, $who_exists_in_tree, $dbh);
+                    $Last_friend = 0;
+
+                }
+                else {
+                  $We_found_him = 1;
+                  $Last_friend = 1;
+                }
+            }
+            elsif ( ( exists $who_exists_in_tree->{$hash_ref->{$key}{'One'}} )
+                      && $nextrootID == $secondID ) {
+
+                        $subtree_of_friends->{$nextrootID} = {};
+                        $who_exists_in_tree->{$nextrootID} = $bundle;
+                        $Last_friend = 1;
+                        $We_found_him = 1;
+            }
+    }
+
+    if ( $We_found_him == 1 ) { return $bundle; }
+    else { return -1; }
+
+}
+# С рекурсией
+sub num_handshakes {
+    say "It is num_handshakes";
+
+    my $firstID  = shift; #Первый юзер из параметров
+    my $secondID = shift; #Второй юзер
+
+    print "$firstID -> ";
+
+    my $tree_of_friends = {
+        $firstID => {} # Дерево друзей начиная с firstID
+    };
+
+    my $who_exists_in_tree = { $firstID => '0', }; #хэш со списком всехкто уже есть в дереве, чтобы не запутывались ветви и можно было дойти до конца
+
+    #Выберем в базе данных все пары с юзером $firstID
+    my $query = "SELECT DISTINCT One, Two FROM users_relation
+                    WHERE One = ? OR Two = ? ";
+    my $sth_rel = $dbh->prepare( $query ) or die $dbh->errstr;
+    $sth_rel->execute( $firstID, $firstID ) or die $dbh->errstr;
+    my $hash_ref = $sth_rel->fetchall_hashref('One');
+
+    # Пойдём по хэшу с полученными парами
+    for my $key (keys %{$hash_ref}) {
+        # Выделим друга $rootID для юзера $firstID из пары $key,
+        # он будет ключом для хэша уже своих друзей
+        my $rootID;
+
+        if ($hash_ref->{$key}{'Two'} == $firstID) {
+            $rootID = $hash_ref->{$key}{'One'};
+        }
+        else { $rootID = $hash_ref->{$key}{'Two'}; }
+
+        # Запишем друга в хэш со всеми юзерами, которые нам встретятся в дереве
+        $who_exists_in_tree->{$rootID} = 1;
+
+        # Теперь будем строить хэш, - искать друзей, для друга юзера
+        my $We_found_him = FindHisFriends(0, $rootID, $secondID, $tree_of_friends->{$firstID}, $who_exists_in_tree, $dbh);
+
+        p $tree_of_friends;
+
+        if ( $We_found_him > 0 ) {
+            return {"Num_handshakers" => $We_found_him, };
+        }
+        else {
+            return {"Num_handshakers" => "Между ними НЕТ связи", };
+        }
+
+    }
+
+}
 
 sub nofriendsxxx {
     my @result = ();
