@@ -7,15 +7,14 @@ use FindBin;
 use lib "$FindBin::Bin/../lib/";
 
 use Getopt::Long;
-use Switch;
 use DDP;
 use Encode qw(encode decode);
 
-use DBI;
+#use DBI;
 use YAML;
 use JSON;
 
-require Local::SocialNetwork;
+use Local::SocialNetwork;
 
 =encoding utf8
 
@@ -40,22 +39,33 @@ GetOptions ( "user=s" => \@user );
 
 if ($#user > 0 && $user[0] eq $user[1] ) { die "Ошибка: Ты ввёл одного и того же человека"; }
 
-#p @ARGV;
-#p $config;
-#my $cmd = $ARGV[0];
+
+my $session = Local::SocialNetwork->new();
+
 my $result;
 
-switch ($ARGV[0]) {
-    case 'friends' { $result = Local::SocialNetwork::friends(@user) }
-    case 'nofriends' { $result = Local::SocialNetwork::nofriends() }
-    case 'num_handshakes' { $result = Local::SocialNetwork::num_handshakes(@user) }
-    #case 'exit' { exit; }
-    else { die 'I don\'t understand you, please, repeat'}
+if ($ARGV[0] eq 'friends') {
+    $result = $session->friends(@user);
 }
+  elsif ($ARGV[0] eq 'nofriends') {
+      $result = $session->nofriends();
+  }
+    elsif ($ARGV[0] eq 'num_handshakes') {
+        $result = $session->num_handshakes(@user);
+    }
+      else {
+          die 'I don\'t understand you, please, repeat';
+      }
 
-#p $result;
-say Local::SocialNetwork::encodeJSON($result);
 
-Local::SocialNetwork::discon();
+say encodeJSON($result);
+
+$session->DESTROY();
+
+sub encodeJSON{
+	my($arrayRef) = @_;
+	my $JSONText= decode('utf8', JSON->new->utf8->encode($arrayRef));
+	return $JSONText;
+}
 
 1;
