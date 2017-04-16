@@ -182,16 +182,16 @@ sub num_handshakes {
     });
 
     say "При запуске";
-    p $memd->get("$firstID $lastID");
+    p $memd->get("$firstID\_$lastID");
 
     my $weFoundHim = 0; # Когда lastID найден
     my @genFriends = ([$firstID]); # Матрица, в каждой строке люди одной степени знакомства с первым
 
-    if ( defined $memd->get("$firstID $lastID")) {
-        $weFoundHim = $memd->get("$firstID $lastID");
+    if ( defined $memd->get("$firstID\_$lastID")) {
+        $weFoundHim = $memd->get("$firstID\_$lastID");
     }
-    elsif (defined $memd->get("$lastID $firstID")) {
-        $weFoundHim = $memd->get("$lastID $firstID");
+    elsif (defined $memd->get("$lastID\_$firstID")) {
+        $weFoundHim = $memd->get("$lastID\_$firstID");
     }
     else
     {
@@ -249,10 +249,10 @@ sub num_handshakes {
         }
 
         # реализация кэша
-        $memd->set("$firstID $lastID", "$weFoundHim", 60);
+        $memd->set("$firstID\_$lastID", "$weFoundHim", 60);
 
         say "Сразу после записи в кэш";
-        p $memd->get("$firstID $lastID");
+        p $memd->get("$firstID\_$lastID");
     }
 
     if ( $weFoundHim > 0 ) {
