@@ -23,4 +23,17 @@ our $VERSION = '1.00';
 
 =cut
 
+sub get {
+    my $self    = shift;
+    my $name    = shift;
+    my $default = shift;
+
+    if (exists $self->{$name}) {
+        return $self->{$name};
+    }
+    else {
+        return $self->{$default};
+    }
+}
+
 1;

@@ -26,15 +26,19 @@ our $VERSION = '1.00';
 
 sub new {
 	my ($class, %params) = @_;
-	my $delim;
+	my $delimiter;
+
 	if (exists $params{delimiter}) {
-		$delim = $params{delimiter};
-	} else {
-		$delim = "\n";
+		$delimiter = $params{delimiter};
 	}
-	my @a = split $delim, $params{text};
-	my %h;
+	else {
+		$delimiter = "\n";
+	}
+
+	my @a = split $delimiter, $params{text};
+	my %h;	
 	$h{array} = \@a;
+
 	return bless \%h, $class;
 }
 
