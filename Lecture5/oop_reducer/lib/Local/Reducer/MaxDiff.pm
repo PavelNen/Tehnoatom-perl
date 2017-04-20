@@ -36,20 +36,33 @@ sub reduce_n {
 	my $self = shift;
 	my $n 	 = shift;
 
-	my $sum  = 0;
+
+	# $self->{maxtop} максимальное значение среди полей top
+	# $self->{minbottom} минимальное значение среди полей bottom
+
+	my ($top, $bottom);
 
 	my $i = $self->{initial_value};
 	my $str;
-	while ($i < $n and $str = $self->{source}->next() and defined $str) {
+	while ($i++ < $n and $str = $self->{source}->next() and defined $str) {
 		my $hashed = $self->{row_class}->new(str => $str);
-		my $num = $hashed->{$self->{field}};
-		if ( $hashed && looks_like_number($num) ) {
-			$sum += $num;
+		if ( $hashed ) {
+			$top = $hashed->{$self->{top}};
+			$bottom = $hashed->{$self->{bottom}};
+
+			if ( looks_like_number($top) && looks_like_number($bottom) ) {
+				my $diff = $top - $bottom;
+				if ( exists $self->{reduced} and $diff > $self->{reduced}) {
+					$self->{reduced} = $diff;
+				}
+				elsif (! exists $self->{reduced} ) {
+					$self->{reduced} = $diff;
+				}
+			}
 		}
-		$i++;
 	}
-	$self->{reduced} += $sum;
-	return $sum;
+
+	return $self->{reduced};
 }
 
 sub reduced {
@@ -60,21 +73,29 @@ sub reduced {
 sub reduce_all {
 	my $self = shift;
 
-	$self->{reduced} += 0;
-
-	my $sum = $self->{reduced};
 	my $str;
+
+	my ($top, $bottom);
 
 	while ($str = $self->{source}->next() and defined $str) {
 		my $hashed = $self->{row_class}->new(str => $str);
-		my $num = $hashed->{$self->{field}};
-		if ( $hashed && looks_like_number($num)) {
-			$sum += $num;
+		if ( $hashed ) {
+			$top = $hashed->{$self->{top}};
+			$bottom = $hashed->{$self->{bottom}};
+
+			if ( looks_like_number($top) && looks_like_number($bottom) ) {
+				my $diff = $top - $bottom;
+				if ( exists $self->{reduced} and $diff > $self->{reduced}) {
+					$self->{reduced} = $diff;
+				}
+				elsif (! exists $self->{reduced} ) {
+					$self->{reduced} = $diff;
+				}
+			}
 		}
 	}
 
-	$self->{reduced} = $sum;
-	return $sum;
+	return $self->{reduced};
 }
 
 1;
