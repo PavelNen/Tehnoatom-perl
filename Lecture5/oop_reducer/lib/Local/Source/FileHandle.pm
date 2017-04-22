@@ -1,4 +1,5 @@
 package Local::Source::FileHandle;
+use 5.020;
 
 use strict;
 use warnings;
@@ -36,11 +37,13 @@ sub next {
 
     my $str;
 
-    $self->{initial_value} += 0; # строка, с которой начинать читать
-    for ( $self->{initial_value} ) {
-        $str = <$fh>;
-    }
+    # При каждом запросе функции будет заново читать
 
+    $str = <$fh>;
+    if ( $str ) {
+        chomp $str ;
+    }
+    
     return $str;
 }
 
