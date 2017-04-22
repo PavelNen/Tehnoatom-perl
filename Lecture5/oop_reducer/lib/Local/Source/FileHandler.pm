@@ -1,4 +1,4 @@
-package Local::Source::FileHandler;
+package Local::Source::FileHandle;
 
 use strict;
 use warnings;
@@ -28,6 +28,20 @@ our $VERSION = '1.00';
 sub new {
     my ($class, %params) = @_;
     return bless \%params, $class;
+}
+
+sub next {
+    my $self = shift @_;
+    my $fh = $self->{fh};
+
+    my $str;
+
+    $self->{initial_value} += 0; # строка, с которой начинать читать
+    for ( $self->{initial_value} ) {
+        $str = <$fh>;
+    }
+
+    return $str;
 }
 
 1;
