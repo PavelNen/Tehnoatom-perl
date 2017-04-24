@@ -5,6 +5,8 @@ use strict;
 use warnings;
 use DDP;
 
+use parent 'Local::Reducer';
+
 use Scalar::Util qw(looks_like_number);
 
 =encoding utf8
@@ -30,26 +32,21 @@ our $VERSION = '1.00';
 sub new {
 	my $class = shift;
 	my $self = bless { @_ }, $class;
+	$self->{reducedMax} = $self->{initial_value};
+	$self->{reducedMin} = $self->{initial_value};
+	return $self;
 }
 
 sub get_max {
 	my $self = shift;
-	if ( exists $self->{reducedMax} ) {
-		return $self->{reducedMax};
-	}
-	else {
-		return undef;
-	}
+	return $self->{reducedMax};
+
 }
 
 sub get_min {
 	my $self = shift;
-	if ( exists $self->{reducedMin} ) {
-		return $self->{reducedMin};
-	}
-	else {
-		return undef;
-	}
+	return $self->{reducedMin};
+
 
 }
 sub get_avg {
@@ -69,7 +66,7 @@ sub reduce_n {
 
 	my $val;
 
-	my $i = $self->{initial_value};
+	my $i = 0;
 	my $str;
 	while ($i++ < $n and $str = $self->{source}->next() and defined $str) {
 		my $hashed = $self->{row_class}->new(str => $str);

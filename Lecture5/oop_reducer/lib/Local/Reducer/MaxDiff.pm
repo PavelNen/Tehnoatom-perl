@@ -5,6 +5,8 @@ use strict;
 use warnings;
 use DDP;
 
+use parent 'Local::Reducer';
+
 use Scalar::Util qw(looks_like_number);
 
 =encoding utf8
@@ -30,19 +32,20 @@ our $VERSION = '1.00';
 sub new {
 	my $class = shift;
 	my $self = bless { @_ }, $class;
+	$self->{reduced} = $self->{initial_value};
+	return $self;
 }
 
 sub reduce_n {
 	my $self = shift;
 	my $n 	 = shift;
 
-
 	# $self->{maxtop} максимальное значение среди полей top
 	# $self->{minbottom} минимальное значение среди полей bottom
 
 	my ($top, $bottom);
 
-	my $i = $self->{initial_value};
+	my $i = 0;
 	my $str;
 	while ($i++ < $n and $str = $self->{source}->next() and defined $str) {
 		my $hashed = $self->{row_class}->new(str => $str);
