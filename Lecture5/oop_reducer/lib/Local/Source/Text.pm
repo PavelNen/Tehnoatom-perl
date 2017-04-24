@@ -2,6 +2,7 @@ package Local::Source::Text;
 
 use strict;
 use warnings;
+
 use parent 'Local::Source';
 
 =encoding utf8
@@ -36,7 +37,7 @@ sub new {
 	}
 
 	my @a = split $delimiter, $params{text};
-	my %h;	
+	my %h;
 	$h{array} = \@a;
 
 	return bless \%h, $class;

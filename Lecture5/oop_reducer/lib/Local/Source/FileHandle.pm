@@ -3,6 +3,7 @@ use 5.020;
 
 use strict;
 use warnings;
+
 use parent 'Local::Source';
 
 =encoding utf8
@@ -41,7 +42,7 @@ sub next {
     if ( $str ) {
         chomp $str ;
     }
-    
+
     return $str;
 }
 
