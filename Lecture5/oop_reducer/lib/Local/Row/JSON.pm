@@ -1,8 +1,9 @@
 package Local::Row::JSON;
 
+use 5.020;
 use strict;
 use warnings;
-use JSON::Parse qw/parse_json valid_json/;
+
 use JSON::XS;
 use DDP;
 use parent 'Local::Row';
@@ -31,9 +32,7 @@ our $VERSION = '1.00';
 sub new {
     my ($class, %param) = @_;
 
-    if ( valid_json ($param{str}) ){
-        my $h = JSON::XS::decode_json($param{str});
-
+    if ( my $h = eval{ JSON::XS::decode_json($param{str}) } ) {
         if (ref $h eq 'HASH') {
             return bless $h, $class;
         }
