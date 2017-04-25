@@ -20,10 +20,11 @@ sub next {
     my $self = shift @_;
     my $array = $self->{array};
 
-    if (@$array) {
-        my $item = shift @$array;
-        $self->{array} = $array;
-        return $item;
+    $self->{whoIsNow} += 1;
+
+    if ( $array->[$self->{whoIsNow} - 1] ) {
+
+        return $array->[$self->{whoIsNow} - 1];
     }
     else {
         return undef;
