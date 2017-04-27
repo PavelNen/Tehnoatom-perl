@@ -28,20 +28,13 @@ our $VERSION = '1.00';
 sub new {
 	my $class = shift;
 	my $self = bless { @_ }, $class;
-    $self->{reducedSum}  = $self->{initial_value};
-	$self->{reducedDiff} = $self->{initial_value};
+    $self->{reduced}  = $self->{initial_value};
 	return $self;
 }
 
 sub reduced {
 	my $self = shift;
-
-    if ( ref $self eq 'Local::Reducer::MaxDiff' ) {
-	    return $self->{reducedDiff};
-    }
-    if ( ref $self eq 'Local::Reducer::Sum' ) {
-        return $self->{reducedSum};
-    }
+	return $self->{reduced};
 }
 
 1;

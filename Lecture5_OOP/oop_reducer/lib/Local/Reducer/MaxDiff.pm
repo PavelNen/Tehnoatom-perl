@@ -50,17 +50,17 @@ sub reduce_n {
 
 			if ( looks_like_number($top) && looks_like_number($bottom) ) {
 				my $diff = $top - $bottom;
-				if ( exists $self->{reducedDiff} and $diff > $self->{reducedDiff}) {
-					$self->{reducedDiff} = $diff;
+				if ( exists $self->{reduced} and $diff > $self->{reduced}) {
+					$self->{reduced} = $diff;
 				}
-				elsif (! exists $self->{reducedDiff} ) {
-					$self->{reducedDiff} = $diff;
+				elsif (! exists $self->{reduced} ) {
+					$self->{reduced} = $diff;
 				}
 			}
 		}
 	}
 
-	return $self->{reducedDiff};
+	return $self->{reduced};
 }
 
 sub reduce_all {

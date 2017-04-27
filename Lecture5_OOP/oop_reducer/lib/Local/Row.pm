@@ -32,7 +32,7 @@ sub get {
         return $self->{$name};
     }
     else {
-        return $self->{$default};
+        return $default;
     }
 }
 

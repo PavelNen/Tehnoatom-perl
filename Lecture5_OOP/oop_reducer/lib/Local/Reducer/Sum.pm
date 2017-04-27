@@ -42,11 +42,11 @@ sub reduce_n {
 		my $hashed = $self->{row_class}->new(str => $str);
 		my $num = $hashed->{$self->{field}};
 		if ( $hashed && looks_like_number($num) ) {
-			$self->{reducedSum} += $num;
+			$self->{reduced} += $num;
 		}
 	}
 
-	return $self->{reducedSum};
+	return $self->{reduced};
 }
 
 sub reduce_all {

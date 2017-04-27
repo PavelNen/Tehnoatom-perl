@@ -22,8 +22,7 @@ sub next {
 
     $self->{whoIsNow} += 1;
 
-    if ( $array->[$self->{whoIsNow} - 1] ) {
-
+    if ( defined $array->[$self->{whoIsNow} - 1] ) {
         return $array->[$self->{whoIsNow} - 1];
     }
     else {
