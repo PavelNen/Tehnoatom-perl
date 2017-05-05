@@ -72,4 +72,3 @@ is(waitpid($pid, 0), $pid, 'process exit by eof');
 is(-f "1", 1, 'File exists');
 is(-s _, 15, "File size ok");
 unlink "1";
-
