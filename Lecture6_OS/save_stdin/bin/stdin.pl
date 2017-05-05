@@ -5,6 +5,24 @@ use strict;
 use warnings;
 use Getopt::Long;
 
+=head1 NAME
+
+stdln - Обработка потоков ввода/вывода
+
+=head1 VERSION
+
+Version 1.00
+
+=cut
+
+our $VERSION = '1.00';
+
+=head1 SYNOPSIS
+
+В корне программы лежит файл output.txt для вывода
+
+=cut
+
 local $SIG{INT} = \&CtrlC;
 our $i     = 0;     # Счётчик сигналов Ctrl+C
 my $sumlth = 0;     # Сумма длин строк
