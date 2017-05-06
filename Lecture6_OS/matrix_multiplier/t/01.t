@@ -3,6 +3,8 @@
 use strict;
 use warnings;
 use Test::More tests => 5;
+use FindBin;
+use lib "$FindBin::Bin/../lib";
 use_ok("Local::MatrixMultiplier");
 
 my $matrix_a = [
@@ -32,7 +34,7 @@ my $matrix_c = [
 [8521, 8842, 9163, 9484, 9805, 10126]
 ];
 
-my $MM = Local::MatrixMultiplier::mult($matrix_a, $matrix_b, 1);
+my $MM = Local::MatrixMultiplier::mult($matrix_a, $matrix_b, 30);
 is_deeply($MM, $matrix_c, 'First ok');
 
 eval {
@@ -49,4 +51,3 @@ eval {
     Local::MatrixMultiplier::mult([[1,3],[2,4]], [[1,2],[4,5],[7,8,9]], 1);
 };
 is(!$@, '', 'Wrong matrix');
-

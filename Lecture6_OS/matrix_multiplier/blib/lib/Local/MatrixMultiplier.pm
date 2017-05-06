@@ -50,6 +50,7 @@ sub mult {
     while ( $numpid <= $max_child and $numpid < $elmnts) {
         $numpid++;
         if ( my $pid = fork() ) {
+            p $pid;
             # Один форк считает не более $forkSize ячеек С
             my $n = 1; # Счёт ячеек внутри форка
             while ( $n <= $forkSize
