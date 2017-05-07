@@ -159,7 +159,7 @@ C_FILES  =
 O_FILES  = 
 H_FILES  = 
 MAN1PODS = 
-MAN3PODS = 
+MAN3PODS = lib/Anagram.pm
 
 # Where is the Config information that we are using/depend on
 CONFIGDEP = $(PERL_ARCHLIBDEP)$(DFSEP)Config.pm $(PERL_INCDEP)$(DFSEP)config.h
@@ -182,9 +182,15 @@ PERL_ARCHIVEDEP    =
 PERL_ARCHIVE_AFTER = 
 
 
-TO_INST_PM = lib/VFS.pm
+TO_INST_PM = dumper/.exists \
+	lib/Anagram.pm \
+	lib/VFS.pm
 
-PM_TO_BLIB = lib/VFS.pm \
+PM_TO_BLIB = dumper/.exists \
+	$(INST_LIB)/dumper/.exists \
+	lib/Anagram.pm \
+	blib/lib/Anagram.pm \
+	lib/VFS.pm \
 	blib/lib/VFS.pm
 
 
@@ -409,8 +415,10 @@ POD2MAN_EXE = $(PERLRUN) "-MExtUtils::Command::MM" -e pod2man "--"
 POD2MAN = $(POD2MAN_EXE)
 
 
-manifypods : pure_all 
-	$(NOECHO) $(NOOP)
+manifypods : pure_all  \
+	lib/Anagram.pm
+	$(NOECHO) $(POD2MAN) --section=$(MAN3EXT) --perm_rw=$(PERM_RW) -u \
+	  lib/Anagram.pm $(INST_MAN3DIR)/Anagram.$(MAN3EXT) 
 
 
 
@@ -829,6 +837,8 @@ ppd :
 
 pm_to_blib : $(FIRST_MAKEFILE) $(TO_INST_PM)
 	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
+	  dumper/.exists $(INST_LIB)/dumper/.exists \
+	  lib/Anagram.pm blib/lib/Anagram.pm \
 	  lib/VFS.pm blib/lib/VFS.pm 
 	$(NOECHO) $(TOUCH) pm_to_blib
 

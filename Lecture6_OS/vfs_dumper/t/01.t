@@ -53,7 +53,7 @@ is (
 
 is (
 	is_died(sub { VFS::parse(read_file("$FindBin::Bin/../data/example5.bin")); }),
-	"Garbage ae the end of the buffer",
+	"Garbage at the end of the buffer",
 	"Test 4"
 );
 
