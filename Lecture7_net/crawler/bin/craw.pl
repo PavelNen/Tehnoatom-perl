@@ -24,7 +24,9 @@ sub async {
 
 $AnyEvent::HTTP::MAX_PER_HOST = 1000;
 
-my $base = 'https://github.com/Nikolo/Technosfera-perl/tree/anosov-crawler/';
+#my $base = 'https://github.com/Nikolo/Technosfera-perl/tree/anosov-crawler/';
+
+my $base = 'https://www.google.com/';
 
 # Ссылки будут храниться в стеке
 my @urls   = ($base);
@@ -45,7 +47,7 @@ $next = sub {
 
         # количество запросов
         #$url = pop @urls;
-        #print "New event: GET => $url\n";
+        print "New event: GET => $url\n";
         $cv->begin;
 
         http_request(
@@ -86,7 +88,7 @@ $next = sub {
                                     my $uri =
                                       URI->new_abs( $_, $head->{'URL'} );
                                     "$uri";
-                                  } $content =~ m/href="([^"#]+)"/g
+                                } $content =~ m/href="([^"#]+)\??"/g
                             };
 
 
