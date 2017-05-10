@@ -17,11 +17,12 @@ use Data::Dumper;
 use FindBin;
 use lib "$FindBin::Bin/../lib";
 use Crawler;
+use DDP;
 
 use constant URL => 'https://github.com/Nikolo/Technosfera-perl/tree/anosov-crawler/';
 
 use constant RESULT => [
-    10632,
+    10635,
     {
         'https://github.com/Nikolo/Technosfera-perl/tree/anosov-crawler/book/syntax/code' => 1,
         'https://github.com/Nikolo/Technosfera-perl/tree/anosov-crawler/homeworks' => 1,
@@ -37,6 +38,7 @@ use constant RESULT => [
 ];
 
 my ($total_size, @top10) = Crawler::run(URL, 100);
+#p @top10;
 cmp_ok ( int($total_size/1024), '>=', RESULT->[0], 'Size1 '.URL);
 cmp_ok ( int($total_size/1024), '<=', RESULT->[0]+100, 'Size2 '.URL);
 is_deeply( { map {$_ => 1 } @top10 }, RESULT->[1], URL);
