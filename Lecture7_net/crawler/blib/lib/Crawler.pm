@@ -111,7 +111,7 @@ sub run {
                                         my $uri =
                                           URI->new_abs( $_, $head->{'URL'} );
                                         "$uri";
-                                      } $content =~ m/href="([^"#]+)"/g
+                                    } $content =~ m/href="([^"#]+)\??"/g
                                 };
 
 
