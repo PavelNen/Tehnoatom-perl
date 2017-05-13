@@ -1,0 +1,187 @@
+[Sat May 13 21:25:11 2017] [debug] GET "/"
+[Sat May 13 21:25:11 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:25:11 2017] [debug] Action not found in controller
+[Sat May 13 21:25:11 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:25:11 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:25:11 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:25:11 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:25:11 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:25:11 2017] [debug] 404 Not Found (0.034581s, 28.918/s)
+[Sat May 13 21:26:38 2017] [debug] GET "/"
+[Sat May 13 21:26:38 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:26:38 2017] [debug] Action not found in controller
+[Sat May 13 21:26:38 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:26:38 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:26:38 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:26:38 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sat May 13 21:26:38 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sat May 13 21:26:38 2017] [debug] 404 Not Found (0.008192s, 122.070/s)
+[Sat May 13 21:27:38 2017] [debug] GET "/"
+[Sat May 13 21:27:38 2017] [debug] Routing to controller "Notes::Controller::Index" and action "index"
+[Sat May 13 21:27:38 2017] [debug] Template "index/index.html.ep" not found
+[Sat May 13 21:27:38 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:27:38 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:27:38 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:27:38 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:27:38 2017] [debug] 404 Not Found (0.037393s, 26.743/s)
+[Sat May 13 21:28:32 2017] [debug] GET "/"
+[Sat May 13 21:28:32 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:28:32 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:28:32 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:28:32 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:28:32 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:28:32 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:28:32 2017] [debug] 404 Not Found (0.03318s, 30.139/s)
+[Sat May 13 21:36:43 2017] [debug] GET "/"
+[Sat May 13 21:36:43 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:36:43 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:36:43 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:36:43 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:36:43 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:36:43 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:36:43 2017] [debug] 404 Not Found (0.037945s, 26.354/s)
+[Sat May 13 21:37:12 2017] [debug] GET "/"
+[Sat May 13 21:37:12 2017] [debug] Controller "Notes::Example" does not exist
+[Sat May 13 21:37:12 2017] [debug] Rendering template "example/welcome.html.ep"
+[Sat May 13 21:37:12 2017] [error] Global symbol "$msg" requires explicit package name (did you forget to declare "my $msg"?) at template example/welcome.html.ep line 3.
+1: % layout 'default';
+2: % title 'Welcome';
+3: <h2><%= $msg %></h2>
+
+[Sat May 13 21:37:12 2017] [debug] Template "exception.development.html.ep" not found
+[Sat May 13 21:37:12 2017] [debug] Template "exception.html.ep" not found
+[Sat May 13 21:37:12 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:37:12 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:37:12 2017] [debug] 500 Internal Server Error (0.037504s, 26.664/s)
+[Sat May 13 21:37:14 2017] [debug] GET "/"
+[Sat May 13 21:37:14 2017] [debug] Controller "Notes::Example" does not exist
+[Sat May 13 21:37:14 2017] [debug] Rendering template "example/welcome.html.ep"
+[Sat May 13 21:37:14 2017] [error] Global symbol "$msg" requires explicit package name (did you forget to declare "my $msg"?) at template example/welcome.html.ep line 3.
+1: % layout 'default';
+2: % title 'Welcome';
+3: <h2><%= $msg %></h2>
+
+[Sat May 13 21:37:14 2017] [debug] Template "exception.development.html.ep" not found
+[Sat May 13 21:37:14 2017] [debug] Template "exception.html.ep" not found
+[Sat May 13 21:37:14 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sat May 13 21:37:14 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sat May 13 21:37:14 2017] [debug] 500 Internal Server Error (0.014922s, 67.015/s)
+[Sat May 13 21:37:31 2017] [debug] GET "/"
+[Sat May 13 21:37:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:37:31 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:37:31 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:37:31 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:37:31 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:37:31 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:37:31 2017] [debug] 404 Not Found (0.036948s, 27.065/s)
+[Sat May 13 21:37:43 2017] [debug] GET "/"
+[Sat May 13 21:37:43 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:37:43 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:37:43 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:37:43 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:37:43 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:37:43 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:37:43 2017] [debug] 404 Not Found (0.034277s, 29.174/s)
+[Sat May 13 21:37:46 2017] [debug] GET "/"
+[Sat May 13 21:37:46 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:37:46 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:37:46 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:37:46 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:37:46 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sat May 13 21:37:46 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sat May 13 21:37:46 2017] [debug] 404 Not Found (0.011158s, 89.622/s)
+[Sat May 13 21:37:53 2017] [debug] GET "/"
+[Sat May 13 21:37:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:37:53 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:37:53 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:37:53 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:37:53 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:37:53 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:37:53 2017] [debug] 404 Not Found (0.034196s, 29.243/s)
+[Sat May 13 21:40:24 2017] [debug] GET "/"
+[Sat May 13 21:40:24 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:40:24 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:40:24 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:40:24 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:40:24 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:40:24 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:40:24 2017] [debug] Your secret passphrase needs to be changed
+[Sat May 13 21:40:24 2017] [debug] 404 Not Found (0.038045s, 26.285/s)
+[Sat May 13 21:41:28 2017] [debug] GET "/"
+[Sat May 13 21:41:28 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:41:28 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:41:28 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:41:28 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:41:28 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:41:28 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:41:28 2017] [debug] Your secret passphrase needs to be changed
+[Sat May 13 21:41:28 2017] [debug] 404 Not Found (0.034256s, 29.192/s)
+[Sat May 13 21:43:53 2017] [debug] GET "/"
+[Sat May 13 21:43:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:43:53 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:43:53 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:43:53 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:43:53 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sat May 13 21:43:53 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sat May 13 21:43:53 2017] [debug] 404 Not Found (0.008554s, 116.904/s)
+[Sat May 13 21:43:55 2017] [debug] GET "/"
+[Sat May 13 21:43:55 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:43:55 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:43:55 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:43:55 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:43:55 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sat May 13 21:43:55 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sat May 13 21:43:55 2017] [debug] 404 Not Found (0.008508s, 117.536/s)
+[Sat May 13 21:44:12 2017] [debug] GET "/"
+[Sat May 13 21:44:12 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:44:12 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:44:12 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:44:12 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:44:12 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:44:12 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:44:12 2017] [debug] Your secret passphrase needs to be changed
+[Sat May 13 21:44:12 2017] [debug] 404 Not Found (0.040372s, 24.770/s)
+[Sat May 13 21:46:34 2017] [debug] GET "/"
+[Sat May 13 21:46:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:46:34 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:46:34 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:46:34 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:46:34 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:46:34 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:46:34 2017] [debug] Your secret passphrase needs to be changed
+[Sat May 13 21:46:34 2017] [debug] 404 Not Found (0.037934s, 26.362/s)
+[Sat May 13 21:47:07 2017] [debug] GET "/"
+[Sat May 13 21:47:07 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:47:07 2017] [debug] Template "index/welcome.html.ep" not found
+[Sat May 13 21:47:07 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:47:07 2017] [debug] Template "not_found.html.ep" not found
+[Sat May 13 21:47:07 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sat May 13 21:47:07 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sat May 13 21:47:07 2017] [debug] Your secret passphrase needs to be changed
+[Sat May 13 21:47:07 2017] [debug] 404 Not Found (0.039097s, 25.577/s)
+[Sat May 13 21:48:35 2017] [debug] GET "/"
+[Sat May 13 21:48:35 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:48:35 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 21:48:35 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 21:48:35 2017] [debug] 200 OK (0.004615s, 216.685/s)
+[Sat May 13 21:51:34 2017] [debug] GET "/esgg"
+[Sat May 13 21:51:34 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:51:34 2017] [debug] Rendering template "not_found.html.ep"
+[Sat May 13 21:51:34 2017] [debug] 404 Not Found (0.006709s, 149.054/s)
+[Sat May 13 21:52:09 2017] [debug] GET "/esgg"
+[Sat May 13 21:52:09 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:52:09 2017] [debug] Rendering template "not_found.html.ep"
+[Sat May 13 21:52:09 2017] [debug] 404 Not Found (0.00456s, 219.298/s)
+[Sat May 13 21:53:02 2017] [debug] GET "/esgg"
+[Sat May 13 21:53:02 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:53:02 2017] [debug] Rendering template "not_found.html.ep"
+[Sat May 13 21:53:02 2017] [debug] 404 Not Found (0.00534s, 187.266/s)
+[Sat May 13 21:53:48 2017] [debug] POST "/notes.pl"
+[Sat May 13 21:53:48 2017] [debug] Template "not_found.development.html.ep" not found
+[Sat May 13 21:53:48 2017] [debug] Rendering cached template "not_found.html.ep"
+[Sat May 13 21:53:48 2017] [debug] 404 Not Found (0.000967s, 1034.126/s)
+[Sat May 13 21:58:47 2017] [debug] GET "/"
+[Sat May 13 21:58:47 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 21:58:47 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 21:58:47 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 21:58:47 2017] [debug] 200 OK (0.009941s, 100.594/s)

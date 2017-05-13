@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+    <head><title>Not Found</title></head>
+    <body>
+        <center><h1>Страница
+        "<%= $self->req->url->path || '/' %>"
+        не найдена!</h1></center>
+    </body>
+</html>
