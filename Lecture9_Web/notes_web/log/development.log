@@ -185,3 +185,2504 @@
 [Sat May 13 21:58:47 2017] [debug] Rendering template "index/welcome.html.ep"
 [Sat May 13 21:58:47 2017] [debug] Rendering template "layouts/default.html.ep"
 [Sat May 13 21:58:47 2017] [debug] 200 OK (0.009941s, 100.594/s)
+[Sat May 13 22:57:14 2017] [debug] GET "/"
+[Sat May 13 22:57:14 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 22:57:14 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 22:57:14 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 22:57:14 2017] [debug] 200 OK (0.005358s, 186.637/s)
+[Sat May 13 22:57:18 2017] [debug] GET "/"
+[Sat May 13 22:57:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 22:57:18 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sat May 13 22:57:18 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sat May 13 22:57:18 2017] [debug] 200 OK (0.000702s, 1424.501/s)
+[Sat May 13 22:58:32 2017] [debug] GET "/"
+[Sat May 13 22:58:32 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 22:58:32 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 22:58:32 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 22:58:32 2017] [debug] 200 OK (0.005244s, 190.694/s)
+[Sat May 13 22:59:21 2017] [debug] GET "/"
+[Sat May 13 22:59:21 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 22:59:21 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 22:59:21 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 22:59:21 2017] [debug] 200 OK (0.004885s, 204.708/s)
+[Sat May 13 23:01:01 2017] [debug] GET "/"
+[Sat May 13 23:01:01 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:01:01 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:01:01 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:01:01 2017] [debug] 200 OK (0.005195s, 192.493/s)
+[Sat May 13 23:05:02 2017] [debug] GET "/"
+[Sat May 13 23:05:02 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:05:02 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:05:02 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:05:02 2017] [debug] 200 OK (0.005989s, 166.973/s)
+[Sat May 13 23:05:19 2017] [debug] GET "/"
+[Sat May 13 23:05:19 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:05:19 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:05:19 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:05:19 2017] [debug] 200 OK (0.007837s, 127.600/s)
+[Sat May 13 23:05:24 2017] [debug] GET "/"
+[Sat May 13 23:05:24 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:05:24 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sat May 13 23:05:24 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sat May 13 23:05:24 2017] [debug] 200 OK (0.000664s, 1506.024/s)
+[Sat May 13 23:06:29 2017] [debug] GET "/"
+[Sat May 13 23:06:29 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:06:29 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:06:29 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:06:29 2017] [debug] 200 OK (0.006039s, 165.590/s)
+[Sat May 13 23:06:56 2017] [debug] GET "/"
+[Sat May 13 23:06:56 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:06:56 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:06:56 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:06:56 2017] [debug] 200 OK (0.007379s, 135.520/s)
+[Sat May 13 23:07:41 2017] [debug] GET "/"
+[Sat May 13 23:07:41 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:07:41 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:07:41 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:07:41 2017] [debug] 200 OK (0.007454s, 134.156/s)
+[Sat May 13 23:08:27 2017] [debug] GET "/"
+[Sat May 13 23:08:27 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:08:27 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:08:27 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:08:27 2017] [debug] 200 OK (0.006328s, 158.028/s)
+[Sat May 13 23:09:45 2017] [debug] GET "/"
+[Sat May 13 23:09:45 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:09:45 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:09:45 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:09:45 2017] [debug] 200 OK (0.007489s, 133.529/s)
+[Sat May 13 23:10:20 2017] [debug] GET "/"
+[Sat May 13 23:10:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:10:20 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:10:20 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:10:20 2017] [debug] 200 OK (0.006287s, 159.058/s)
+[Sat May 13 23:10:21 2017] [debug] GET "/"
+[Sat May 13 23:10:21 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:10:21 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sat May 13 23:10:21 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sat May 13 23:10:21 2017] [debug] 200 OK (0.000766s, 1305.483/s)
+[Sat May 13 23:10:29 2017] [debug] GET "/"
+[Sat May 13 23:10:29 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:10:29 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:10:29 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:10:29 2017] [debug] 200 OK (0.005908s, 169.262/s)
+[Sat May 13 23:10:54 2017] [debug] GET "/"
+[Sat May 13 23:10:54 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:10:54 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:10:54 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:10:54 2017] [debug] 200 OK (0.008266s, 120.977/s)
+[Sat May 13 23:11:53 2017] [debug] GET "/"
+[Sat May 13 23:11:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:11:53 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:11:53 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:11:53 2017] [debug] 200 OK (0.008897s, 112.397/s)
+[Sat May 13 23:13:39 2017] [debug] GET "/"
+[Sat May 13 23:13:39 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:13:39 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:13:39 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:13:39 2017] [debug] 200 OK (0.005682s, 175.994/s)
+[Sat May 13 23:40:50 2017] [debug] GET "/"
+[Sat May 13 23:40:50 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:40:50 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:40:50 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:40:50 2017] [debug] 200 OK (0.005256s, 190.259/s)
+[Sat May 13 23:51:20 2017] [debug] GET "/"
+[Sat May 13 23:51:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:51:20 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:51:20 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:51:20 2017] [debug] 200 OK (0.006885s, 145.243/s)
+[Sat May 13 23:51:51 2017] [debug] GET "/"
+[Sat May 13 23:51:51 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:51:51 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:51:51 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:51:51 2017] [debug] 200 OK (0.005511s, 181.455/s)
+[Sat May 13 23:52:26 2017] [debug] GET "/"
+[Sat May 13 23:52:26 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:52:26 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:52:26 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:52:26 2017] [debug] 200 OK (0.007351s, 136.036/s)
+[Sat May 13 23:53:07 2017] [debug] GET "/"
+[Sat May 13 23:53:07 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:53:07 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:53:07 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:53:07 2017] [debug] 200 OK (0.006125s, 163.265/s)
+[Sat May 13 23:56:17 2017] [debug] GET "/"
+[Sat May 13 23:56:17 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:56:17 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:56:17 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:56:17 2017] [debug] 200 OK (0.007997s, 125.047/s)
+[Sat May 13 23:56:44 2017] [debug] GET "/"
+[Sat May 13 23:56:44 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:56:44 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:56:44 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:56:44 2017] [debug] 200 OK (0.006184s, 161.708/s)
+[Sat May 13 23:56:45 2017] [debug] GET "/"
+[Sat May 13 23:56:45 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:56:45 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sat May 13 23:56:45 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sat May 13 23:56:45 2017] [debug] 200 OK (0.000683s, 1464.129/s)
+[Sat May 13 23:57:50 2017] [debug] GET "/"
+[Sat May 13 23:57:50 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:57:50 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:57:50 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:57:50 2017] [debug] 200 OK (0.006347s, 157.555/s)
+[Sat May 13 23:59:32 2017] [debug] GET "/"
+[Sat May 13 23:59:32 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:59:32 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:59:32 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:59:32 2017] [debug] 200 OK (0.005606s, 178.380/s)
+[Sat May 13 23:59:53 2017] [debug] GET "/"
+[Sat May 13 23:59:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sat May 13 23:59:53 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sat May 13 23:59:53 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sat May 13 23:59:53 2017] [debug] 200 OK (0.006995s, 142.959/s)
+[Sun May 14 00:01:13 2017] [debug] GET "/"
+[Sun May 14 00:01:13 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:01:13 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:01:13 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:01:13 2017] [debug] 200 OK (0.003633s, 275.255/s)
+[Sun May 14 00:05:17 2017] [debug] GET "/"
+[Sun May 14 00:05:17 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:05:17 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:05:17 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:05:17 2017] [debug] 200 OK (0.007715s, 129.618/s)
+[Sun May 14 00:05:31 2017] [debug] GET "/"
+[Sun May 14 00:05:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:05:31 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:05:31 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:05:31 2017] [debug] 200 OK (0.005472s, 182.749/s)
+[Sun May 14 00:06:07 2017] [debug] GET "/"
+[Sun May 14 00:06:07 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:06:07 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:06:07 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:06:07 2017] [debug] 200 OK (0.00774s, 129.199/s)
+[Sun May 14 00:07:48 2017] [debug] GET "/"
+[Sun May 14 00:07:48 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:07:48 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:07:48 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:07:48 2017] [debug] 200 OK (0.005551s, 180.148/s)
+[Sun May 14 00:08:33 2017] [debug] GET "/"
+[Sun May 14 00:08:33 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:08:33 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:08:33 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:08:33 2017] [debug] 200 OK (0.011942s, 83.738/s)
+[Sun May 14 00:08:34 2017] [debug] GET "/"
+[Sun May 14 00:08:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:08:34 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:08:34 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:08:34 2017] [debug] 200 OK (0.000838s, 1193.317/s)
+[Sun May 14 00:08:53 2017] [debug] GET "/"
+[Sun May 14 00:08:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:08:53 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:08:53 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:08:53 2017] [debug] 200 OK (0.006895s, 145.033/s)
+[Sun May 14 00:11:49 2017] [debug] GET "/"
+[Sun May 14 00:11:49 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:11:49 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:11:49 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:11:49 2017] [debug] 200 OK (0.005366s, 186.359/s)
+[Sun May 14 00:13:01 2017] [debug] GET "/"
+[Sun May 14 00:13:01 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:13:01 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:13:01 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:13:01 2017] [debug] 200 OK (0.005821s, 171.792/s)
+[Sun May 14 00:13:29 2017] [debug] GET "/"
+[Sun May 14 00:13:29 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:13:29 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:13:29 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:13:29 2017] [debug] 200 OK (0.007035s, 142.146/s)
+[Sun May 14 00:14:00 2017] [debug] GET "/"
+[Sun May 14 00:14:00 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:14:00 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:14:00 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:14:00 2017] [debug] 200 OK (0.005374s, 186.081/s)
+[Sun May 14 00:15:23 2017] [debug] GET "/"
+[Sun May 14 00:15:23 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:15:23 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:15:23 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:15:23 2017] [debug] 200 OK (0.00688s, 145.349/s)
+[Sun May 14 00:15:38 2017] [debug] GET "/"
+[Sun May 14 00:15:38 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:15:38 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:15:38 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:15:38 2017] [debug] 200 OK (0.009599s, 104.178/s)
+[Sun May 14 00:15:43 2017] [debug] GET "/"
+[Sun May 14 00:15:43 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:15:43 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:15:43 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:15:43 2017] [debug] 200 OK (0.000716s, 1396.648/s)
+[Sun May 14 00:25:10 2017] [debug] GET "/"
+[Sun May 14 00:25:10 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:25:10 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:25:10 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:25:10 2017] [debug] 200 OK (0.009464s, 105.664/s)
+[Sun May 14 00:26:20 2017] [debug] GET "/"
+[Sun May 14 00:26:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:26:20 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:26:20 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:26:20 2017] [debug] 200 OK (0.007842s, 127.518/s)
+[Sun May 14 00:26:21 2017] [debug] GET "/"
+[Sun May 14 00:26:21 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:26:21 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:26:21 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:26:21 2017] [debug] 200 OK (0.000796s, 1256.281/s)
+[Sun May 14 00:26:44 2017] [debug] GET "/"
+[Sun May 14 00:26:44 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:26:44 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:26:44 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:26:44 2017] [debug] 200 OK (0.005842s, 171.174/s)
+[Sun May 14 00:27:11 2017] [debug] GET "/"
+[Sun May 14 00:27:11 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:27:11 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:27:11 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:27:11 2017] [debug] 200 OK (0.005768s, 173.370/s)
+[Sun May 14 00:27:47 2017] [debug] GET "/"
+[Sun May 14 00:27:47 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:27:47 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:27:47 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:27:47 2017] [debug] 200 OK (0.008699s, 114.956/s)
+[Sun May 14 00:28:08 2017] [debug] GET "/"
+[Sun May 14 00:28:08 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:28:08 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:28:08 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:28:08 2017] [debug] 200 OK (0.007788s, 128.403/s)
+[Sun May 14 00:29:00 2017] [debug] GET "/"
+[Sun May 14 00:29:00 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:29:00 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:29:00 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:29:00 2017] [debug] 200 OK (0.001644s, 608.273/s)
+[Sun May 14 00:31:18 2017] [debug] GET "/"
+[Sun May 14 00:31:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:31:18 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:31:18 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:31:18 2017] [debug] 200 OK (0.005536s, 180.636/s)
+[Sun May 14 00:31:24 2017] [debug] GET "/"
+[Sun May 14 00:31:24 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:31:24 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:31:24 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:31:24 2017] [debug] 200 OK (0.000729s, 1371.742/s)
+[Sun May 14 00:31:43 2017] [debug] GET "/"
+[Sun May 14 00:31:43 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:31:43 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:31:43 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:31:43 2017] [debug] 200 OK (0.009548s, 104.734/s)
+[Sun May 14 00:31:51 2017] [debug] GET "/"
+[Sun May 14 00:31:51 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:31:51 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:31:51 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:31:51 2017] [debug] 200 OK (0.007908s, 126.454/s)
+[Sun May 14 00:31:58 2017] [debug] GET "/"
+[Sun May 14 00:31:58 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:31:58 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:31:58 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:31:58 2017] [debug] 200 OK (0.000743s, 1345.895/s)
+[Sun May 14 00:32:01 2017] [debug] GET "/"
+[Sun May 14 00:32:01 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:32:01 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:32:01 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:32:01 2017] [debug] 200 OK (0.000684s, 1461.988/s)
+[Sun May 14 00:32:43 2017] [debug] GET "/"
+[Sun May 14 00:32:43 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:32:43 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:32:43 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:32:43 2017] [debug] 200 OK (0.010468s, 95.529/s)
+[Sun May 14 00:33:06 2017] [debug] GET "/"
+[Sun May 14 00:33:06 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:33:06 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:33:06 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:33:06 2017] [debug] 200 OK (0.000699s, 1430.615/s)
+[Sun May 14 00:33:27 2017] [debug] GET "/"
+[Sun May 14 00:33:27 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:33:27 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 00:33:27 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 00:33:27 2017] [debug] 200 OK (0.000837s, 1194.743/s)
+[Sun May 14 00:59:43 2017] [debug] GET "/"
+[Sun May 14 00:59:43 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 00:59:43 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 00:59:43 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 00:59:43 2017] [debug] 200 OK (0.006958s, 143.719/s)
+[Sun May 14 01:00:27 2017] [debug] GET "/"
+[Sun May 14 01:00:27 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 01:00:27 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 01:00:27 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 01:00:27 2017] [debug] 200 OK (0.006632s, 150.784/s)
+[Sun May 14 01:07:12 2017] [debug] POST "/auths_create"
+[Sun May 14 01:07:12 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 01:07:12 2017] [debug] Rendering template "not_found.html.ep"
+[Sun May 14 01:07:12 2017] [debug] 404 Not Found (0.003242s, 308.452/s)
+[Sun May 14 01:07:20 2017] [debug] POST "/auths_create"
+[Sun May 14 01:07:20 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 01:07:20 2017] [debug] Rendering cached template "not_found.html.ep"
+[Sun May 14 01:07:20 2017] [debug] 404 Not Found (0.000896s, 1116.071/s)
+[Sun May 14 01:07:27 2017] [debug] GET "/"
+[Sun May 14 01:07:27 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 01:07:27 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 01:07:27 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 01:07:27 2017] [debug] 200 OK (0.000972s, 1028.807/s)
+[Sun May 14 01:07:29 2017] [debug] POST "/auths_create"
+[Sun May 14 01:07:29 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 01:07:29 2017] [debug] Rendering cached template "not_found.html.ep"
+[Sun May 14 01:07:29 2017] [debug] 404 Not Found (0.000816s, 1225.490/s)
+[Sun May 14 01:29:22 2017] [debug] GET "/"
+[Sun May 14 01:29:22 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 01:29:22 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 01:29:22 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 01:29:22 2017] [debug] 200 OK (0.008528s, 117.261/s)
+[Sun May 14 01:29:35 2017] [debug] GET "/"
+[Sun May 14 01:29:35 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 01:29:35 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 01:29:35 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 01:29:35 2017] [debug] 200 OK (0.011632s, 85.970/s)
+[Sun May 14 01:30:20 2017] [debug] GET "/"
+[Sun May 14 01:30:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 01:30:20 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 01:30:20 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 01:30:20 2017] [debug] 200 OK (0.013947s, 71.700/s)
+[Sun May 14 02:13:56 2017] [debug] GET "/"
+[Sun May 14 02:13:56 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 02:13:56 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 02:13:56 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 02:13:56 2017] [debug] 200 OK (0.006239s, 160.282/s)
+[Sun May 14 02:13:56 2017] [debug] POST "/login"
+[Sun May 14 02:13:56 2017] [debug] Controller "Notes::Auths" does not exist
+[Sun May 14 02:13:56 2017] [debug] Template "auths/create.html.ep" not found
+[Sun May 14 02:13:56 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 02:13:56 2017] [debug] Rendering template "not_found.html.ep"
+[Sun May 14 02:13:56 2017] [debug] 404 Not Found (0.004798s, 208.420/s)
+[Sun May 14 02:13:56 2017] [debug] GET "/zgzr"
+[Sun May 14 02:13:56 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 02:13:56 2017] [debug] Rendering cached template "not_found.html.ep"
+[Sun May 14 02:13:56 2017] [debug] 404 Not Found (0.000956s, 1046.025/s)
+[Sun May 14 02:13:56 2017] [debug] GET "/login"
+[Sun May 14 02:13:56 2017] [debug] Controller "Notes::Auths" does not exist
+[Sun May 14 02:13:56 2017] [debug] Template "auths/create.html.ep" not found
+[Sun May 14 02:13:56 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 02:13:56 2017] [debug] Rendering cached template "not_found.html.ep"
+[Sun May 14 02:13:56 2017] [debug] 404 Not Found (0.002184s, 457.875/s)
+[Sun May 14 02:14:08 2017] [debug] GET "/"
+[Sun May 14 02:14:08 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 02:14:08 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 02:14:08 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 02:14:08 2017] [debug] 200 OK (0.001053s, 949.668/s)
+[Sun May 14 02:14:22 2017] [debug] POST "/login"
+[Sun May 14 02:14:22 2017] [debug] Controller "Notes::Auths" does not exist
+[Sun May 14 02:14:22 2017] [debug] Template "auths/create.html.ep" not found
+[Sun May 14 02:14:22 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 02:14:22 2017] [debug] Rendering cached template "not_found.html.ep"
+[Sun May 14 02:14:22 2017] [debug] 404 Not Found (0.002324s, 430.293/s)
+[Sun May 14 02:14:46 2017] [debug] GET "/"
+[Sun May 14 02:14:46 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 02:14:46 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 02:14:46 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 02:14:46 2017] [debug] 200 OK (0.001072s, 932.836/s)
+[Sun May 14 02:15:22 2017] [debug] GET "/login"
+[Sun May 14 02:15:22 2017] [debug] Controller "Notes::Auths" does not exist
+[Sun May 14 02:15:22 2017] [debug] Template "auths/create.html.ep" not found
+[Sun May 14 02:15:22 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 02:15:22 2017] [debug] Rendering cached template "not_found.html.ep"
+[Sun May 14 02:15:22 2017] [debug] 404 Not Found (0.00229s, 436.681/s)
+[Sun May 14 02:15:41 2017] [debug] GET "/login"
+[Sun May 14 02:15:41 2017] [debug] Controller "Notes::Auths" does not exist
+[Sun May 14 02:15:41 2017] [debug] Template "auths/create.html.ep" not found
+[Sun May 14 02:15:41 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 02:15:41 2017] [debug] Rendering cached template "not_found.html.ep"
+[Sun May 14 02:15:41 2017] [debug] 404 Not Found (0.001918s, 521.376/s)
+[Sun May 14 02:16:03 2017] [debug] POST "/login"
+[Sun May 14 02:16:03 2017] [debug] Controller "Notes::Auths" does not exist
+[Sun May 14 02:16:03 2017] [debug] Template "auths/create.html.ep" not found
+[Sun May 14 02:16:03 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 02:16:03 2017] [debug] Rendering cached template "not_found.html.ep"
+[Sun May 14 02:16:03 2017] [debug] 404 Not Found (0.002557s, 391.083/s)
+[Sun May 14 10:16:52 2017] [debug] GET "/"
+[Sun May 14 10:16:52 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:16:52 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:16:52 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:16:52 2017] [debug] 200 OK (0.013972s, 71.572/s)
+[Sun May 14 10:21:01 2017] [debug] GET "/"
+[Sun May 14 10:21:01 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:21:01 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:21:01 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:21:01 2017] [debug] 200 OK (0.007065s, 141.543/s)
+[Sun May 14 10:21:27 2017] [debug] GET "/"
+[Sun May 14 10:21:27 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:21:27 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:21:27 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:21:27 2017] [debug] 200 OK (0.006567s, 152.277/s)
+[Sun May 14 10:41:52 2017] [debug] GET "/"
+[Sun May 14 10:41:52 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:41:52 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:41:52 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:41:52 2017] [debug] 200 OK (0.006867s, 145.624/s)
+[Sun May 14 10:41:53 2017] [debug] GET "/"
+[Sun May 14 10:41:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:41:53 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 10:41:53 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 10:41:53 2017] [debug] 200 OK (0.001168s, 856.164/s)
+[Sun May 14 10:42:13 2017] [debug] GET "/"
+[Sun May 14 10:42:13 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:42:13 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:42:13 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:42:13 2017] [debug] 200 OK (0.008962s, 111.582/s)
+[Sun May 14 10:43:37 2017] [debug] GET "/"
+[Sun May 14 10:43:37 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:43:37 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:43:37 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:43:37 2017] [debug] 200 OK (0.00833s, 120.048/s)
+[Sun May 14 10:44:04 2017] [debug] GET "/"
+[Sun May 14 10:44:04 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:44:04 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:44:04 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:44:04 2017] [debug] 200 OK (0.009143s, 109.373/s)
+[Sun May 14 10:45:11 2017] [debug] GET "/"
+[Sun May 14 10:45:11 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:45:11 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:45:11 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:45:11 2017] [debug] 200 OK (0.007799s, 128.222/s)
+[Sun May 14 10:45:55 2017] [debug] GET "/"
+[Sun May 14 10:45:55 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:45:55 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:45:55 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:45:55 2017] [debug] 200 OK (0.00782s, 127.877/s)
+[Sun May 14 10:46:25 2017] [debug] GET "/"
+[Sun May 14 10:46:25 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:46:25 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:46:25 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:46:25 2017] [debug] 200 OK (0.006378s, 156.789/s)
+[Sun May 14 10:47:52 2017] [debug] GET "/"
+[Sun May 14 10:47:52 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:47:52 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:47:52 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:47:52 2017] [debug] 200 OK (0.010413s, 96.034/s)
+[Sun May 14 10:50:52 2017] [debug] GET "/"
+[Sun May 14 10:50:52 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:50:52 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:50:52 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:50:52 2017] [debug] 200 OK (0.009071s, 110.241/s)
+[Sun May 14 10:51:15 2017] [debug] GET "/"
+[Sun May 14 10:51:15 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:51:15 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:51:15 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:51:15 2017] [debug] 200 OK (0.008972s, 111.458/s)
+[Sun May 14 10:51:40 2017] [debug] GET "/"
+[Sun May 14 10:51:40 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:51:40 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:51:40 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:51:40 2017] [debug] 200 OK (0.006707s, 149.098/s)
+[Sun May 14 10:52:25 2017] [debug] GET "/"
+[Sun May 14 10:52:25 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:52:25 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:52:25 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:52:25 2017] [debug] 200 OK (0.008967s, 111.520/s)
+[Sun May 14 10:54:32 2017] [debug] GET "/"
+[Sun May 14 10:54:32 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:54:32 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:54:32 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:54:32 2017] [debug] 200 OK (0.006723s, 148.743/s)
+[Sun May 14 10:55:55 2017] [debug] GET "/"
+[Sun May 14 10:55:55 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:55:55 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:55:55 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:55:55 2017] [debug] 200 OK (0.011279s, 88.660/s)
+[Sun May 14 10:56:06 2017] [debug] GET "/"
+[Sun May 14 10:56:06 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:56:06 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:56:06 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:56:06 2017] [debug] 200 OK (0.011029s, 90.670/s)
+[Sun May 14 10:58:33 2017] [debug] GET "/"
+[Sun May 14 10:58:33 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:58:33 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:58:33 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:58:33 2017] [debug] 200 OK (0.007564s, 132.205/s)
+[Sun May 14 10:59:09 2017] [debug] GET "/"
+[Sun May 14 10:59:09 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:59:09 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:59:09 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:59:09 2017] [debug] 200 OK (0.010288s, 97.201/s)
+[Sun May 14 10:59:18 2017] [debug] GET "/"
+[Sun May 14 10:59:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:59:18 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:59:18 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:59:18 2017] [debug] 200 OK (0.007061s, 141.623/s)
+[Sun May 14 10:59:39 2017] [debug] GET "/"
+[Sun May 14 10:59:39 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 10:59:39 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 10:59:39 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 10:59:39 2017] [debug] 200 OK (0.00734s, 136.240/s)
+[Sun May 14 11:02:53 2017] [debug] GET "/"
+[Sun May 14 11:02:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 11:02:53 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 11:02:53 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 11:02:53 2017] [debug] 200 OK (0.006778s, 147.536/s)
+[Sun May 14 11:03:18 2017] [debug] GET "/"
+[Sun May 14 11:03:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 11:03:18 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 11:03:18 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 11:03:18 2017] [debug] 200 OK (0.007932s, 126.072/s)
+[Sun May 14 11:04:32 2017] [debug] GET "/"
+[Sun May 14 11:04:32 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 11:04:32 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 11:04:32 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 11:04:32 2017] [debug] 200 OK (0.009973s, 100.271/s)
+[Sun May 14 11:04:34 2017] [debug] GET "/"
+[Sun May 14 11:04:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 11:04:34 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 11:04:34 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 11:04:34 2017] [debug] 200 OK (0.001159s, 862.813/s)
+[Sun May 14 11:05:27 2017] [debug] GET "/"
+[Sun May 14 11:05:27 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 11:05:27 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 11:05:27 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 11:05:27 2017] [debug] 200 OK (0.008964s, 111.557/s)
+[Sun May 14 11:06:34 2017] [debug] GET "/"
+[Sun May 14 11:06:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 11:06:34 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 11:06:34 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 11:06:34 2017] [debug] 200 OK (0.008371s, 119.460/s)
+[Sun May 14 11:07:10 2017] [debug] GET "/"
+[Sun May 14 11:07:10 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 11:07:10 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 11:07:10 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 11:07:10 2017] [debug] 200 OK (0.007035s, 142.146/s)
+[Sun May 14 11:09:56 2017] [debug] GET "/"
+[Sun May 14 11:09:56 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 11:09:56 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 11:09:56 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 11:09:56 2017] [debug] 200 OK (0.00945s, 105.820/s)
+[Sun May 14 13:15:10 2017] [debug] GET "/"
+[Sun May 14 13:15:10 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 13:15:10 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 13:15:10 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 13:15:10 2017] [debug] 200 OK (0.007017s, 142.511/s)
+[Sun May 14 13:18:05 2017] [debug] GET "/"
+[Sun May 14 13:18:05 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 13:18:05 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 13:18:05 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 13:18:05 2017] [debug] 200 OK (0.006958s, 143.719/s)
+[Sun May 14 14:02:46 2017] [debug] GET "/"
+[Sun May 14 14:02:46 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 14:02:46 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 14:02:46 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 14:02:46 2017] [debug] 200 OK (0.006899s, 144.949/s)
+[Sun May 14 14:09:14 2017] [debug] GET "/"
+[Sun May 14 14:09:14 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 14:09:14 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 14:09:14 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 14:09:14 2017] [debug] 200 OK (0.00773s, 129.366/s)
+[Sun May 14 14:11:39 2017] [debug] POST "/login"
+[Sun May 14 14:11:39 2017] [debug] Controller "Notes::Auth" does not exist
+[Sun May 14 14:11:39 2017] [debug] Template "auth/create.html.ep" not found
+[Sun May 14 14:11:39 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 14:11:39 2017] [debug] Rendering template "not_found.html.ep"
+[Sun May 14 14:11:39 2017] [debug] 404 Not Found (0.005029s, 198.847/s)
+[Sun May 14 14:12:23 2017] [debug] GET "/"
+[Sun May 14 14:12:23 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 14:12:23 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 14:12:23 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 14:12:23 2017] [debug] 200 OK (0.006685s, 149.589/s)
+[Sun May 14 14:24:13 2017] [debug] GET "/"
+[Sun May 14 14:24:13 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 14:24:13 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 14:24:13 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 14:24:13 2017] [debug] 200 OK (0.007572s, 132.066/s)
+[Sun May 14 14:25:14 2017] [debug] GET "/"
+[Sun May 14 14:25:14 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 14:25:14 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 14:25:14 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 14:25:14 2017] [debug] 200 OK (0.009541s, 104.811/s)
+[Sun May 14 14:39:53 2017] [debug] GET "/"
+[Sun May 14 14:39:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 14:39:53 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 14:39:53 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 14:39:53 2017] [debug] 200 OK (0.006956s, 143.761/s)
+[Sun May 14 14:41:42 2017] [debug] GET "/"
+[Sun May 14 14:41:42 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 14:41:42 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 14:41:42 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 14:41:42 2017] [debug] 200 OK (0.001305s, 766.284/s)
+[Sun May 14 14:42:31 2017] [debug] GET "/"
+[Sun May 14 14:42:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 14:42:31 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 14:42:31 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 14:42:31 2017] [debug] 200 OK (0.010817s, 92.447/s)
+[Sun May 14 15:04:48 2017] [debug] GET "/"
+[Sun May 14 15:04:48 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:04:48 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:04:48 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:04:48 2017] [debug] 200 OK (0.00706s, 141.643/s)
+[Sun May 14 15:06:35 2017] [debug] GET "/"
+[Sun May 14 15:06:35 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:06:35 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:06:35 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:06:35 2017] [debug] 200 OK (0.009257s, 108.026/s)
+[Sun May 14 15:07:30 2017] [debug] GET "/"
+[Sun May 14 15:07:30 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:07:30 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:07:30 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:07:30 2017] [debug] 200 OK (0.010269s, 97.380/s)
+[Sun May 14 15:09:49 2017] [debug] GET "/"
+[Sun May 14 15:09:49 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:09:49 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:09:49 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:09:49 2017] [debug] 200 OK (0.009049s, 110.509/s)
+[Sun May 14 15:10:15 2017] [debug] GET "/"
+[Sun May 14 15:10:15 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:10:15 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:10:15 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:10:15 2017] [debug] 200 OK (0.006948s, 143.926/s)
+[Sun May 14 15:11:29 2017] [debug] GET "/"
+[Sun May 14 15:11:29 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:11:29 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:11:29 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:11:29 2017] [debug] 200 OK (0.00719s, 139.082/s)
+[Sun May 14 15:14:04 2017] [debug] GET "/"
+[Sun May 14 15:14:04 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:14:04 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:14:04 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:14:04 2017] [debug] 200 OK (0.008412s, 118.878/s)
+[Sun May 14 15:14:34 2017] [debug] GET "/"
+[Sun May 14 15:14:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:14:34 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:14:34 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:14:34 2017] [debug] 200 OK (0.008126s, 123.062/s)
+[Sun May 14 15:15:07 2017] [debug] GET "/"
+[Sun May 14 15:15:07 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:15:07 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:15:07 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:15:07 2017] [debug] 200 OK (0.007438s, 134.445/s)
+[Sun May 14 15:16:10 2017] [debug] GET "/"
+[Sun May 14 15:16:10 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:16:10 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:16:10 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:16:10 2017] [debug] 200 OK (0.001354s, 738.552/s)
+[Sun May 14 15:17:41 2017] [debug] GET "/"
+[Sun May 14 15:17:41 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:17:41 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:17:41 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:17:41 2017] [debug] 200 OK (0.007244s, 138.045/s)
+[Sun May 14 15:20:33 2017] [debug] GET "/"
+[Sun May 14 15:20:33 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:20:33 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:20:33 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:20:33 2017] [debug] 200 OK (0.001515s, 660.066/s)
+[Sun May 14 15:20:36 2017] [debug] GET "/"
+[Sun May 14 15:20:36 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:20:36 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:20:36 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:20:36 2017] [debug] 200 OK (0.001306s, 765.697/s)
+[Sun May 14 15:21:03 2017] [debug] GET "/"
+[Sun May 14 15:21:03 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:21:03 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:21:03 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:21:03 2017] [debug] 200 OK (0.00136s, 735.294/s)
+[Sun May 14 15:22:33 2017] [debug] GET "/"
+[Sun May 14 15:22:33 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:22:33 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:22:33 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:22:33 2017] [debug] 200 OK (0.010523s, 95.030/s)
+[Sun May 14 15:23:06 2017] [debug] GET "/"
+[Sun May 14 15:23:06 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:23:06 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:23:06 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:23:06 2017] [debug] 200 OK (0.001778s, 562.430/s)
+[Sun May 14 15:23:30 2017] [debug] GET "/"
+[Sun May 14 15:23:30 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:23:30 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:23:30 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:23:30 2017] [debug] 200 OK (0.001563s, 639.795/s)
+[Sun May 14 15:23:48 2017] [debug] GET "/"
+[Sun May 14 15:23:48 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:23:48 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:23:48 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:23:48 2017] [debug] 200 OK (0.001307s, 765.111/s)
+[Sun May 14 15:24:29 2017] [debug] GET "/"
+[Sun May 14 15:24:29 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:24:29 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:24:29 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:24:29 2017] [debug] 200 OK (0.006705s, 149.142/s)
+[Sun May 14 15:25:01 2017] [debug] GET "/"
+[Sun May 14 15:25:01 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:25:01 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:25:01 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:25:01 2017] [debug] 200 OK (0.001533s, 652.316/s)
+[Sun May 14 15:26:11 2017] [debug] GET "/"
+[Sun May 14 15:26:11 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:26:11 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:26:11 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:26:11 2017] [debug] 200 OK (0.006673s, 149.858/s)
+[Sun May 14 15:26:41 2017] [debug] GET "/"
+[Sun May 14 15:26:41 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:26:42 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:26:42 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:26:42 2017] [debug] 200 OK (0.008917s, 112.145/s)
+[Sun May 14 15:26:44 2017] [debug] GET "/"
+[Sun May 14 15:26:44 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:26:44 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:26:44 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:26:44 2017] [debug] 200 OK (0.001612s, 620.347/s)
+[Sun May 14 15:27:22 2017] [debug] GET "/"
+[Sun May 14 15:27:22 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:27:22 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:27:22 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:27:22 2017] [debug] 200 OK (0.001369s, 730.460/s)
+[Sun May 14 15:32:17 2017] [debug] GET "/"
+[Sun May 14 15:32:17 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:32:17 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:32:17 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:32:17 2017] [debug] 200 OK (0.001413s, 707.714/s)
+[Sun May 14 15:32:41 2017] [debug] GET "/"
+[Sun May 14 15:32:41 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:32:41 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:32:41 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:32:41 2017] [debug] 200 OK (0.001944s, 514.403/s)
+[Sun May 14 15:32:55 2017] [debug] GET "/"
+[Sun May 14 15:32:55 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:32:55 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:32:55 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:32:55 2017] [debug] 200 OK (0.00141s, 709.220/s)
+[Sun May 14 15:33:37 2017] [debug] GET "/"
+[Sun May 14 15:33:37 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:33:37 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:33:37 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:33:37 2017] [debug] 200 OK (0.006911s, 144.697/s)
+[Sun May 14 15:34:04 2017] [debug] GET "/"
+[Sun May 14 15:34:04 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:34:04 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:34:04 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:34:04 2017] [debug] 200 OK (0.001421s, 703.730/s)
+[Sun May 14 15:34:54 2017] [debug] GET "/"
+[Sun May 14 15:34:54 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:34:54 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:34:54 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:34:54 2017] [debug] 200 OK (0.001407s, 710.732/s)
+[Sun May 14 15:35:18 2017] [debug] GET "/"
+[Sun May 14 15:35:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:35:18 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:35:18 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:35:18 2017] [debug] 200 OK (0.009325s, 107.239/s)
+[Sun May 14 15:36:27 2017] [debug] GET "/"
+[Sun May 14 15:36:27 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:36:27 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:36:27 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:36:27 2017] [debug] 200 OK (0.001424s, 702.247/s)
+[Sun May 14 15:36:59 2017] [debug] GET "/"
+[Sun May 14 15:36:59 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:36:59 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:36:59 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:36:59 2017] [debug] 200 OK (0.001393s, 717.875/s)
+[Sun May 14 15:44:36 2017] [debug] GET "/"
+[Sun May 14 15:44:36 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:44:36 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:44:36 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:44:36 2017] [debug] 200 OK (0.006739s, 148.390/s)
+[Sun May 14 15:44:57 2017] [debug] GET "/"
+[Sun May 14 15:44:57 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:44:57 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:44:57 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:44:57 2017] [debug] 200 OK (0.006966s, 143.554/s)
+[Sun May 14 15:45:50 2017] [debug] GET "/"
+[Sun May 14 15:45:50 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:45:50 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:45:50 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:45:50 2017] [debug] 200 OK (0.001426s, 701.262/s)
+[Sun May 14 15:45:55 2017] [debug] GET "/"
+[Sun May 14 15:45:55 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:45:55 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:45:55 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:45:55 2017] [debug] 200 OK (0.001464s, 683.060/s)
+[Sun May 14 15:50:05 2017] [debug] GET "/"
+[Sun May 14 15:50:05 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:50:05 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:50:05 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:50:05 2017] [debug] 200 OK (0.007126s, 140.331/s)
+[Sun May 14 15:52:56 2017] [debug] GET "/"
+[Sun May 14 15:52:56 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:52:56 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:52:56 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:52:56 2017] [debug] 200 OK (0.008533s, 117.192/s)
+[Sun May 14 15:52:58 2017] [debug] GET "/"
+[Sun May 14 15:52:58 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:52:58 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:52:58 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:52:58 2017] [debug] 200 OK (0.001423s, 702.741/s)
+[Sun May 14 15:55:53 2017] [debug] GET "/"
+[Sun May 14 15:55:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:55:53 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:55:53 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:55:53 2017] [debug] 200 OK (0.001601s, 624.610/s)
+[Sun May 14 15:57:38 2017] [debug] GET "/"
+[Sun May 14 15:57:38 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:57:38 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 15:57:38 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 15:57:38 2017] [debug] 200 OK (0.001387s, 720.981/s)
+[Sun May 14 15:59:53 2017] [debug] GET "/"
+[Sun May 14 15:59:53 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 15:59:53 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 15:59:53 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 15:59:53 2017] [debug] 200 OK (0.011126s, 89.880/s)
+[Sun May 14 16:01:14 2017] [debug] GET "/"
+[Sun May 14 16:01:14 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:01:14 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 16:01:14 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 16:01:14 2017] [debug] 200 OK (0.007626s, 131.130/s)
+[Sun May 14 16:10:41 2017] [debug] GET "/"
+[Sun May 14 16:10:41 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:10:41 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 16:10:41 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 16:10:41 2017] [debug] 200 OK (0.007423s, 134.716/s)
+[Sun May 14 16:12:13 2017] [debug] GET "/"
+[Sun May 14 16:12:13 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:12:13 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 16:12:13 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 16:12:13 2017] [debug] 200 OK (0.00991s, 100.908/s)
+[Sun May 14 16:13:20 2017] [debug] GET "/"
+[Sun May 14 16:13:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:13:20 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 16:13:20 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 16:13:20 2017] [debug] 200 OK (0.011164s, 89.574/s)
+[Sun May 14 16:14:50 2017] [debug] GET "/"
+[Sun May 14 16:14:50 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:14:50 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:14:50 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:14:50 2017] [debug] 200 OK (0.001595s, 626.959/s)
+[Sun May 14 16:15:34 2017] [debug] GET "/"
+[Sun May 14 16:15:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:15:34 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:15:34 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:15:34 2017] [debug] 200 OK (0.001348s, 741.840/s)
+[Sun May 14 16:17:17 2017] [debug] GET "/"
+[Sun May 14 16:17:17 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:17:17 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:17:17 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:17:17 2017] [debug] 200 OK (0.001362s, 734.214/s)
+[Sun May 14 16:19:49 2017] [debug] GET "/"
+[Sun May 14 16:19:49 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:19:49 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:19:49 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:19:49 2017] [debug] 200 OK (0.001638s, 610.501/s)
+[Sun May 14 16:20:31 2017] [debug] GET "/"
+[Sun May 14 16:20:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:20:31 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:20:31 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:20:31 2017] [debug] 200 OK (0.001449s, 690.131/s)
+[Sun May 14 16:21:31 2017] [debug] GET "/"
+[Sun May 14 16:21:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:21:31 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:21:31 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:21:31 2017] [debug] 200 OK (0.001427s, 700.771/s)
+[Sun May 14 16:21:47 2017] [debug] GET "/"
+[Sun May 14 16:21:47 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:21:47 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 16:21:47 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 16:21:47 2017] [debug] 200 OK (0.007103s, 140.786/s)
+[Sun May 14 16:22:14 2017] [debug] GET "/"
+[Sun May 14 16:22:14 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:22:14 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:22:14 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:22:14 2017] [debug] 200 OK (0.00145s, 689.655/s)
+[Sun May 14 16:22:21 2017] [debug] GET "/"
+[Sun May 14 16:22:21 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:22:21 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:22:21 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:22:21 2017] [debug] 200 OK (0.001319s, 758.150/s)
+[Sun May 14 16:23:34 2017] [debug] GET "/"
+[Sun May 14 16:23:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:23:34 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 16:23:34 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 16:23:34 2017] [debug] 200 OK (0.007144s, 139.978/s)
+[Sun May 14 16:23:35 2017] [debug] GET "/"
+[Sun May 14 16:23:35 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:23:35 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:23:35 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:23:35 2017] [debug] 200 OK (0.001438s, 695.410/s)
+[Sun May 14 16:23:46 2017] [debug] GET "/"
+[Sun May 14 16:23:46 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:23:46 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:23:46 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:23:46 2017] [debug] 200 OK (0.001416s, 706.215/s)
+[Sun May 14 16:30:17 2017] [debug] GET "/"
+[Sun May 14 16:30:17 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 16:30:17 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 16:30:17 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 16:30:17 2017] [debug] 200 OK (0.001671s, 598.444/s)
+[Sun May 14 17:18:09 2017] [debug] POST "/login"
+[Sun May 14 17:18:09 2017] [error] Can't locate Mojo/base.pm in @INC (you may need to install the Mojo::base module) (@INC contains: /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib /home/pasha/perl5/lib/perl5/5.24.1/x86_64-linux-gnu-thread-multi /home/pasha/perl5/lib/perl5/5.24.1 /home/pasha/perl5/lib/perl5/x86_64-linux-gnu-thread-multi /home/pasha/perl5/lib/perl5 /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.24.1 /usr/local/share/perl/5.24.1 /usr/lib/x86_64-linux-gnu/perl5/5.24 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.24 /usr/share/perl/5.24 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Auths.pm line 7.
+BEGIN failed--compilation aborted at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Auths.pm line 7.
+Compilation failed in require at (eval 115) line 1.
+
+[Sun May 14 17:18:09 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 17:18:09 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 17:18:09 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 17:18:09 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 17:18:09 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 17:18:09 2017] [debug] 500 Internal Server Error (0.08328s, 12.008/s)
+[Sun May 14 17:49:24 2017] [debug] POST "/login"
+[Sun May 14 17:49:24 2017] [error] Can't locate Mojo/base.pm in @INC (you may need to install the Mojo::base module) (@INC contains: /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib /home/pasha/perl5/lib/perl5/5.24.1/x86_64-linux-gnu-thread-multi /home/pasha/perl5/lib/perl5/5.24.1 /home/pasha/perl5/lib/perl5/x86_64-linux-gnu-thread-multi /home/pasha/perl5/lib/perl5 /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.24.1 /usr/local/share/perl/5.24.1 /usr/lib/x86_64-linux-gnu/perl5/5.24 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.24 /usr/share/perl/5.24 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Auths.pm line 7.
+BEGIN failed--compilation aborted at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Auths.pm line 7.
+Compilation failed in require at (eval 115) line 1.
+
+[Sun May 14 17:49:24 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 17:49:24 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 17:49:24 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 17:49:24 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 17:49:24 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 17:49:24 2017] [debug] 500 Internal Server Error (0.039138s, 25.551/s)
+[Sun May 14 17:51:32 2017] [debug] GET "/"
+[Sun May 14 17:51:32 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 17:51:32 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 17:51:32 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 17:51:32 2017] [debug] 200 OK (0.008216s, 121.714/s)
+[Sun May 14 17:51:36 2017] [debug] POST "/login"
+[Sun May 14 17:51:36 2017] [debug] Class "Notes::Controller::Auths" is not a controller
+[Sun May 14 17:51:36 2017] [debug] Template "auths/create.html.ep" not found
+[Sun May 14 17:51:36 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 17:51:36 2017] [debug] Rendering template "not_found.html.ep"
+[Sun May 14 17:51:36 2017] [debug] 404 Not Found (0.004044s, 247.280/s)
+[Sun May 14 17:52:10 2017] [debug] POST "/login"
+[Sun May 14 17:52:10 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 17:52:11 2017] [error] DBI::st=HASH(0x5643edf43e78)->_prepare(...): attribute parameter 'id' is not a hash ref at /usr/lib/x86_64-linux-gnu/perl5/5.24/DBD/mysql.pm line 246.
+
+[Sun May 14 17:52:11 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 17:52:11 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 17:52:11 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 17:52:11 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 17:52:11 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 17:52:11 2017] [debug] 500 Internal Server Error (0.103s, 9.709/s)
+[Sun May 14 17:55:50 2017] [debug] POST "/login"
+[Sun May 14 17:55:50 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 17:55:50 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 17:55:50 2017] [debug] 302 Found (0.002627s, 380.662/s)
+[Sun May 14 17:55:50 2017] [debug] GET "/auths_create_form"
+[Sun May 14 17:55:50 2017] [debug] Template "not_found.development.html.ep" not found
+[Sun May 14 17:55:50 2017] [debug] Rendering template "not_found.html.ep"
+[Sun May 14 17:55:50 2017] [debug] 404 Not Found (0.004414s, 226.552/s)
+[Sun May 14 17:56:46 2017] [debug] POST "/login"
+[Sun May 14 17:56:46 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 17:56:46 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 17:56:46 2017] [debug] 302 Found (0.003271s, 305.717/s)
+[Sun May 14 17:56:46 2017] [debug] GET "/"
+[Sun May 14 17:56:46 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 17:56:46 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 17:56:46 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 17:56:46 2017] [debug] 200 OK (0.007775s, 128.617/s)
+[Sun May 14 18:01:30 2017] [debug] POST "/login"
+[Sun May 14 18:01:30 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:01:30 2017] [debug] 302 Found (0.00126s, 793.651/s)
+[Sun May 14 18:01:30 2017] [debug] GET "/"
+[Sun May 14 18:01:30 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:01:30 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:01:30 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:01:30 2017] [debug] 200 OK (0.001477s, 677.048/s)
+[Sun May 14 18:05:14 2017] [debug] GET "/"
+[Sun May 14 18:05:14 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:05:14 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:05:14 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:05:14 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:05:14 2017] [debug] 200 OK (0.010383s, 96.311/s)
+[Sun May 14 18:05:18 2017] [debug] GET "/"
+[Sun May 14 18:05:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:05:18 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:05:18 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:05:18 2017] [debug] 200 OK (0.001626s, 615.006/s)
+[Sun May 14 18:05:20 2017] [debug] GET "/"
+[Sun May 14 18:05:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:05:20 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:05:20 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:05:20 2017] [debug] 200 OK (0.001654s, 604.595/s)
+[Sun May 14 18:05:38 2017] [debug] POST "/login"
+[Sun May 14 18:05:38 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:05:38 2017] [debug] 302 Found (0.002281s, 438.404/s)
+[Sun May 14 18:05:38 2017] [debug] GET "/"
+[Sun May 14 18:05:38 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:05:38 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:05:38 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:05:38 2017] [debug] 200 OK (0.001865s, 536.193/s)
+[Sun May 14 18:05:55 2017] [debug] GET "/"
+[Sun May 14 18:05:55 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:05:55 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:05:55 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:05:55 2017] [debug] 200 OK (0.001722s, 580.720/s)
+[Sun May 14 18:13:25 2017] [debug] POST "/login"
+[Sun May 14 18:13:25 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:13:25 2017] [debug] 302 Found (0.001114s, 897.666/s)
+[Sun May 14 18:13:25 2017] [debug] GET "/"
+[Sun May 14 18:13:25 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:13:25 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:13:25 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:13:25 2017] [debug] 200 OK (0.001771s, 564.653/s)
+[Sun May 14 18:20:36 2017] [debug] GET "/"
+[Sun May 14 18:20:36 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:20:36 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:20:36 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:20:36 2017] [debug] 200 OK (0.001663s, 601.323/s)
+[Sun May 14 18:20:40 2017] [debug] POST "/login"
+[Sun May 14 18:20:40 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:20:40 2017] [debug] 302 Found (0.001021s, 979.432/s)
+[Sun May 14 18:20:40 2017] [debug] GET "/"
+[Sun May 14 18:20:40 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:20:40 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:20:40 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:20:40 2017] [debug] 200 OK (0.001959s, 510.465/s)
+[Sun May 14 18:24:34 2017] [debug] POST "/login"
+[Sun May 14 18:24:34 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:24:34 2017] [debug] 302 Found (0.001094s, 914.077/s)
+[Sun May 14 18:24:34 2017] [debug] GET "/"
+[Sun May 14 18:24:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:24:34 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:24:34 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:24:34 2017] [debug] 200 OK (0.001748s, 572.082/s)
+[Sun May 14 18:24:50 2017] [debug] POST "/login"
+[Sun May 14 18:24:50 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:24:50 2017] [debug] 302 Found (0.001133s, 882.613/s)
+[Sun May 14 18:24:50 2017] [debug] GET "/"
+[Sun May 14 18:24:50 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:24:50 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:24:50 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:24:50 2017] [debug] 200 OK (0.00176s, 568.182/s)
+[Sun May 14 18:28:27 2017] [debug] POST "/login"
+[Sun May 14 18:28:27 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:28:27 2017] [debug] 302 Found (0.001071s, 933.707/s)
+[Sun May 14 18:28:27 2017] [debug] GET "/"
+[Sun May 14 18:28:27 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:28:27 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:28:27 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:28:27 2017] [debug] 200 OK (0.001791s, 558.347/s)
+[Sun May 14 18:28:42 2017] [debug] GET "/"
+[Sun May 14 18:28:42 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:28:42 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:28:42 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:28:42 2017] [debug] 200 OK (0.001674s, 597.372/s)
+[Sun May 14 18:30:55 2017] [debug] GET "/"
+[Sun May 14 18:30:55 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:30:55 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:30:55 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:30:55 2017] [error] Bareword "error" not allowed while "strict subs" in use at template layouts/default.html.ep line 21.
+Bareword "notice" not allowed while "strict subs" in use at template layouts/default.html.ep line 27.
+16: % if (error) {
+17: 	<span class='red_msg' >
+18:     <%= flash 'error' %>
+19: </span>
+20: % }
+21: 
+22: % if (notice) {
+23: <span class='green_msg' >
+24:     <%= flash 'notice'%>
+25: </span>
+26: % }
+
+[Sun May 14 18:30:55 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 18:30:55 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 18:30:55 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 18:30:55 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 18:30:55 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:30:55 2017] [debug] 500 Internal Server Error (0.052698s, 18.976/s)
+[Sun May 14 18:31:15 2017] [debug] GET "/"
+[Sun May 14 18:31:15 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:31:15 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:31:15 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:31:15 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:31:15 2017] [debug] 200 OK (0.00992s, 100.806/s)
+[Sun May 14 18:31:18 2017] [debug] GET "/"
+[Sun May 14 18:31:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:31:18 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:31:18 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:31:18 2017] [debug] 200 OK (0.001641s, 609.385/s)
+[Sun May 14 18:31:46 2017] [debug] GET "/"
+[Sun May 14 18:31:46 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:31:46 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:31:46 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:31:46 2017] [error] syntax error at template layouts/default.html.ep line 18, near "<span class='red_msg' > 
+    $_O "
+syntax error at template layouts/default.html.ep line 24, near "<span class='green_msg' > 
+    $_O "
+13: 		</div>
+14: 		
+15: 	</div>
+16: % if ('error') {
+17: %	<span class='red_msg' >
+18: %    <%= flash 'error' %>
+19: %  </span>
+20: % }
+21: 
+22: % if ('notice') {
+23: % <span class='green_msg' >
+
+[Sun May 14 18:31:46 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 18:31:46 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 18:31:46 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 18:31:46 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 18:31:46 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:31:46 2017] [debug] 500 Internal Server Error (0.062959s, 15.883/s)
+[Sun May 14 18:32:30 2017] [debug] GET "/"
+[Sun May 14 18:32:30 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:32:30 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:32:30 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:32:30 2017] [error] syntax error at template layouts/default.html.ep line 18, near "<span class='red_msg' > 
+     flash "
+13: 		</div>
+14: 		
+15: 	</div>
+16: % if ('error') {
+17: %	<span class='red_msg' >
+18: %     flash 'error'
+19: %  </span>
+20: % }
+21: 
+22: % if ('notice') {
+23: % <span class='green_msg' >
+
+[Sun May 14 18:32:30 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 18:32:30 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 18:32:30 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 18:32:30 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 18:32:30 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:32:30 2017] [debug] 500 Internal Server Error (0.054561s, 18.328/s)
+[Sun May 14 18:34:39 2017] [debug] GET "/"
+[Sun May 14 18:34:39 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:34:39 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:34:39 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:34:39 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:34:39 2017] [debug] 200 OK (0.00929899999999995s, 107.538/s)
+[Sun May 14 18:35:51 2017] [debug] GET "/"
+[Sun May 14 18:35:51 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:35:51 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:35:51 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:35:51 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:35:51 2017] [debug] 200 OK (0.010413s, 96.034/s)
+[Sun May 14 18:35:56 2017] [debug] POST "/login"
+[Sun May 14 18:35:56 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:35:56 2017] [debug] 302 Found (0.002416s, 413.907/s)
+[Sun May 14 18:35:56 2017] [debug] GET "/"
+[Sun May 14 18:35:56 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:35:56 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:35:56 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:35:56 2017] [debug] 200 OK (0.001462s, 683.995/s)
+[Sun May 14 18:36:14 2017] [debug] GET "/"
+[Sun May 14 18:36:14 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:36:14 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:36:14 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:36:14 2017] [debug] 200 OK (0.001521s, 657.462/s)
+[Sun May 14 18:36:18 2017] [debug] POST "/login"
+[Sun May 14 18:36:18 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:36:18 2017] [debug] 302 Found (0.001302s, 768.049/s)
+[Sun May 14 18:36:18 2017] [debug] GET "/"
+[Sun May 14 18:36:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:36:18 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:36:18 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:36:18 2017] [debug] 200 OK (0.001835s, 544.959/s)
+[Sun May 14 18:37:16 2017] [debug] GET "/"
+[Sun May 14 18:37:16 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:37:16 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:37:16 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:37:16 2017] [debug] 200 OK (0.001419s, 704.722/s)
+[Sun May 14 18:38:16 2017] [debug] GET "/"
+[Sun May 14 18:38:16 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:38:16 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:38:16 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:38:16 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:38:16 2017] [debug] 200 OK (0.009976s, 100.241/s)
+[Sun May 14 18:39:07 2017] [debug] GET "/"
+[Sun May 14 18:39:07 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:39:07 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:39:07 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:39:07 2017] [debug] 200 OK (0.002146s, 465.983/s)
+[Sun May 14 18:39:15 2017] [debug] POST "/login"
+[Sun May 14 18:39:15 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:39:15 2017] [debug] 302 Found (0.002641s, 378.644/s)
+[Sun May 14 18:39:15 2017] [debug] GET "/"
+[Sun May 14 18:39:15 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:39:15 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:39:15 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:39:15 2017] [debug] 200 OK (0.001694s, 590.319/s)
+[Sun May 14 18:40:35 2017] [debug] POST "/login"
+[Sun May 14 18:40:35 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:40:35 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:40:35 2017] [debug] 302 Found (0.00371s, 269.542/s)
+[Sun May 14 18:40:35 2017] [debug] GET "/"
+[Sun May 14 18:40:35 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:40:35 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:40:35 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:40:35 2017] [debug] 200 OK (0.007589s, 131.770/s)
+[Sun May 14 18:41:02 2017] [debug] POST "/login"
+[Sun May 14 18:41:02 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:41:02 2017] [debug] 302 Found (0.001514s, 660.502/s)
+[Sun May 14 18:41:02 2017] [debug] GET "/"
+[Sun May 14 18:41:02 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:41:02 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:41:02 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:41:02 2017] [debug] 200 OK (0.001694s, 590.319/s)
+[Sun May 14 18:43:52 2017] [debug] GET "/"
+[Sun May 14 18:43:52 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:43:52 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 18:43:52 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 18:43:52 2017] [debug] 200 OK (0.001673s, 597.729/s)
+[Sun May 14 18:47:13 2017] [debug] POST "/login"
+[Sun May 14 18:47:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 18:47:13 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:47:13 2017] [debug] 302 Found (0.003785s, 264.201/s)
+[Sun May 14 18:47:13 2017] [debug] GET "/"
+[Sun May 14 18:47:13 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:47:13 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:47:13 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:47:13 2017] [debug] 200 OK (0.007557s, 132.328/s)
+[Sun May 14 18:50:44 2017] [debug] GET "/"
+[Sun May 14 18:50:44 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:50:44 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:50:44 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:50:44 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:50:44 2017] [debug] 200 OK (0.008375s, 119.403/s)
+[Sun May 14 18:58:30 2017] [debug] GET "/"
+[Sun May 14 18:58:30 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 18:58:30 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 18:58:30 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 18:58:30 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 18:58:30 2017] [debug] 200 OK (0.010535s, 94.922/s)
+[Sun May 14 18:58:47 2017] [debug] POST "/signup"
+[Sun May 14 18:58:47 2017] [error] Global symbol "$login" requires explicit package name (did you forget to declare "my $login"?) at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Users.pm line 26.
+Compilation failed in require at (eval 118) line 1.
+
+[Sun May 14 18:58:47 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 18:58:47 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 18:58:47 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 18:58:47 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 18:58:47 2017] [debug] 500 Internal Server Error (0.039744s, 25.161/s)
+[Sun May 14 18:58:55 2017] [debug] POST "/signup"
+[Sun May 14 18:58:55 2017] [error] Attempt to reload Notes/Controller/Users.pm aborted.
+Compilation failed in require at (eval 121) line 1.
+
+[Sun May 14 18:58:55 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 18:58:55 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 18:58:55 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sun May 14 18:58:55 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sun May 14 18:58:55 2017] [debug] 500 Internal Server Error (0.009545s, 104.767/s)
+[Sun May 14 19:15:05 2017] [debug] GET "/"
+[Sun May 14 19:15:05 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:15:05 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 19:15:05 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 19:15:05 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 19:15:05 2017] [debug] 200 OK (0.010242s, 97.637/s)
+[Sun May 14 19:16:13 2017] [debug] GET "/"
+[Sun May 14 19:16:13 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:16:13 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 19:16:13 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 19:16:13 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 19:16:13 2017] [debug] 200 OK (0.010836s, 92.285/s)
+[Sun May 14 19:17:03 2017] [debug] GET "/"
+[Sun May 14 19:17:03 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:17:03 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:17:03 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:17:03 2017] [debug] 200 OK (0.001649s, 606.428/s)
+[Sun May 14 19:18:15 2017] [debug] GET "/"
+[Sun May 14 19:18:15 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:18:15 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:18:15 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:18:15 2017] [debug] 200 OK (0.001645s, 607.903/s)
+[Sun May 14 19:18:39 2017] [debug] GET "/"
+[Sun May 14 19:18:39 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:18:39 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:18:39 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:18:39 2017] [debug] 200 OK (0.001909s, 523.834/s)
+[Sun May 14 19:21:26 2017] [debug] GET "/"
+[Sun May 14 19:21:26 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:21:26 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:21:26 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:21:26 2017] [debug] 200 OK (0.001791s, 558.347/s)
+[Sun May 14 19:21:58 2017] [debug] GET "/"
+[Sun May 14 19:21:58 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:21:58 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:21:58 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:21:58 2017] [debug] 200 OK (0.00153s, 653.595/s)
+[Sun May 14 19:22:11 2017] [debug] GET "/"
+[Sun May 14 19:22:11 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:22:11 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:22:11 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:22:11 2017] [debug] 200 OK (0.00157s, 636.943/s)
+[Sun May 14 19:22:28 2017] [debug] GET "/"
+[Sun May 14 19:22:28 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:22:28 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:22:28 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:22:28 2017] [debug] 200 OK (0.001551s, 644.745/s)
+[Sun May 14 19:23:21 2017] [debug] GET "/"
+[Sun May 14 19:23:21 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:23:21 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:23:21 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:23:21 2017] [debug] 200 OK (0.001543s, 648.088/s)
+[Sun May 14 19:23:30 2017] [debug] GET "/"
+[Sun May 14 19:23:30 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:23:30 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:23:30 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:23:30 2017] [debug] 200 OK (0.001577s, 634.115/s)
+[Sun May 14 19:23:36 2017] [debug] GET "/"
+[Sun May 14 19:23:36 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:23:36 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:23:36 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:23:36 2017] [debug] 200 OK (0.00165s, 606.061/s)
+[Sun May 14 19:24:50 2017] [debug] GET "/"
+[Sun May 14 19:24:50 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:24:50 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 19:24:50 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 19:24:50 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 19:24:50 2017] [debug] 200 OK (0.009836s, 101.667/s)
+[Sun May 14 19:29:24 2017] [debug] GET "/"
+[Sun May 14 19:29:24 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:29:24 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:29:24 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:29:24 2017] [debug] 200 OK (0.001564s, 639.386/s)
+[Sun May 14 19:35:20 2017] [debug] GET "/"
+[Sun May 14 19:35:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:35:20 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 19:35:20 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 19:35:20 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 19:35:20 2017] [debug] 200 OK (0.009789s, 102.155/s)
+[Sun May 14 19:35:47 2017] [debug] GET "/"
+[Sun May 14 19:35:47 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:35:47 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:35:47 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:35:47 2017] [debug] 200 OK (0.001663s, 601.323/s)
+[Sun May 14 19:36:12 2017] [debug] GET "/"
+[Sun May 14 19:36:12 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:36:12 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:36:12 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:36:12 2017] [debug] 200 OK (0.001612s, 620.347/s)
+[Sun May 14 19:36:35 2017] [debug] GET "/"
+[Sun May 14 19:36:35 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:36:35 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:36:35 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:36:35 2017] [debug] 200 OK (0.001603s, 623.830/s)
+[Sun May 14 19:36:41 2017] [debug] GET "/"
+[Sun May 14 19:36:41 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:36:41 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:36:41 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:36:41 2017] [debug] 200 OK (0.001514s, 660.502/s)
+[Sun May 14 19:37:04 2017] [debug] GET "/"
+[Sun May 14 19:37:04 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:37:04 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:37:04 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:37:04 2017] [debug] 200 OK (0.00166s, 602.410/s)
+[Sun May 14 19:39:10 2017] [debug] GET "/"
+[Sun May 14 19:39:10 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:39:10 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:39:10 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:39:10 2017] [debug] 200 OK (0.001632s, 612.745/s)
+[Sun May 14 19:41:31 2017] [debug] GET "/"
+[Sun May 14 19:41:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:41:31 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:41:31 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:41:31 2017] [debug] 200 OK (0.001416s, 706.215/s)
+[Sun May 14 19:42:31 2017] [debug] GET "/"
+[Sun May 14 19:42:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:42:31 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:42:31 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:42:31 2017] [debug] 200 OK (0.001636s, 611.247/s)
+[Sun May 14 19:43:49 2017] [debug] GET "/"
+[Sun May 14 19:43:49 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:43:49 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:43:49 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:43:49 2017] [debug] 200 OK (0.001608s, 621.891/s)
+[Sun May 14 19:45:16 2017] [debug] GET "/"
+[Sun May 14 19:45:16 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:45:16 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:45:16 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:45:16 2017] [debug] 200 OK (0.001753s, 570.451/s)
+[Sun May 14 19:45:25 2017] [debug] GET "/"
+[Sun May 14 19:45:25 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:45:25 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:45:25 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:45:25 2017] [debug] 200 OK (0.001756s, 569.476/s)
+[Sun May 14 19:45:48 2017] [debug] GET "/"
+[Sun May 14 19:45:48 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:45:48 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:45:48 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:45:48 2017] [debug] 200 OK (0.001645s, 607.903/s)
+[Sun May 14 19:45:56 2017] [debug] GET "/"
+[Sun May 14 19:45:56 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:45:56 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:45:56 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:45:56 2017] [debug] 200 OK (0.001599s, 625.391/s)
+[Sun May 14 19:46:29 2017] [debug] GET "/"
+[Sun May 14 19:46:29 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:46:29 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:46:29 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:46:29 2017] [debug] 200 OK (0.00163s, 613.497/s)
+[Sun May 14 19:47:07 2017] [debug] GET "/"
+[Sun May 14 19:47:07 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:47:07 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:47:07 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:47:07 2017] [debug] 200 OK (0.001772s, 564.334/s)
+[Sun May 14 19:47:18 2017] [debug] GET "/"
+[Sun May 14 19:47:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:47:18 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:47:18 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:47:18 2017] [debug] 200 OK (0.001828s, 547.046/s)
+[Sun May 14 19:47:41 2017] [debug] GET "/"
+[Sun May 14 19:47:41 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:47:41 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:47:41 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:47:41 2017] [debug] 200 OK (0.001409s, 709.723/s)
+[Sun May 14 19:48:15 2017] [debug] GET "/"
+[Sun May 14 19:48:15 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:48:15 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:48:15 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:48:15 2017] [debug] 200 OK (0.001363s, 733.676/s)
+[Sun May 14 19:48:26 2017] [debug] GET "/"
+[Sun May 14 19:48:26 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:48:26 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:48:26 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:48:26 2017] [debug] 200 OK (0.001695s, 589.971/s)
+[Sun May 14 19:58:35 2017] [debug] GET "/"
+[Sun May 14 19:58:35 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:58:35 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 19:58:35 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 19:58:35 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 19:58:35 2017] [debug] 200 OK (0.014084s, 71.003/s)
+[Sun May 14 19:59:17 2017] [debug] GET "/"
+[Sun May 14 19:59:17 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:59:17 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:59:17 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:59:17 2017] [debug] 200 OK (0.001382s, 723.589/s)
+[Sun May 14 19:59:20 2017] [debug] GET "/"
+[Sun May 14 19:59:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:59:20 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:59:20 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:59:20 2017] [debug] 200 OK (0.001418s, 705.219/s)
+[Sun May 14 19:59:41 2017] [debug] GET "/"
+[Sun May 14 19:59:41 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:59:41 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:59:41 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:59:41 2017] [debug] 200 OK (0.00149s, 671.141/s)
+[Sun May 14 19:59:54 2017] [debug] GET "/"
+[Sun May 14 19:59:54 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 19:59:54 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 19:59:54 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 19:59:54 2017] [debug] 200 OK (0.001367s, 731.529/s)
+[Sun May 14 20:02:06 2017] [debug] GET "/"
+[Sun May 14 20:02:06 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:02:06 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 20:02:06 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 20:02:06 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:02:06 2017] [debug] 200 OK (0.008489s, 117.800/s)
+[Sun May 14 20:02:54 2017] [debug] GET "/"
+[Sun May 14 20:02:54 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:02:54 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 20:02:54 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 20:02:54 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:02:54 2017] [debug] 200 OK (0.011192s, 89.350/s)
+[Sun May 14 20:03:02 2017] [debug] GET "/"
+[Sun May 14 20:03:02 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:03:02 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 20:03:02 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 20:03:02 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:03:02 2017] [debug] 200 OK (0.009816s, 101.874/s)
+[Sun May 14 20:03:20 2017] [debug] GET "/"
+[Sun May 14 20:03:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:03:20 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 20:03:20 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 20:03:20 2017] [debug] 200 OK (0.001513s, 660.939/s)
+[Sun May 14 20:03:25 2017] [debug] GET "/"
+[Sun May 14 20:03:25 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:03:25 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 20:03:25 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 20:03:25 2017] [debug] 200 OK (0.001644s, 608.273/s)
+[Sun May 14 20:03:34 2017] [debug] GET "/"
+[Sun May 14 20:03:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:03:34 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 20:03:34 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 20:03:34 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:03:34 2017] [debug] 200 OK (0.01145s, 87.336/s)
+[Sun May 14 20:04:56 2017] [debug] GET "/"
+[Sun May 14 20:04:56 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:04:56 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 20:04:56 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 20:04:56 2017] [debug] 200 OK (0.00157s, 636.943/s)
+[Sun May 14 20:05:16 2017] [debug] GET "/"
+[Sun May 14 20:05:16 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:05:16 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 20:05:16 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 20:05:16 2017] [debug] 200 OK (0.001404s, 712.251/s)
+[Sun May 14 20:05:27 2017] [debug] GET "/"
+[Sun May 14 20:05:27 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:05:27 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 20:05:27 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 20:05:27 2017] [debug] 200 OK (0.001393s, 717.875/s)
+[Sun May 14 20:08:58 2017] [debug] POST "/signup"
+[Sun May 14 20:08:58 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:08:58 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:08:58 2017] [debug] 302 Found (0.003244s, 308.261/s)
+[Sun May 14 20:08:58 2017] [debug] GET "/"
+[Sun May 14 20:08:58 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:08:58 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 20:08:58 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 20:08:58 2017] [debug] 200 OK (0.00899s, 111.235/s)
+[Sun May 14 20:10:59 2017] [debug] POST "/signup"
+[Sun May 14 20:10:59 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:10:59 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:10:59 2017] [debug] 302 Found (0.00352s, 284.091/s)
+[Sun May 14 20:10:59 2017] [debug] GET "/"
+[Sun May 14 20:10:59 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:10:59 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 20:10:59 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 20:10:59 2017] [debug] 200 OK (0.009314s, 107.365/s)
+[Sun May 14 20:11:56 2017] [debug] GET "/"
+[Sun May 14 20:11:56 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 20:11:56 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 20:11:56 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 20:11:56 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:11:56 2017] [debug] 200 OK (0.012215s, 81.867/s)
+[Sun May 14 20:20:47 2017] [debug] POST "/signup"
+[Sun May 14 20:20:47 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:20:47 2017] [error] Can't use an undefined value as an ARRAY reference at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:20:47 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:20:47 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:20:47 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:20:47 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:20:47 2017] [debug] 500 Internal Server Error (0.047498s, 21.054/s)
+[Sun May 14 20:27:19 2017] [debug] POST "/signup"
+[Sun May 14 20:27:19 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:27:19 2017] [error] Can't locate object method "error" via package "Notes::Model" at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:27:19 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:27:19 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:27:19 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:27:19 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:27:19 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:27:19 2017] [debug] 500 Internal Server Error (0.040676s, 24.585/s)
+[Sun May 14 20:33:53 2017] [debug] POST "/signup"
+[Sun May 14 20:33:53 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:33:53 2017] [error] Can't locate object method "error" via package "Notes::Model" at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:33:53 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:33:53 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:33:53 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:33:53 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:33:53 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:33:53 2017] [debug] 500 Internal Server Error (0.036767s, 27.198/s)
+[Sun May 14 20:33:53 2017] [debug] POST "/signup"
+[Sun May 14 20:33:53 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:33:53 2017] [error] Can't locate object method "error" via package "Notes::Model" at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:33:53 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:33:53 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:33:53 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sun May 14 20:33:53 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sun May 14 20:33:53 2017] [debug] 500 Internal Server Error (0.009965s, 100.351/s)
+[Sun May 14 20:33:53 2017] [debug] POST "/signup"
+[Sun May 14 20:33:53 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:33:53 2017] [error] Can't locate object method "error" via package "Notes::Model" at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:33:53 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:33:53 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:33:53 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sun May 14 20:33:53 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sun May 14 20:33:53 2017] [debug] 500 Internal Server Error (0.010257s, 97.494/s)
+[Sun May 14 20:33:57 2017] [debug] POST "/signup"
+[Sun May 14 20:33:57 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:33:57 2017] [error] Can't locate object method "error" via package "Notes::Model" at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:33:57 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:33:57 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:33:57 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sun May 14 20:33:57 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sun May 14 20:33:57 2017] [debug] 500 Internal Server Error (0.011783s, 84.868/s)
+[Sun May 14 20:35:37 2017] [debug] POST "/signup"
+[Sun May 14 20:35:37 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:35:37 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@mail.ru)' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:35:37 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:35:37 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:35:37 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:35:37 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:35:37 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:35:37 2017] [debug] 500 Internal Server Error (0.051381s, 19.462/s)
+[Sun May 14 20:36:27 2017] [debug] POST "/signup"
+[Sun May 14 20:36:27 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:36:27 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@mail.ru)' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:36:27 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:36:27 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:36:27 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:36:27 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:36:27 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:36:27 2017] [debug] 500 Internal Server Error (0.044034s, 22.710/s)
+[Sun May 14 20:38:59 2017] [debug] POST "/signup"
+[Sun May 14 20:38:59 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:38:59 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:38:59 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:38:59 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:38:59 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:38:59 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:38:59 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:38:59 2017] [debug] 500 Internal Server Error (0.049507s, 20.199/s)
+[Sun May 14 20:42:27 2017] [debug] POST "/signup"
+[Sun May 14 20:42:28 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:42:28 2017] [error] Column count doesn't match value count at row 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:42:28 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:42:28 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:42:28 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:42:28 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:42:28 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:42:28 2017] [debug] 500 Internal Server Error (0.067458s, 14.824/s)
+[Sun May 14 20:43:37 2017] [debug] POST "/signup"
+[Sun May 14 20:43:37 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:43:37 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',1 )' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:43:37 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:43:37 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:43:37 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:43:37 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:43:37 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:43:37 2017] [debug] 500 Internal Server Error (0.040988s, 24.397/s)
+[Sun May 14 20:45:06 2017] [debug] POST "/signup"
+[Sun May 14 20:45:06 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:45:06 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@mail.ru )' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 26.
+
+[Sun May 14 20:45:06 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:45:06 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:45:06 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:45:06 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:45:06 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:45:06 2017] [debug] 500 Internal Server Error (0.052612s, 19.007/s)
+[Sun May 14 20:47:29 2017] [debug] POST "/signup"
+[Sun May 14 20:47:29 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:47:29 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@mail.ru,1234,pavelnen )' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:47:29 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:47:29 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:47:29 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:47:29 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:47:29 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:47:29 2017] [debug] 500 Internal Server Error (0.042633s, 23.456/s)
+[Sun May 14 20:49:10 2017] [debug] POST "/signup"
+[Sun May 14 20:49:10 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:49:10 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@mail.ru )' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:49:10 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:49:10 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:49:10 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:49:10 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:49:10 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:49:10 2017] [debug] 500 Internal Server Error (0.061382s, 16.291/s)
+[Sun May 14 20:59:13 2017] [debug] POST "/signup"
+[Sun May 14 20:59:13 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 20:59:13 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@mail.ru , pavelnen , 1234 )' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 20:59:13 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 20:59:13 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 20:59:13 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 20:59:13 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 20:59:13 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 20:59:13 2017] [debug] 500 Internal Server Error (0.045599s, 21.930/s)
+[Sun May 14 21:00:19 2017] [debug] POST "/signup"
+[Sun May 14 21:00:19 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 21:00:19 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:00:19 2017] [debug] 302 Found (0.107401s, 9.311/s)
+[Sun May 14 21:00:19 2017] [debug] GET "/main"
+[Sun May 14 21:00:19 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:00:19 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:00:19 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:00:19 2017] [error] Global symbol "$user" requires explicit package name (did you forget to declare "my $user"?) at template layouts/defwall.html.ep line 15.
+10: 	<div class="hat">
+11: 		<div class="hat logo">
+12: 			<h1>iNotes</h1>
+13: 		</div>
+14: 		<div class="usermenu">
+15: 			Привет,<%= $user %>!
+16: 		</div>
+17: 	</div>
+18: 	<div class="board"><%= content %></div>
+19: 	
+20: 
+
+[Sun May 14 21:00:19 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 21:00:19 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 21:00:19 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 21:00:19 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 21:00:19 2017] [debug] 500 Internal Server Error (0.065269s, 15.321/s)
+[Sun May 14 21:05:08 2017] [debug] GET "/main"
+[Sun May 14 21:05:08 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:05:08 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:05:08 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:05:08 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:05:08 2017] [error] Bareword "username" not allowed while "strict subs" in use at template layouts/defwall.html.ep line 15.
+10: 	<div class="hat">
+11: 		<div class="hat logo">
+12: 			<h1>iNotes</h1>
+13: 		</div>
+14: 		<div class="usermenu">
+15: 			Привет,<%= session username %>!
+16: 		</div>
+17: 	</div>
+18: 	<div class="board"><%= content %></div>
+19: 	
+20: 
+
+[Sun May 14 21:05:08 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 21:05:08 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 21:05:08 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 21:05:08 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 21:05:08 2017] [debug] 500 Internal Server Error (0.056424s, 17.723/s)
+[Sun May 14 21:05:11 2017] [debug] GET "/main"
+[Sun May 14 21:05:11 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:05:11 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Sun May 14 21:05:11 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:05:11 2017] [error] Bareword "username" not allowed while "strict subs" in use at template layouts/defwall.html.ep line 15.
+10: 	<div class="hat">
+11: 		<div class="hat logo">
+12: 			<h1>iNotes</h1>
+13: 		</div>
+14: 		<div class="usermenu">
+15: 			Привет,<%= session username %>!
+16: 		</div>
+17: 	</div>
+18: 	<div class="board"><%= content %></div>
+19: 	
+20: 
+
+[Sun May 14 21:05:11 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 21:05:11 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 21:05:11 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sun May 14 21:05:11 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sun May 14 21:05:11 2017] [debug] 500 Internal Server Error (0.014129s, 70.776/s)
+[Sun May 14 21:05:42 2017] [debug] GET "/main"
+[Sun May 14 21:05:42 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:05:42 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:05:42 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:05:42 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:05:42 2017] [debug] 200 OK (0.010971s, 91.149/s)
+[Sun May 14 21:07:14 2017] [debug] GET "/main"
+[Sun May 14 21:07:14 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:07:14 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:07:14 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:07:14 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:07:14 2017] [error] Bareword "username" not allowed while "strict subs" in use at template layouts/defwall.html.ep line 15.
+10: 	<div class="hat">
+11: 		<div class="hat logo">
+12: 			<h1>iNotes</h1>
+13: 		</div>
+14: 		<div class="usermenu">
+15: 			Привет,<%= username %>!
+16: 		</div>
+17: 	</div>
+18: 	<div class="board"><%= content %></div>
+19: 	
+20: 
+
+[Sun May 14 21:07:14 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 21:07:14 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 21:07:14 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 21:07:14 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 21:07:14 2017] [debug] 500 Internal Server Error (0.043056s, 23.226/s)
+[Sun May 14 21:08:21 2017] [debug] GET "/main"
+[Sun May 14 21:08:21 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:08:21 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:08:21 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:08:21 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:08:21 2017] [debug] 200 OK (0.008528s, 117.261/s)
+[Sun May 14 21:09:16 2017] [debug] GET "/main"
+[Sun May 14 21:09:16 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:09:16 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:09:16 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:09:16 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:09:16 2017] [debug] 200 OK (0.00815s, 122.699/s)
+[Sun May 14 21:09:57 2017] [debug] GET "/main"
+[Sun May 14 21:09:57 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:09:57 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:09:57 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:09:57 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:09:57 2017] [error] Global symbol "$username" requires explicit package name (did you forget to declare "my $username"?) at template layouts/defwall.html.ep line 15.
+10: 	<div class="hat">
+11: 		<div class="hat logo">
+12: 			<h1>iNotes</h1>
+13: 		</div>
+14: 		<div class="usermenu">
+15: 			Привет, <%= $username %>!
+16: 		</div>
+17: 	</div>
+18: 	<div class="board"><%= content %></div>
+19: 	
+20: 
+
+[Sun May 14 21:09:57 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 21:09:57 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 21:09:57 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 21:09:57 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 21:09:57 2017] [debug] 500 Internal Server Error (0.062268s, 16.060/s)
+[Sun May 14 21:11:46 2017] [debug] GET "/main"
+[Sun May 14 21:11:46 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:11:46 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:11:46 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:11:46 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:11:46 2017] [debug] 200 OK (0.007096s, 140.924/s)
+[Sun May 14 21:12:04 2017] [debug] GET "/main"
+[Sun May 14 21:12:04 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:12:04 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:12:04 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:12:04 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:12:04 2017] [debug] 200 OK (0.01227s, 81.500/s)
+[Sun May 14 21:13:17 2017] [debug] GET "/main"
+[Sun May 14 21:13:17 2017] [error] Bareword "username" not allowed while "strict subs" in use at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Users.pm line 75.
+Compilation failed in require at (eval 115) line 1.
+
+[Sun May 14 21:13:17 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 21:13:17 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 21:13:17 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 21:13:17 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 21:13:17 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:13:17 2017] [debug] 500 Internal Server Error (0.036013s, 27.768/s)
+[Sun May 14 21:43:59 2017] [debug] GET "/main"
+[Sun May 14 21:43:59 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:43:59 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:43:59 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:43:59 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:43:59 2017] [debug] 200 OK (0.010668s, 93.738/s)
+[Sun May 14 21:44:07 2017] [debug] GET "/"
+[Sun May 14 21:44:07 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 21:44:07 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 21:44:07 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 21:44:07 2017] [debug] 200 OK (0.06001s, 16.664/s)
+[Sun May 14 21:56:48 2017] [debug] GET "/main"
+[Sun May 14 21:56:48 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:56:48 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:56:48 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:56:48 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:56:48 2017] [debug] 200 OK (0.00806s, 124.069/s)
+[Sun May 14 21:57:01 2017] [debug] GET "/main"
+[Sun May 14 21:57:01 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:57:01 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:57:01 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:57:01 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:57:01 2017] [debug] 200 OK (0.009671s, 103.402/s)
+[Sun May 14 21:59:13 2017] [debug] GET "/main"
+[Sun May 14 21:59:13 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:59:13 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 21:59:13 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 21:59:13 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 21:59:13 2017] [debug] 200 OK (0.008982s, 111.334/s)
+[Sun May 14 21:59:17 2017] [debug] GET "/logout"
+[Sun May 14 21:59:17 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Sun May 14 21:59:17 2017] [debug] 302 Found (0.001777s, 562.746/s)
+[Sun May 14 21:59:17 2017] [debug] GET "/"
+[Sun May 14 21:59:17 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 21:59:17 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 21:59:17 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 21:59:17 2017] [debug] 200 OK (0.00704s, 142.045/s)
+[Sun May 14 21:59:22 2017] [debug] GET "/main"
+[Sun May 14 21:59:22 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:59:22 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Sun May 14 21:59:22 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Sun May 14 21:59:22 2017] [debug] 200 OK (0.001525s, 655.738/s)
+[Sun May 14 21:59:23 2017] [debug] GET "/main"
+[Sun May 14 21:59:23 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:59:23 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Sun May 14 21:59:23 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Sun May 14 21:59:23 2017] [debug] 200 OK (0.001744s, 573.394/s)
+[Sun May 14 21:59:26 2017] [debug] GET "/main"
+[Sun May 14 21:59:26 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 21:59:26 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Sun May 14 21:59:26 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Sun May 14 21:59:26 2017] [debug] 200 OK (0.001517s, 659.196/s)
+[Sun May 14 22:09:01 2017] [debug] GET "/main"
+[Sun May 14 22:09:01 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 22:09:01 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 22:09:01 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:09:01 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 22:09:01 2017] [debug] 200 OK (0.009865s, 101.368/s)
+[Sun May 14 22:09:04 2017] [debug] GET "/main"
+[Sun May 14 22:09:04 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 22:09:04 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Sun May 14 22:09:04 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Sun May 14 22:09:04 2017] [debug] 200 OK (0.001801s, 555.247/s)
+[Sun May 14 22:09:05 2017] [debug] GET "/logout"
+[Sun May 14 22:09:05 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Sun May 14 22:09:05 2017] [debug] 302 Found (0.002418s, 413.565/s)
+[Sun May 14 22:09:05 2017] [debug] GET "/"
+[Sun May 14 22:09:05 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:09:05 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:09:05 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:09:05 2017] [debug] 200 OK (0.00747s, 133.869/s)
+[Sun May 14 22:10:30 2017] [debug] GET "/main"
+[Sun May 14 22:10:30 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 22:10:30 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Sun May 14 22:10:30 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Sun May 14 22:10:30 2017] [debug] 200 OK (0.001434s, 697.350/s)
+[Sun May 14 22:28:57 2017] [debug] GET "/"
+[Sun May 14 22:28:57 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:28:57 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:28:57 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:28:57 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:28:57 2017] [debug] 200 OK (0.010482s, 95.402/s)
+[Sun May 14 22:29:13 2017] [debug] GET "/"
+[Sun May 14 22:29:13 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:29:13 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:29:13 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:29:13 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:29:13 2017] [debug] 200 OK (0.008612s, 116.117/s)
+[Sun May 14 22:30:09 2017] [debug] GET "/"
+[Sun May 14 22:30:09 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:30:09 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:30:09 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:30:09 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:30:09 2017] [debug] 200 OK (0.008931s, 111.970/s)
+[Sun May 14 22:30:23 2017] [debug] GET "/"
+[Sun May 14 22:30:23 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:30:23 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:30:23 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:30:23 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:30:23 2017] [debug] 200 OK (0.01261s, 79.302/s)
+[Sun May 14 22:31:38 2017] [debug] GET "/"
+[Sun May 14 22:31:38 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:31:38 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:31:38 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:31:38 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:31:38 2017] [debug] 200 OK (0.012425s, 80.483/s)
+[Sun May 14 22:33:16 2017] [debug] POST "/signup"
+[Sun May 14 22:33:16 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 22:33:16 2017] [error] MySQL server has gone away at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 22:33:16 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 22:33:16 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 22:33:16 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 22:33:16 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 22:33:16 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:33:16 2017] [debug] 500 Internal Server Error (0.049921s, 20.032/s)
+[Sun May 14 22:35:48 2017] [debug] POST "/signup"
+[Sun May 14 22:35:48 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 22:35:48 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@qwe.rt , 1234 , Vladiko )' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 22:35:48 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 22:35:48 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 22:35:48 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 22:35:48 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 22:35:48 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:35:48 2017] [debug] 500 Internal Server Error (0.071068s, 14.071/s)
+[Sun May 14 22:36:07 2017] [debug] POST "/login"
+[Sun May 14 22:36:07 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 22:36:07 2017] [debug] 302 Found (0.00248s, 403.226/s)
+[Sun May 14 22:36:07 2017] [debug] GET "/"
+[Sun May 14 22:36:07 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:36:07 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:36:07 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:36:07 2017] [debug] 200 OK (0.007115s, 140.548/s)
+[Sun May 14 22:36:17 2017] [debug] POST "/login"
+[Sun May 14 22:36:17 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 22:36:17 2017] [debug] 302 Found (0.001409s, 709.723/s)
+[Sun May 14 22:36:17 2017] [debug] GET "/"
+[Sun May 14 22:36:17 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:36:17 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 22:36:17 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 22:36:17 2017] [debug] 200 OK (0.001632s, 612.745/s)
+[Sun May 14 22:37:25 2017] [debug] POST "/login"
+[Sun May 14 22:37:25 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 22:37:25 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:37:25 2017] [debug] 302 Found (0.003604s, 277.469/s)
+[Sun May 14 22:37:25 2017] [debug] GET "/"
+[Sun May 14 22:37:25 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:37:25 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:37:25 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:37:25 2017] [debug] 200 OK (0.009478s, 105.507/s)
+[Sun May 14 22:38:14 2017] [debug] POST "/login"
+[Sun May 14 22:38:14 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 22:38:14 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:38:14 2017] [debug] 302 Found (0.003643s, 274.499/s)
+[Sun May 14 22:38:14 2017] [debug] GET "/"
+[Sun May 14 22:38:14 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:38:14 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:38:14 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:38:14 2017] [debug] 200 OK (0.008s, 125.000/s)
+[Sun May 14 22:40:11 2017] [debug] POST "/login"
+[Sun May 14 22:40:11 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 22:40:11 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:40:11 2017] [debug] 302 Found (0.045944s, 21.766/s)
+[Sun May 14 22:40:11 2017] [debug] GET "/"
+[Sun May 14 22:40:11 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:40:11 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:40:11 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:40:11 2017] [debug] 200 OK (0.008051s, 124.208/s)
+[Sun May 14 22:42:44 2017] [debug] POST "/login"
+[Sun May 14 22:42:44 2017] [error] Global symbol "%user" requires explicit package name (did you forget to declare "my %user"?) at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Auths.pm line 25.
+Compilation failed in require at (eval 115) line 1.
+
+[Sun May 14 22:42:44 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 22:42:44 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 22:42:44 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 22:42:45 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 22:42:45 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:42:45 2017] [debug] 500 Internal Server Error (0.039786s, 25.134/s)
+[Sun May 14 22:43:05 2017] [debug] POST "/login"
+[Sun May 14 22:43:05 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 22:43:05 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:43:05 2017] [debug] 302 Found (0.003484s, 287.026/s)
+[Sun May 14 22:43:05 2017] [debug] GET "/"
+[Sun May 14 22:43:05 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:43:05 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:43:05 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:43:05 2017] [debug] 200 OK (0.009134s, 109.481/s)
+[Sun May 14 22:44:37 2017] [debug] POST "/login"
+[Sun May 14 22:44:37 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 22:44:37 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:44:37 2017] [debug] 302 Found (0.139947s, 7.146/s)
+[Sun May 14 22:44:37 2017] [debug] GET "/main"
+[Sun May 14 22:44:37 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 22:44:37 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 22:44:37 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 22:44:37 2017] [debug] 200 OK (0.007264s, 137.665/s)
+[Sun May 14 22:44:44 2017] [debug] GET "/logout"
+[Sun May 14 22:44:44 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Sun May 14 22:44:44 2017] [debug] 302 Found (0.000859s, 1164.144/s)
+[Sun May 14 22:44:44 2017] [debug] GET "/"
+[Sun May 14 22:44:44 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:44:44 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:44:44 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:44:44 2017] [debug] 200 OK (0.006936s, 144.175/s)
+[Sun May 14 22:45:25 2017] [debug] POST "/signup"
+[Sun May 14 22:45:25 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 22:45:25 2017] [error] MySQL server has gone away at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 22:45:25 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 22:45:25 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 22:45:25 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 22:45:25 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 22:45:25 2017] [debug] 500 Internal Server Error (0.04004s, 24.975/s)
+[Sun May 14 22:47:59 2017] [debug] POST "/signup"
+[Sun May 14 22:47:59 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 22:48:00 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:48:00 2017] [debug] 302 Found (0.153073s, 6.533/s)
+[Sun May 14 22:48:00 2017] [debug] GET "/main"
+[Sun May 14 22:48:00 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 22:48:00 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 22:48:00 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 22:48:00 2017] [debug] 200 OK (0.005298s, 188.750/s)
+[Sun May 14 22:48:30 2017] [debug] GET "/logout"
+[Sun May 14 22:48:30 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Sun May 14 22:48:30 2017] [debug] 302 Found (0.001779s, 562.114/s)
+[Sun May 14 22:48:30 2017] [debug] GET "/"
+[Sun May 14 22:48:30 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:48:30 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:48:30 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:48:30 2017] [debug] 200 OK (0.00698s, 143.266/s)
+[Sun May 14 22:55:40 2017] [debug] POST "/signup"
+[Sun May 14 22:55:40 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 22:55:40 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:55:40 2017] [debug] 302 Found (0.00386s, 259.067/s)
+[Sun May 14 22:55:40 2017] [debug] GET "/"
+[Sun May 14 22:55:40 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:55:40 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:55:40 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:55:40 2017] [debug] 200 OK (0.008546s, 117.014/s)
+[Sun May 14 22:56:13 2017] [debug] POST "/signup"
+[Sun May 14 22:56:13 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 22:56:13 2017] [error] MySQL server has gone away at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 22:56:13 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 22:56:13 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 22:56:13 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 22:56:13 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 22:56:13 2017] [debug] 500 Internal Server Error (0.045152s, 22.147/s)
+[Sun May 14 22:56:55 2017] [debug] POST "/signup"
+[Sun May 14 22:56:55 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 22:56:55 2017] [error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '  , nps-11@mail.ru , pavelnen , 1234 )' at line 1 at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 22:56:55 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 22:56:55 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 22:56:55 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 22:56:55 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 22:56:55 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:56:55 2017] [debug] 500 Internal Server Error (0.115451s, 8.662/s)
+[Sun May 14 22:58:40 2017] [debug] POST "/signup"
+[Sun May 14 22:58:40 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 22:58:40 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:58:40 2017] [debug] 302 Found (0.163593s, 6.113/s)
+[Sun May 14 22:58:40 2017] [debug] GET "/main"
+[Sun May 14 22:58:40 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 22:58:40 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 22:58:40 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 22:58:40 2017] [debug] 200 OK (0.005423s, 184.400/s)
+[Sun May 14 22:59:46 2017] [debug] GET "/logout"
+[Sun May 14 22:59:46 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Sun May 14 22:59:46 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 22:59:46 2017] [debug] 302 Found (0.002843s, 351.741/s)
+[Sun May 14 22:59:46 2017] [debug] GET "/"
+[Sun May 14 22:59:46 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 22:59:46 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 22:59:46 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 22:59:46 2017] [debug] 200 OK (0.008673s, 115.300/s)
+[Sun May 14 23:02:32 2017] [debug] POST "/signup"
+[Sun May 14 23:02:32 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:02:32 2017] [error] MySQL server has gone away at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 23:02:32 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 23:02:32 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 23:02:32 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 23:02:32 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 23:02:32 2017] [debug] 500 Internal Server Error (0.039959s, 25.026/s)
+[Sun May 14 23:04:49 2017] [debug] POST "/signup"
+[Sun May 14 23:04:49 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:04:49 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:04:49 2017] [debug] 302 Found (0.07392s, 13.528/s)
+[Sun May 14 23:04:49 2017] [debug] GET "/"
+[Sun May 14 23:04:49 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:04:49 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:04:49 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:04:49 2017] [debug] 200 OK (0.008042s, 124.347/s)
+[Sun May 14 23:05:10 2017] [debug] POST "/signup"
+[Sun May 14 23:05:10 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:05:10 2017] [debug] 302 Found (0.076221s, 13.120/s)
+[Sun May 14 23:05:10 2017] [debug] GET "/"
+[Sun May 14 23:05:10 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:05:10 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:05:10 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:05:10 2017] [debug] 200 OK (0.001922s, 520.291/s)
+[Sun May 14 23:05:45 2017] [debug] POST "/signup"
+[Sun May 14 23:05:45 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:05:45 2017] [error] MySQL server has gone away at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 25.
+
+[Sun May 14 23:05:45 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 23:05:45 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 23:05:45 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 23:05:45 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 23:05:45 2017] [debug] 500 Internal Server Error (0.041935s, 23.846/s)
+[Sun May 14 23:17:04 2017] [debug] POST "/signup"
+[Sun May 14 23:17:04 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:17:04 2017] [error] MySQL server has gone away at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 24.
+
+[Sun May 14 23:17:04 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 23:17:04 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 23:17:04 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 23:17:04 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 23:17:04 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:17:04 2017] [debug] 500 Internal Server Error (0.045648s, 21.907/s)
+[Sun May 14 23:20:24 2017] [debug] POST "/signup"
+[Sun May 14 23:20:24 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:20:24 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:20:24 2017] [debug] 302 Found (0.077823s, 12.850/s)
+[Sun May 14 23:20:24 2017] [debug] GET "/"
+[Sun May 14 23:20:24 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:20:24 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:20:24 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:20:24 2017] [debug] 200 OK (0.008906s, 112.284/s)
+[Sun May 14 23:20:46 2017] [debug] POST "/signup"
+[Sun May 14 23:20:46 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:20:47 2017] [debug] 302 Found (0.069438s, 14.401/s)
+[Sun May 14 23:20:47 2017] [debug] GET "/"
+[Sun May 14 23:20:47 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:20:47 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:20:47 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:20:47 2017] [debug] 200 OK (0.001926s, 519.211/s)
+[Sun May 14 23:21:20 2017] [debug] POST "/signup"
+[Sun May 14 23:21:20 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:21:20 2017] [debug] 302 Found (0.001633s, 612.370/s)
+[Sun May 14 23:21:20 2017] [debug] GET "/"
+[Sun May 14 23:21:20 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:21:20 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:21:20 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:21:20 2017] [debug] 200 OK (0.001908s, 524.109/s)
+[Sun May 14 23:28:37 2017] [debug] GET "/"
+[Sun May 14 23:28:37 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:28:37 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:28:37 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:28:37 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:28:37 2017] [debug] 200 OK (0.011257s, 88.834/s)
+[Sun May 14 23:28:44 2017] [debug] GET "/"
+[Sun May 14 23:28:44 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:28:44 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:28:44 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:28:44 2017] [debug] 200 OK (0.001649s, 606.428/s)
+[Sun May 14 23:28:45 2017] [debug] GET "/"
+[Sun May 14 23:28:45 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:28:45 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:28:45 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:28:45 2017] [debug] 200 OK (0.00178s, 561.798/s)
+[Sun May 14 23:29:28 2017] [debug] GET "/"
+[Sun May 14 23:29:28 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:29:28 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:29:28 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:29:28 2017] [debug] 200 OK (0.00172s, 581.395/s)
+[Sun May 14 23:29:34 2017] [debug] GET "/"
+[Sun May 14 23:29:34 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:29:34 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:29:34 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:29:34 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:29:34 2017] [debug] 200 OK (0.012636s, 79.139/s)
+[Sun May 14 23:30:07 2017] [debug] GET "/"
+[Sun May 14 23:30:07 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:30:07 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:30:07 2017] [error] syntax error at template index/welcome.html.ep line 35, near "+  unless"
+syntax error at template index/welcome.html.ep line 59, near "} $_O "
+  (Might be a runaway multi-line "" string starting on line 45)
+Global symbol "$_O" requires explicit package name (did you forget to declare "my $_O"?) at template index/welcome.html.ep line 59.
+30: 		<table cellpadding="4px" height="400px">
+31: 			<tr>
+32:         		<td><h4>Регистрация</h4></td>
+33: 	      </tr> 
+34: 			<tr>
+35:         		<td><input type="text" name="username" placeholder="<%= unless (flash 'username') {'имя пользователя'} %>" /></td>
+36: 			</tr>
+37: 			<tr>
+38:         		<td><input type="text" name="firstname" placeholder="имя (не обязательно)" /></td>
+39: 			</tr>
+40: 			<tr>
+
+[Sun May 14 23:30:07 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 23:30:07 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 23:30:07 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 23:30:07 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 23:30:07 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:30:07 2017] [debug] 500 Internal Server Error (0.060856s, 16.432/s)
+[Sun May 14 23:30:32 2017] [debug] GET "/"
+[Sun May 14 23:30:32 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:30:32 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:30:32 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:30:32 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:30:32 2017] [debug] 200 OK (0.012158s, 82.250/s)
+[Sun May 14 23:30:36 2017] [debug] GET "/"
+[Sun May 14 23:30:36 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:30:36 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:30:36 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:30:36 2017] [debug] 200 OK (0.001556s, 642.674/s)
+[Sun May 14 23:32:35 2017] [debug] GET "/"
+[Sun May 14 23:32:35 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:32:35 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:32:35 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:32:35 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:32:35 2017] [debug] 200 OK (0.01053s, 94.967/s)
+[Sun May 14 23:32:36 2017] [debug] GET "/"
+[Sun May 14 23:32:36 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:32:36 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:32:36 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:32:36 2017] [debug] 200 OK (0.001688s, 592.417/s)
+[Sun May 14 23:32:38 2017] [debug] GET "/"
+[Sun May 14 23:32:38 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:32:38 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:32:38 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:32:38 2017] [debug] 200 OK (0.002221s, 450.248/s)
+[Sun May 14 23:33:16 2017] [debug] GET "/"
+[Sun May 14 23:33:16 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:33:16 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:33:16 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:33:16 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:33:16 2017] [debug] 200 OK (0.012134s, 82.413/s)
+[Sun May 14 23:33:18 2017] [debug] GET "/"
+[Sun May 14 23:33:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:33:18 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:33:18 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:33:18 2017] [debug] 200 OK (0.001852s, 539.957/s)
+[Sun May 14 23:34:58 2017] [debug] GET "/"
+[Sun May 14 23:34:58 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:34:58 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:34:58 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:34:58 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:34:58 2017] [debug] 200 OK (0.012117s, 82.529/s)
+[Sun May 14 23:35:33 2017] [debug] POST "/signup"
+[Sun May 14 23:35:33 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:35:33 2017] [error] MySQL server has gone away at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 24.
+
+[Sun May 14 23:35:33 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 23:35:33 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 23:35:33 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 23:35:33 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 23:35:33 2017] [debug] 500 Internal Server Error (0.050568s, 19.775/s)
+[Sun May 14 23:37:30 2017] [debug] POST "/signup"
+[Sun May 14 23:37:30 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:37:30 2017] [error] MySQL server has gone away at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 24.
+
+[Sun May 14 23:37:30 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 23:37:30 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 23:37:30 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sun May 14 23:37:30 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sun May 14 23:37:30 2017] [debug] 500 Internal Server Error (0.015013s, 66.609/s)
+[Sun May 14 23:38:02 2017] [debug] POST "/signup"
+[Sun May 14 23:38:02 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:38:02 2017] [error] MySQL server has gone away at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Model/Base.pm line 24.
+
+[Sun May 14 23:38:02 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 23:38:02 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 23:38:02 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Sun May 14 23:38:02 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Sun May 14 23:38:02 2017] [debug] 500 Internal Server Error (0.013441s, 74.399/s)
+[Sun May 14 23:40:06 2017] [debug] POST "/signup"
+[Sun May 14 23:40:06 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:40:06 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:40:06 2017] [debug] 302 Found (0.188018s, 5.319/s)
+[Sun May 14 23:40:06 2017] [debug] GET "/main"
+[Sun May 14 23:40:06 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 23:40:06 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 23:40:06 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 23:40:06 2017] [debug] 200 OK (0.00668s, 149.701/s)
+[Sun May 14 23:40:10 2017] [debug] GET "/logout"
+[Sun May 14 23:40:10 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Sun May 14 23:40:10 2017] [debug] 302 Found (0.001939s, 515.730/s)
+[Sun May 14 23:40:10 2017] [debug] GET "/"
+[Sun May 14 23:40:10 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:40:10 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:40:10 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:40:10 2017] [debug] 200 OK (0.008393s, 119.147/s)
+[Sun May 14 23:40:31 2017] [debug] POST "/signup"
+[Sun May 14 23:40:31 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:40:31 2017] [debug] 302 Found (0.066841s, 14.961/s)
+[Sun May 14 23:40:31 2017] [debug] GET "/"
+[Sun May 14 23:40:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:40:31 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:40:31 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:40:31 2017] [debug] 200 OK (0.001941s, 515.198/s)
+[Sun May 14 23:41:25 2017] [debug] POST "/signup"
+[Sun May 14 23:41:25 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:41:25 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:41:25 2017] [debug] 302 Found (0.003469s, 288.268/s)
+[Sun May 14 23:41:25 2017] [debug] GET "/"
+[Sun May 14 23:41:25 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:41:25 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:41:25 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:41:25 2017] [debug] 200 OK (0.008592s, 116.387/s)
+[Sun May 14 23:41:31 2017] [debug] POST "/signup"
+[Sun May 14 23:41:31 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Sun May 14 23:41:31 2017] [debug] 302 Found (0.06636s, 15.069/s)
+[Sun May 14 23:41:31 2017] [debug] GET "/"
+[Sun May 14 23:41:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:41:31 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:41:31 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:41:31 2017] [debug] 200 OK (0.00181s, 552.486/s)
+[Sun May 14 23:45:11 2017] [debug] GET "/"
+[Sun May 14 23:45:11 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:45:11 2017] [error] Can't locate object method "check" via package "Notes::Controller::Index" at /usr/local/share/perl/5.24.1/Mojolicious.pm line 138.
+
+[Sun May 14 23:45:11 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 23:45:11 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 23:45:11 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 23:45:11 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 23:45:11 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:45:11 2017] [debug] 500 Internal Server Error (0.082613s, 12.105/s)
+[Sun May 14 23:47:29 2017] [debug] GET "/"
+[Sun May 14 23:47:29 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:47:29 2017] [error] Can't locate object method "Auths" via package "Notes::Controller" at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Index.pm line 7.
+
+[Sun May 14 23:47:29 2017] [debug] Template "exception.development.html.ep" not found
+[Sun May 14 23:47:29 2017] [debug] Template "exception.html.ep" not found
+[Sun May 14 23:47:29 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Sun May 14 23:47:29 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Sun May 14 23:47:29 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:47:29 2017] [debug] 500 Internal Server Error (0.041701s, 23.980/s)
+[Sun May 14 23:51:03 2017] [debug] GET "/"
+[Sun May 14 23:51:03 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:51:03 2017] [debug] Your secret passphrase needs to be changed
+[Sun May 14 23:51:03 2017] [debug] Rendering template "index/welcome.html.ep"
+[Sun May 14 23:51:03 2017] [debug] Rendering template "layouts/default.html.ep"
+[Sun May 14 23:51:03 2017] [debug] 200 OK (0.014493s, 68.999/s)
+[Sun May 14 23:51:08 2017] [debug] GET "/"
+[Sun May 14 23:51:08 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:51:08 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:51:08 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:51:08 2017] [debug] 200 OK (0.001632s, 612.745/s)
+[Sun May 14 23:51:16 2017] [debug] GET "/main"
+[Sun May 14 23:51:16 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Sun May 14 23:51:16 2017] [debug] Rendering template "users/wall.html.ep"
+[Sun May 14 23:51:16 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Sun May 14 23:51:16 2017] [debug] 200 OK (0.005451s, 183.453/s)
+[Sun May 14 23:51:57 2017] [debug] POST "/login"
+[Sun May 14 23:51:57 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 23:51:57 2017] [debug] 302 Found (0.002392s, 418.060/s)
+[Sun May 14 23:51:57 2017] [debug] GET "/"
+[Sun May 14 23:51:57 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:51:57 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:51:57 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:51:57 2017] [debug] 200 OK (0.002052s, 487.329/s)
+[Sun May 14 23:52:18 2017] [debug] POST "/login"
+[Sun May 14 23:52:18 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Sun May 14 23:52:18 2017] [debug] 302 Found (0.001208s, 827.815/s)
+[Sun May 14 23:52:18 2017] [debug] GET "/"
+[Sun May 14 23:52:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:52:18 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:52:18 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:52:18 2017] [debug] 200 OK (0.002195s, 455.581/s)
+[Sun May 14 23:54:01 2017] [debug] GET "/"
+[Sun May 14 23:54:01 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Sun May 14 23:54:01 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Sun May 14 23:54:01 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Sun May 14 23:54:01 2017] [debug] 200 OK (0.002037s, 490.918/s)
+[Mon May 15 00:04:14 2017] [debug] POST "/login"
+[Mon May 15 00:04:14 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 15 00:04:14 2017] [debug] 302 Found (0.001391s, 718.907/s)
+[Mon May 15 00:04:14 2017] [debug] GET "/"
+[Mon May 15 00:04:14 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 15 00:04:14 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Mon May 15 00:04:14 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Mon May 15 00:04:14 2017] [debug] 200 OK (0.001643s, 608.643/s)
+[Mon May 15 00:09:39 2017] [debug] GET "/"
+[Mon May 15 00:09:39 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 15 00:09:39 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 15 00:09:39 2017] [debug] Rendering template "index/welcome.html.ep"
+[Mon May 15 00:09:39 2017] [debug] Rendering template "layouts/default.html.ep"
+[Mon May 15 00:09:39 2017] [debug] 200 OK (0.009617s, 103.983/s)
+[Mon May 15 00:11:09 2017] [debug] POST "/signup"
+[Mon May 15 00:11:09 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Mon May 15 00:11:09 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 15 00:11:09 2017] [debug] 302 Found (0.142763s, 7.005/s)
+[Mon May 15 00:11:09 2017] [debug] GET "/"
+[Mon May 15 00:11:09 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 15 00:11:09 2017] [debug] Rendering template "index/welcome.html.ep"
+[Mon May 15 00:11:09 2017] [debug] Rendering template "layouts/default.html.ep"
+[Mon May 15 00:11:09 2017] [debug] 200 OK (0.009151s, 109.278/s)
+[Mon May 15 00:11:34 2017] [debug] POST "/login"
+[Mon May 15 00:11:34 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 15 00:11:34 2017] [debug] 302 Found (0.082693s, 12.093/s)
+[Mon May 15 00:11:34 2017] [debug] GET "/main"
+[Mon May 15 00:11:34 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Mon May 15 00:11:34 2017] [debug] Rendering template "users/wall.html.ep"
+[Mon May 15 00:11:34 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 15 00:11:34 2017] [debug] 200 OK (0.004064s, 246.063/s)
+[Mon May 15 00:11:37 2017] [debug] GET "/logout"
+[Mon May 15 00:11:37 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Mon May 15 00:11:37 2017] [debug] 302 Found (0.000933s, 1071.811/s)
+[Mon May 15 00:11:37 2017] [debug] GET "/"
+[Mon May 15 00:11:37 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 15 00:11:37 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Mon May 15 00:11:37 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Mon May 15 00:11:37 2017] [debug] 200 OK (0.001908s, 524.109/s)
+[Mon May 15 00:11:54 2017] [debug] POST "/login"
+[Mon May 15 00:11:54 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 15 00:11:54 2017] [debug] 302 Found (0.079926s, 12.512/s)
+[Mon May 15 00:11:54 2017] [debug] GET "/main"
+[Mon May 15 00:11:54 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Mon May 15 00:11:54 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Mon May 15 00:11:54 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 15 00:11:54 2017] [debug] 200 OK (0.001346s, 742.942/s)
+[Mon May 15 00:12:01 2017] [debug] GET "/logout"
+[Mon May 15 00:12:01 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Mon May 15 00:12:01 2017] [debug] 302 Found (0.000715s, 1398.601/s)
+[Mon May 15 00:12:01 2017] [debug] GET "/"
+[Mon May 15 00:12:01 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 15 00:12:01 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Mon May 15 00:12:01 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Mon May 15 00:12:01 2017] [debug] 200 OK (0.001752s, 570.776/s)
+[Mon May 15 00:12:11 2017] [debug] POST "/login"
+[Mon May 15 00:12:11 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 15 00:12:11 2017] [debug] 302 Found (0.080513s, 12.420/s)
+[Mon May 15 00:12:11 2017] [debug] GET "/main"
+[Mon May 15 00:12:11 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Mon May 15 00:12:11 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Mon May 15 00:12:11 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 15 00:12:11 2017] [debug] 200 OK (0.001439s, 694.927/s)
+[Mon May 15 00:12:18 2017] [debug] GET "/"
+[Mon May 15 00:12:18 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 15 00:12:18 2017] [debug] 302 Found (0.000772s, 1295.337/s)
+[Mon May 15 00:12:18 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Mon May 15 00:12:18 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Mon May 15 00:12:18 2017] [debug] GET "/main"
+[Mon May 15 00:12:18 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Mon May 15 00:12:18 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Mon May 15 00:12:18 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 15 00:12:18 2017] [debug] 200 OK (0.001467s, 681.663/s)
+[Mon May 15 00:12:33 2017] [debug] GET "/"
+[Mon May 15 00:12:33 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 15 00:12:33 2017] [debug] 302 Found (0.000781s, 1280.410/s)
+[Mon May 15 00:12:33 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Mon May 15 00:12:33 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Mon May 15 00:12:33 2017] [debug] GET "/main"
+[Mon May 15 00:12:33 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Mon May 15 00:12:33 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Mon May 15 00:12:33 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 15 00:12:33 2017] [debug] 200 OK (0.001471s, 679.810/s)
+[Mon May 15 00:25:22 2017] [debug] GET "/main"
+[Mon May 15 00:25:22 2017] [debug] Routing to controller "Notes::Controller::Users" and action "wall"
+[Mon May 15 00:25:22 2017] [debug] Rendering cached template "users/wall.html.ep"
+[Mon May 15 00:25:22 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 15 00:25:22 2017] [debug] 200 OK (0.001543s, 648.088/s)

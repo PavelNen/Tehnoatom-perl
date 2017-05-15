@@ -1,5 +1,7 @@
 package Notes;
+
 use Mojo::Base 'Mojolicious';
+use Notes::Model;
 
 =encoding utf8
 
@@ -25,7 +27,19 @@ sub startup {
     my $config = $self->plugin('Config');
 
     my $r = $self->routes;
-    $r->get('/')->to('Index#welcome')->name('index');
+    $r->route('/')->to('Index#welcome')->name('index');
+    #$r->route('/')               ->to('auth#create_form')->name('auths_create_form');
+    $r->route('/login')              ->to('auths#create')     ->name('auths_create');
+    $r->route('/logout')             ->to('auths#delete')     ->name('auths_delete');
+    $r->route('/signup')->via('get') ->to('users#create')->name('users_create_form');
+    $r->route('/signup')->via('post')->to('users#create')     ->name('users_create');
+    $r->route('/main')  ->via('get') ->to('users#wall')       ->name('users_wall');
+
+    my $rn = $r->under('/notes')->to('auths#check');
+
+    #Init Model
+    #Инициализация базы данных
+    Notes::Model->db();
 }
 
 1;

@@ -1,0 +1,3 @@
+% layout 'defwall';
+% title "iNotes - " . session 'username';
+<h2><%= $msg %></h2>

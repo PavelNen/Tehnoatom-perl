@@ -9,26 +9,15 @@
 <body>
 	<div class="hat">
 		<div class="hat logo">
-			<h1>mNote</h1>
+			<h1>mNotes</h1>
 		</div>
-		
+		<div class="usermenu">
+			Привет, <%= session 'username' %>!
+			<a href="<%= url_for 'auths_delete' %>">Выйти</a>
+		</div>
 	</div>
-% if (flash 'error') {
-	<span class='red_msg' >
-%=     flash 'error'
-  </span>
-% }
-
-% if (flash 'notice') {
- <span class='green_msg' >
-%=    flash 'notice'
- </span>
-% }
 	<div class="board"><%= content %></div>
 	
 
 </body>
-<footer>
-(С) Павел Ненашев
-</footer>
 </html>
