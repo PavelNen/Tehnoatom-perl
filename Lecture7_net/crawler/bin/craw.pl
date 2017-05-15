@@ -10,58 +10,38 @@ use AnyEvent;
 use AnyEvent::HTTP;
 use DDP;
 use URI;
-use AE;
 
-sub async {
-    my $cb = pop;
-    my $w;
-    $w = AE::timer rand(0.1), 0, sub {
-        undef $w;
-        $cb->();
-    };
-    return;
-}
+local $AnyEvent::HTTP::MAX_PER_HOST = 1000;
 
-$AnyEvent::HTTP::MAX_PER_HOST = 1000;
-
-my $base = 'https://github.com/Nikolo/Technosfera-perl/tree/anosov-crawler/';
+my $start_page = 'https://github.com/Nikolo/Technosfera-perl/tree/anosov-crawler/';
 
 #my $base = 'https://www.google.com/';
 
 # Ссылки будут храниться в стеке
-my @urls   = ($base);
+my @urls   = ($start_page);
 my $result = {};
 
-my $cv = AE::cv;
-$cv->begin;
+
+
 
 my $count = 0;
 my $url;
 
-my $next;
-$next = sub {
-    return if 0 > $#urls or ( keys %$result ) > 1000;
+while ( 0 <= $#urls and ( keys %$result ) <= 1000 ) {
+    my $cv = AnyEvent->condvar;
+    my $br = $#urls + 1;
+    for (1..$br) {
     my $url = pop @urls;
-    $cv->begin;
-    async sub {
-
-        # количество запросов
-        #$url = pop @urls;
-        #print "New event: GET => $url\n";
+        print "New event: GET => $url\n";
         $cv->begin;
 
         http_request(
             HEAD => $url,
             sub {
-
                 my $headers = $_[1];
-
-                #print "Headers of $url: $headers\n";
-
-                #p $headers;
-
+                print "Headers of $url: $headers\n";
+                p $headers;
                 if ( $headers->{'content-type'} =~ /text\/html/ ) {
-
                     $cv->begin;
                     http_request(
                         GET => $url,
@@ -82,7 +62,7 @@ $next = sub {
                                 push @urls,
                                 grep {
                                     !( exists $result->{"$_"} )
-                                      && $_ =~ /^$base/
+                                      && $_ =~ /^$start_page/
                                   }
                                   map {
                                     my $uri =
@@ -91,9 +71,6 @@ $next = sub {
                                 } $content =~ m/href="([^"#]+)\??"/g
                             };
 
-
-
-                            $next->();
                             $cv->end;
                         }
                     );
@@ -102,19 +79,14 @@ $next = sub {
                 $cv->end;
             }
         );
-
-        $next->();
-        $cv->end;
     };
+    $cv->recv;
 };
 
-$next->() for 1 .. 100;
 
-$cv->end;
-$cv->recv;
 #p $result;
 #say scalar( keys %$result );
-#p @urls;
+p @urls;
 
 my @rating = sort { $result->{$b} <=> $result->{$a} } keys %$result;
 my @top = @rating[0..9];

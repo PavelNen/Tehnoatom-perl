@@ -6,7 +6,6 @@ use warnings;
 
 use AnyEvent;
 use AnyEvent::HTTP;
-use AE;
 use URI;
 
 =encoding UTF8
@@ -38,23 +37,14 @@ $total_size - суммарный размер собранных ссылок в
 =cut
 
 
-sub async {
-    my $cb = pop;
-    my $w;
-    $w = AE::timer rand(0.1), 0, sub {
-        undef $w;
-        $cb->();
-    };
-    return;
-}
-
-$AnyEvent::HTTP::MAX_PER_HOST = 1000;
 
 
 sub run {
     my ($start_page, $parallel_factor) = @_;
     $start_page or die "You must setup url parameter";
     $parallel_factor or die "You must setup parallel factor > 0";
+
+    local $AnyEvent::HTTP::MAX_PER_HOST = $parallel_factor;
 
     my $total_size = 0;
     my @top10_list;
@@ -63,18 +53,17 @@ sub run {
     my @urls   = ($start_page);
     my $result = {};
 
-    my $cv = AE::cv;
-    $cv->begin;
+    my $cv = AnyEvent->condvar;
+
 
     my $count = 0;
     my $url;
 
-    my $next;
-    $next = sub {
-        return if 0 > $#urls or ( keys %$result ) > 1000;
+    while ( 0 <= $#urls and ( keys %$result ) <= 1000 ) {
+        my $cv = AnyEvent->condvar;
+        my $br = $#urls + 1;
+        for (1..$br) {
         my $url = pop @urls;
-        $cv->begin;
-        async sub {
             #print "New event: GET => $url\n";
             $cv->begin;
 
@@ -105,7 +94,7 @@ sub run {
                                     push @urls,
                                     grep {
                                         !( exists $result->{"$_"} )
-                                          && $_ =~ /^$start_page/
+                                          && $_ =~ /^\Q$start_page\E/
                                       }
                                       map {
                                         my $uri =
@@ -114,9 +103,6 @@ sub run {
                                     } $content =~ m/href="([^"#]+)\??"/g
                                 };
 
-
-
-                                $next->();
                                 $cv->end;
                             }
                         );
@@ -125,16 +111,9 @@ sub run {
                     $cv->end;
                 }
             );
-
-            $next->();
-            $cv->end;
         };
+        $cv->recv;
     };
-
-    $next->() for 1 .. $parallel_factor;
-
-    $cv->end;
-    $cv->recv;
 
     my @rating = sort { $result->{$b} <=> $result->{$a} } keys %$result;
 
