@@ -8,7 +8,7 @@ use Carp qw/confess/;
 
 =head1 NAME
 
-C<DBI::ActiveRecord::DB::SQLite> - базовый класс-адаптер для работы с БД SQLite. 
+C<DBI::ActiveRecord::DB::SQLite> - базовый класс-адаптер для работы с БД SQLite.
 
 =head1 DESCRIPTION
 
@@ -62,7 +62,9 @@ sub _select {
 
 Метод для непосредственной вставки данных в БД.
 
-Данные для полей C<$fields> со значениями C<$values> вставляются в таблицу C<$table>. Если первичный ключ автоинкрементальный, то его имя должно быть передано в параметре C<$autoinc_field>.
+Данные для полей C<$fields> со значениями C<$values> вставляются в таблицу C<$table>.
+Если первичный ключ автоинкрементальный,
+то его имя должно быть передано в параметре C<$autoinc_field>.
 
 =cut
 
@@ -72,13 +74,13 @@ sub _insert {
     my $dbh = $self->connection;
 
     my $fields_str = join ", ", @$fields;
-    my $placeholders = join ", ", map { "?" } @$fields; 
+    my $placeholders = join ", ", map { "?" } @$fields;
 
     $dbh->begin_work;
     my $last_insert_id;
     if($dbh->do("INSERT INTO $table ($fields_str) VALUES ($placeholders)", {}, @$values)) {
         $last_insert_id = $autoinc_field ? $dbh->last_insert_id("", "", $table, $autoinc_field) : 0;
-        $dbh->commit; 
+        $dbh->commit;
     } else {
         $dbh->rollback;
         confess "can't do insert request!";
@@ -90,9 +92,24 @@ sub _insert {
 
 Метод для непосредственного обновления данных в БД.
 
-Данные для полей C<$fields> обновляются значениями C<$values> в таблице C<$table>. Обновляется данные по первичному ключу C<$key_field> со значением C<$key_value>.
+Данные для полей C<$fields> обновляются значениями C<$values> в таблице C<$table>.
+Обновляется данные по первичному ключу C<$key_field> со значением C<$key_value>.
 
 =cut
+
+sub _update {
+    my ($self, $table, $key_field, $key_value, $fields, $values) = @_;
+
+    my $dbh = $self->connection;
+
+    my $fields_str = join ", ", map { "$_=?" } @$fields;
+
+    if($dbh->do("UPDATE $table SET $fields_str WHERE $key_field=$key_value", {}, @$values)) {
+        return 1;
+    } else {
+        confess "can't do insert request!";
+    }
+}
 
 =head2 _delete($table, $key_field, $key_value)
 
@@ -118,4 +135,3 @@ no Mouse;
 __PACKAGE__->meta->make_immutable();
 
 1;
-
