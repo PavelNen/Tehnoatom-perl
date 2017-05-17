@@ -178,6 +178,7 @@ sub update {
         not ($obj->meta->get_attribute($_)->index
         or $obj->meta->get_attribute($_)->primary_key) } @$fields;
 
+    my ($key_value, $key_field);
     my @bind = ();
     for(@$fields) {
         my $attr = $obj->meta->get_attribute($_);

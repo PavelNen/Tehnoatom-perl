@@ -7,7 +7,7 @@ use DateTime;
 
 db "Local::MusicLib::DB::SQLite";
 
-table 'album';
+table 'albums';
 
 has_field id => (
     isa => 'Int',
