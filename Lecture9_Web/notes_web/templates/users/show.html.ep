@@ -1,0 +1,26 @@
+% layout 'defwall';
+% title "miniNotes - Мир - " . session 'username';
+<article>
+% for my $id (keys %$list) {
+% 		my $me = '';
+%		if ($id eq session 'user_id') {$me = 'me';}
+<div class="people <%= $me %>">
+	<div class="nick">
+	 	<a href="/id<%= $id %>" class="apeople"><%= $list->{$id}->{username} %> </a>
+	</div>
+	<div class="realname">
+		<%= $list->{$id}->{firstname} %> <%= $list->{$id}->{lastname} %>
+	</div>
+%	if (!$me) {
+	<div class="add">
+% 		if ($list->{$id}->{'favorite'} == 0) {
+		<a href="<%= '/people?favadd=' . $list->{$id}->{username}; %>" class="apeople">Добавить в избранных</a>
+%		}
+%		else {
+		<a href="<%= '/people?favdel=' . $list->{$id}->{username}; %>" class="apeople">Отписаться</a>
+%		}
+	</div>
+%	}
+</div>
+% }
+</article>

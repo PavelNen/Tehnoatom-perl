@@ -8,9 +8,29 @@ use Mojo::Base;
 sub select {
     my $class = shift;
     my $h = shift;
-    Notes::Model->db->selectrow_hashref(
-        "SELECT * FROM " . $class->table_name . " WHERE "
-            . join (' AND ', map {"$_ = '$h->{$_}'"; } keys %$h), undef) or undef;
+    say "select";
+    my $query = "SELECT * FROM " . $class->table_name . " WHERE "
+        . join (' AND ', map {"$_ = '$h->{$_}'"; } keys %$h);
+    say "$query";
+    Notes::Model->db->selectrow_hashref($query, undef) or undef;
+}
+
+sub selectall {
+    my $class = shift;
+    my $h = shift;
+    my $mode = shift;
+    say "selectall";
+    my $query = "SELECT * FROM " . $class->table_name;
+    if ($mode eq 'lenta') {
+        $query .= " WHERE users LIKE '\%$h->{username}\%'";
+    }
+    elsif ($mode ne 'empty') {
+        $query .= " WHERE ";
+        $query .= join (' AND ', map {"$_ = '$h->{$_}'"; } keys %$h);
+    }
+    say "$query";
+    Notes::Model->db->selectall_hashref( $query , 'id') or undef;
+
 }
 
 sub insert {
@@ -27,14 +47,22 @@ sub insert {
 
 sub update {
     my $class = shift;
+    my $key = shift;
+    my $value = shift;
+    my $h = shift;
+
     my $db = Notes::Model->db;
-    $db->update($class->table_name, @_) or die $db->errstr;
+    $db->do("UPDATE " . $class->table_name . " SET $key = '$value' "
+                . " WHERE " . join(', ',  map {"$_ = '$h->{$_}'"} keys %$h))
+                    or die $db->errstr;
 }
 
 sub delete {
     my $class = shift;
+    my $h = shift;
     my $db = Notes::Model->db;
-    $db->delete($class->table_name, @_) or die $db->errstr;
+    $db->do("DELETE FROM "  . $class->table_name . " WHERE  "
+            . join(' AND ',  map {"$_ = '$h->{$_}'"} keys %$h) ) or die $db->errstr;
 }
 
 1;

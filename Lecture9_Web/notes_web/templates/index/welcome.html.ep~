@@ -7,7 +7,7 @@
 	<form method="POST" action="<%= url_for 'auths_create' %>">
 		<table cellpadding="4px" height="300px" style="top: 50px">
 			<tr>        
-        		<td><h3>Вход в систему</h3></td>
+        		<td><h4>Вход в систему</h4></td>
         	</tr>  
 			<tr>
         		<td><input type="text" autofocus name="username" placeholder="имя пользователя" /></td>
@@ -29,7 +29,7 @@
 	<form method="POST" action="<%= url_for 'users_create' %>">
 		<table cellpadding="4px" height="400px">
 			<tr>
-        		<td><h3>Регистрация</h3></td>
+        		<td><h4>Регистрация</h4></td>
 	      </tr> 
 			<tr>
         		<td><input type="text" name="username" placeholder="имя пользователя" value="<%= flash 'username' %>" /></td>

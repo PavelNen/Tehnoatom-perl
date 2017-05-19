@@ -1,0 +1,153 @@
+.usermenu {
+	float: right; width: 300px; padding: 0 auto;
+}
+
+#nav {
+	width: 360px;
+	height: 25px;
+	padding: 6px;
+	position: absolute;
+}
+
+#nav div {
+	height: 25px;
+	margin: 0;
+	padding: 5px;
+	position: absolute;
+	vertical-align: 50%;
+	transition: 0.1s linear;
+}
+
+#m1 {
+	left: 5px;
+	width: 120px;
+}
+
+#m2 {
+	left: 135px;
+	width: 120px;
+}
+
+#m3 {
+	left: 265px;
+	width: 120px;
+}
+
+#m4 {
+	left: 395px;
+	width: 120px;
+}
+
+#m5 {
+	left: 700px;
+	top: 4px;
+	width: 180px;
+	font-weight: bold;
+	border: 2px solid #333333;
+}
+
+#mback {
+	left: 600px;
+	top: ;
+	width: 150px;
+	border: 5px solid #261B30;
+}
+
+#nav a {
+	outline: none;
+	color: #333333;
+}
+
+#nav div:hover {
+	color: #e0dce5;
+	background-color: #7a6d8c;
+	
+}
+
+#content {
+	/*position: relative;*/
+	margin-top: 50px;
+	vertical-align: top;
+}
+
+.onenote {
+	/*float: left;*/
+	min-width: 200px;
+	max-width: 35%;
+	min-height: 150px;
+	background-color: rgb(247, 249, 249);
+	border: 1px solid #97B1C3;
+	padding: 10px;
+	margin: 5px;
+	color: #333333;
+	outline: none;
+	font-family: 'Pangolin', cursive;
+	border-radius: 4px;	
+	border-collapse: collapse;
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+.mynote {
+	background-color: #ffefdb;
+}
+
+.title {
+	font-size: 20pt;
+	font-weight: bold; 
+	text-decoration: none;
+}
+
+.time {
+	font-size: 10pt; 
+	text-decoration: none;
+	color: #6d3f4f;
+}
+.text {
+	font-size: 17pt; 
+	text-decoration: none;
+	padding-top: 7px
+}
+
+.people {
+	float: left;
+	min-width: 200px;
+	max-width: 40%;
+	min-height: 150px;
+	background-color: #d4f7d4;
+	border: 1px solid #97B1C3;
+	padding: 10px;
+	margin: 10px;
+	color: #333333;
+	outline: none;
+	font-family: 'Pangolin', cursive;
+	border-radius: 2px;
+	
+}
+
+.nick {
+	font-size: 20pt;
+	font-weight: bold; 
+	text-decoration: none;
+}
+
+.realname {
+	font-size: 25pt; 
+	text-decoration: none;
+	color: #6d3f4f;
+}
+.add {
+	font-size: 15pt; 
+	text-decoration: none;
+	padding-top: 7px
+}
+
+a.apeople {
+	outline: none;
+	color: #333333;
+}
+
+.me {
+	background-color: #edd4f7;
+}

@@ -1,0 +1,22 @@
+% layout 'defwall';
+% title "miniNotes - Лента - " . session 'username';
+<article>
+% for my $id (sort {$b<=>$a} keys %$fewnotes) {
+% 		my $mynote = '';
+%		if ($fewnotes->{$id}->{username} eq session 'username') {$mynote = 'mynote';}
+<div class="onenote <%= $mynote %>">
+	<div class="username">
+		<%= $fewnotes->{$id}->{username} %>
+	</div>
+	<div class="title">
+		<%= $fewnotes->{$id}->{title} %>
+	</div>
+	<div class="time">
+		<%= $fewnotes->{$id}->{time} %>
+	</div>
+	<div class="text">
+		<%= $fewnotes->{$id}->{text} %>
+	</div>
+</div>
+% }
+</article>

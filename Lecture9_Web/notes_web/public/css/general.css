@@ -1,87 +1,95 @@
-.hat {
+#hat {
 	height: 50px;
 	width: 100%;
-	background: #9393A4;	
+	background-color: rgba(147, 147, 164, 0.9);	
 	padding: 0px;
-	margin: 0;
-	display: inline-block;
-	#position: fixed;
-	#top: 0;
+	margin: 0 auto;	
 }
-.logo {
-	margin: 0 0 0 10%;
-	width: 200px;
-}
-/* класс формы на странице входа и регистации */
-.welcome {
-	margin: auto;
-	position: relative;
-	width: 80%;
-	display: inline;
+#that {
+	width:80%;
+	min-width:800px;
+	height:50px;
+	margin: 0 auto;
+	padding: 0;
+	border-collapse: collapse;
 	
-}
-.wform {
-	width: 40%;
-	display: inline-block;
-	
-}
-#razd {
-	width: 10%;
-	display: inline-block;
 }
 
-input {
-	width: 100%;
-	height: 30px;
-	font-size: 14pt;
+#that td {
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
 }
+
+#that h1 {
+	height:50px;
+	margin: 0;
+}
+
+.logo {
+	float: left; width: 110px; padding: 5px; 
+}
+
 /* класс белого пространства для страницы */
 .board {
 	width: 80%;
-	height: auto;
 	min-height: 500px;
+	left: 10%;
 	min-width: 800px;
-	margin: 15px auto 50px auto;
-	padding-bottom: 40px;
-	background: #F7F9F9;
+	margin: 15px auto 15px auto;
+	padding-bottom: 15px;
+	background-color: rgba(247, 249, 249, 0.6);
 	border-radius: 5px;
 	border: 1px solid #97B1C3;
 	text-align: center;
-	#box-shadow: 0.4em 0.4em 5px;
+	position: absolute;
+	z-index: 0;
 }
 
-h1 {
-	margin: 5px;
-}
-h2 {
-	margin: 20px ;	
-}
+
 body {
-	margin: 0;
-	background: #DFDDCD;
-	color: #261B30;
-	font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+	margin: auto;
+	background-color: #DFDDCD;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*color: #261B30;*/
+	color: #333333;
+	font-family: 'PT Mono', monospace;
 	font-size: 14pt;
+}
+
+td {
+	vertical-align:middle;
+}
+
+a { 
+	outline: none;
+	color: #edefef; /* Цвет ссылок */ }
+	
+a:hover {
+	color: #ffffff;
 }
 	
 .green_msg {
-	position: fixed;
+	position: absolute;
 	padding: 5px;
 	top: 50px;
-	left: 0px;
+	right: 10%;
 	border: 1px solid #293834;
 	background-color: #6BCA80;
 	color: #293834;
 	font-weight:bold;
+	z-index: 3;
 }
 .red_msg {
-	position: fixed;
+	position: absolute;
 	padding: 5px;
-	top: 50px;
-	left: 0px;
+	right: 10%;
 	border: 1px solid #5F434E;
 	background-color: #dd8e99;
 	color: #5F434E;
 	font-weight:bold;
+	z-index: 3;
 }
 	

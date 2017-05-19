@@ -1,11 +1,11 @@
 package Notes::Model;
 use Notes::Model::User;
 use Notes::Model::Note;
+use Notes::Model::Favorites;
 use 5.020;
 use strict;
 use warnings;
 no warnings 'experimental';
-use Encode qw(encode decode);
 
 #use DBI;
 use DDP;
@@ -26,8 +26,9 @@ sub db {
         my $dbh =
             DBI->connect($config->{dsn}, $config->{userDB}, $config->{password})
                 or die $DBI::errstr;
-
-        $dbh->do( "SET SESSION wait_timeout=30" );
+        $dbh->{mysql_enable_utf8} = 1;
+        $dbh->do("set names utf8");
+        $dbh->do( "SET SESSION wait_timeout=60*60*8" );
 
         $DB = bless $dbh, $class;
 
