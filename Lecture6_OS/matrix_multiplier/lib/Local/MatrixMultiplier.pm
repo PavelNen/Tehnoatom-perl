@@ -46,32 +46,27 @@ sub mult {
     }
     my $s = $elmnts; # Количество оставшехся процессов
 
-# Определяю количество ячеек, которое должен посчитать один процесс
-# При не кратном
-
-# Создаём потоки
-
     my $forks = 0;
-
-    open( my $fifo, ">", 'matrix.pipe' ); # Для фиксации результатов
-
+    # Работаем, пока не дойдём до последней ячейки
     while ( $i != $height_a + 1 and $j != $height_a + 1 ) {
+        # Форкаем сколько нужно
         for ( 1 .. $max_child ) {
 
             $s--;
-            my ( $ri, $wi, $rj, $wj);
-            pipe( $ri, $wi );
-            pipe( $rj, $wj );
+
+            pipe(PARENT_RDR, CHILD_WTR);
+            pipe(CHILD_RDR,  PARENT_WTR);
+            CHILD_WTR->autoflush(1);
+            PARENT_WTR->autoflush(1);
 
             if ( my $pid = fork() ) {
-
+                close PARENT_RDR;
+                close PARENT_WTR;
                 $forks++;
-                close $ri;
-                close $rj;
 
-                print $wi $i;
-                print $wj $j;
+                print CHILD_WTR "$i $j\n";
 
+                chomp($res->[$i]->[$j] = <CHILD_RDR>);
                 # Идём по ячейкам матрицы C
                 if ( $j == $height_a ) {
                     $j = 0;
@@ -80,24 +75,26 @@ sub mult {
                 else {
                     $j++;
                 }
-
+                close CHILD_RDR; close CHILD_WTR;
+                #waitpid($pid, 0);
             }
             else {
                 die "Cannot fork: $!" unless defined $pid;
-                close $wi;
-                close $wj;
 
-                my $ii  = <$ri>;
-                my $jj  = <$rj>;
+                my $line;
+                chomp($line = <PARENT_RDR>);
+                my ($ii, $jj) = $line =~ /(\d+)\s(\d+)/;
+
                 my $res = 0;
 
-         # перемножаем строку из А и столбец из В
+                # перемножаем строку из А и столбец из В
                 for my $k ( 0 .. $height_a ) {
                     $res += $mat_a->[$k]->[$jj] * $mat_b->[$ii]->[$k];
                 }
 
-                print $fifo "$ii $jj $res\n";
-
+                print PARENT_WTR "$res\n";
+                close PARENT_RDR;
+                close PARENT_WTR;
                 exit;
             }
         }
@@ -111,12 +108,6 @@ sub mult {
         }
     }
 
-    open( $fifo, "<", 'matrix.pipe' );
-    while (<$fifo>) {
-        $_ =~ /(\d+) (\d+) (\d+)/;
-        $res->[$1]->[$2] = $3;
-    }
-    close $fifo;
     return $res;
 }
 
