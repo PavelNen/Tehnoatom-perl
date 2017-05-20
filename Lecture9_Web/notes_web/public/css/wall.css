@@ -105,7 +105,8 @@
 	color: #6d3f4f;
 }
 .text {
-	font-size: 17pt; 
+	font-size: 17pt;
+	word-wrap: break-word;
 	text-decoration: none;
 	padding-top: 7px
 }
