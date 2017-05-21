@@ -35,14 +35,15 @@ sub startup {
     #$r->route('/main')  ->via('get') ->to('users#wall')       ->name('users_wall');
 
     my $rc = $r->under('/')->to('auths#check');
-    $rc->route('/id:id', id => qr/\d+/)->via('get')->to('notes#')->name('notes_');
+    $rc->route('/id:id', id => qr/\d+/)->via('get')->to('notes#lenta')->name('notes_individual');
 
     my $rn = $r->under('/notes')->to('auths#check');
     $rn->route                       ->via('get')   ->to('notes#wall') ->name('notes_show');
     $rn->route('/newnote')           ->via('get')   ->to('notes#create_form') ->name('notes_form');
     $rn->route                       ->via('post')  ->to('notes#create')->name('notes_create');
-    $rn->route('/:id', id => qr/\d+/)->via('put')   ->to('notes#update')->name('notes_update');
-    $rn->route('/:id', id => qr/\d+/)->via('delete')->to('notes#delete')->name('notes_delete');
+    $rn->route('/edit:noteid', noteid => qr/\d+/)->via('get')->to('notes#edit_form')->name('notes_edit');
+    $rn->route('/up')                ->via('post')  ->to('notes#update')->name('notes_update');
+    $rn->route('/del:noteid', noteid => qr/\d+/)->via('get')->to('notes#delete')->name('notes_delete');
 
     my $rl = $r->under('/lenta')->to('auths#check');
     $rl->route->to('notes#lenta')->name('lenta_show');
@@ -51,6 +52,8 @@ sub startup {
     $rp->route->to('users#show')->name('people_show');
     #$rp->route('', favname => qr/^[^\.\/\?]+$/)->via('get')->to('users#favadd')->name('favorite_add');
 
+    my $rf = $r->under('/favorites')->to('auths#check');
+    $rf->route->to('users#show', fav => 1)->name('favorites_show');
 
     #Init Model
     #Инициализация базы данных

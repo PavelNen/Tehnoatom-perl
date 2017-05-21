@@ -1,0 +1,34 @@
+% layout 'defwall';
+% title "miniNotes - Редактирование заметки";
+
+<div id="newnote" style="">
+	<h2>Редактирование заметки</h2>
+	<form method="POST" action="<%= url_for 'notes_update' %>" id="forma">
+	<input type="text" name="nid" value="<%= $noteid %>" style="display:none">
+	<div id="divfav">
+	<p style="font-size:13pt; text-align:center;">Кто будет видеть Твои заметки</p>
+
+	<select multiple="" name="favs" id="favorites">
+% my $selected = '';
+% if (exists $forms->{favs}->{'ALL'}) {
+%		$selected = 'selected';
+%	} else {
+%		$selected = '';
+%	}
+	<option value="ALL" <%= $selected %> >Доступно всем</option>
+
+% for my $nick (@$favorites) {
+%	if (exists $forms->{favs}->{$nick}) {
+%		$selected = 'selected';
+%	} else {
+%		$selected = '';
+%	}
+	<option value="<%= $nick %>" <%= $selected %> ><%= $nick %></option>
+%}
+	</select>
+	</div>
+	<input type="title" id="notetitle" name="title" value="<%= $forms->{title} %>" placeholder="Заголовок" />
+		<textarea name="text" id="notetext" placeholder="Текст заметки"><%= $forms->{text} %></textarea>
+		<input type="submit" id="rec" value="Обновить заметку" />
+	</form>
+</div>

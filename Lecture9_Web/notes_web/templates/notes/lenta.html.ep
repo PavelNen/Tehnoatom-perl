@@ -1,22 +1,38 @@
 % layout 'defwall';
 % title "miniNotes - Лента - " . session 'username';
+
+
 <article>
+% if ((keys %$fewnotes) == 0) {
+<center><h1 style="margin:auto; top:100px; position:relative">
+	Пользователь пока что не открыл<br>ни одной заметки для Тебя.
+	<br>Или их у него нет...
+</h1></center>
+%} else {
+Всего заметок: <%= (keys %$fewnotes) %><br>
+%}
 % for my $id (sort {$b<=>$a} keys %$fewnotes) {
 % 		my $mynote = '';
 %		if ($fewnotes->{$id}->{username} eq session 'username') {$mynote = 'mynote';}
 <div class="onenote <%= $mynote %>">
+	% if ($mynote) {
+	<div style="float:right; position:relative">
+		<a href="/notes/edit<%= $id %>"><img src="/images/Icon/pen.png" width="15px" alt="Редактировать"></a>
+		<a href="/notes/del<%= $id %>"><img src="/images/Icon/trash.png" width="20px" alt="Удалить"></a>
+	</div>
+	% }
 	<div class="username">
-		<%= $fewnotes->{$id}->{username} %>
+		<a href="/id<%= $fewnotes->{$id}->{userid} %>" class="apeople"><%= $fewnotes->{$id}->{username} %></a>
 	</div>
 	<div class="title">
 		<%= $fewnotes->{$id}->{title} %>
 	</div>
 	<div class="time">
-		<%= $fewnotes->{$id}->{time} %>
+&#8986; <%= $fewnotes->{$id}->{time} %>
 	</div>
 	<div class="text">
-		<%= $fewnotes->{$id}->{text} %>
+<%= $fewnotes->{$id}->{text} %>
 	</div>
 </div>
 % }
-</article>
+</article

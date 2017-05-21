@@ -2,7 +2,7 @@ package Notes::Model;
 use Notes::Model::User;
 use Notes::Model::Note;
 use Notes::Model::Favorites;
-use 5.020;
+use 5.010;
 use strict;
 use warnings;
 no warnings 'experimental';
@@ -28,7 +28,7 @@ sub db {
                 or die $DBI::errstr;
         $dbh->{mysql_enable_utf8} = 1;
         $dbh->do("set names utf8");
-        $dbh->do( "SET SESSION wait_timeout=60*60*8" );
+        $dbh->do( "SET SESSION wait_timeout=60*30" );
 
         $DB = bless $dbh, $class;
 

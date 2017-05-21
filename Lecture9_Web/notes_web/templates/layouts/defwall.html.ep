@@ -6,26 +6,25 @@
 	<link type="text/css" href="/css/wall.css" rel="stylesheet" />
 	<link type="text/css" href="/css/newnote.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=PT+Mono|Pangolin" rel="stylesheet">
-	
+
 
 </head>
-<script src="/scripts/time.js"></script>
 % my $wallpaper = int(rand(5));
 <body style="background-image: url(/images/Wallpaper/<%= $wallpaper %>.jpg);">
 	<div id="hat">
 		<table id="that">
 			<tr>
 				<td width="25%">
-					<h1>miniNotes</h1>						
+					<h1>miniNotes</h1>
 				</td>
 				<td width="60%">
 					<a href="https://github.com/PavelNen/Tehnoatom-perl/tree/master/Lecture9_Web/notes_web">https://github.com/.../notes_web</a>
 				</td>
 				<td width="20%">
 					<%= session 'username' %><br>
-					<a href="<%= url_for 'auths_delete' %>">Выйти</a>	
-				</td>	
-			</tr>		
+					<a href="<%= url_for 'auths_delete' %>">Выйти</a>
+				</td>
+			</tr>
 		</table>
 	</div>
 % if (flash 'error') {
@@ -44,15 +43,15 @@
 			<a href="<%= url_for 'notes_show' %>"><div id="m1">Мой стол</div></a>
 			<a href="<%= url_for 'lenta_show' %>"><div id="m2">Лента</div></a>
 			<a href="<%= url_for 'people_show' %>"><div id="m3">Мир</div></a>
-			<a href="<%= url_for 'friends_show' %>"><div id="m4">Избранные</div></a>
+			<a href="<%= url_for 'favorites_show' %>"><div id="m4">Избранные</div></a>
 			<a href="<%= url_for 'notes_form' %>"><div id="m5">Новая заметка</div></a>
 		</div>
-		
+
 		<div id="content">
 			<%= content %>
 		</div>
 	</div>
-	
+
 
 </body>
 </html>

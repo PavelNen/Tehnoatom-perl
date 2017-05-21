@@ -8,7 +8,7 @@ sub welcome {
       $self->redirect_to('notes_show');
   }
   # Render template "example/welcome.html.ep" with message
-  $self->render(msg => 'Добро пожаловать на сайт miniNote!');
+  $self->render(msg => 'Добро пожаловать на сайт miniNotes!');
 }
 
 1;

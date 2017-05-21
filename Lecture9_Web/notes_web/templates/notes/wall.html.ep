@@ -1,21 +1,27 @@
 % layout 'defwall';
 % title "miniNotes - Мой стол - " . session 'username';
-
+<article>
+Всего заметок: <%= (keys %$fewnotes) %><br>
 % if ($fewnotes) {
 % for my $id (sort {$b<=>$a} keys %$fewnotes) {
 
 <div class="onenote">
+	<div style="float:right; position:relative">
+		<a href="/notes/edit<%= $id %>"><img src="/images/Icon/pen.png" width="15px" alt="Редактировать"></a>
+		<a href="/notes/del<%= $id %>"><img src="/images/Icon/trash.png" width="20px" alt="Удалить"></a>
+	</div>
 	<div class="title">
 		<%= $fewnotes->{$id}->{title} %>
 	</div>
 	<div class="time">
-		<%= $fewnotes->{$id}->{time} %>
+		&#8986; <%= $fewnotes->{$id}->{time} %>
 	</div>
 	<div class="text">
-		<%= $fewnotes->{$id}->{text} %>
+<%= $fewnotes->{$id}->{text} %>
 	</div>
 </div>
 % }
 %} else {
 <center> Создавайте заметки, чтобы увидеть их здесь!</center>
 %}
+</article>

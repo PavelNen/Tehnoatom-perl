@@ -8,10 +8,13 @@ use DDP;
 use Mojo::Base 'Mojolicious::Controller';
 #use Mail::Sender;
 
+# функция для представления карточек с данными пользователей в Ленте и Мире
+
 sub show {
     my $self = shift;
     my $favadd = $self->param('favadd');
     my $favdel = $self->param('favdel');
+    my $favmode = $self->param('fav');
 
     if ($favadd and $favadd =~ /^\w+$/) {
         favadd($self, $favadd);
@@ -25,18 +28,31 @@ sub show {
     my $a = {};
     $a = Notes::Model::Favorites->select({userid => $self->session('user_id')});
 
-    for my $id (keys %$h) {
-        if ($a->{'users'} and $a->{'users'} =~ /\Q$h->{$id}->{'username'}\E/) {
-            $h->{$id}->{'favorite'} = 1;
+    if ($favmode) {
+        my $f = {};
+        for my $id (keys %$h) {
+            if ($a->{'users'} and $a->{'users'} =~ /\Q$h->{$id}->{'username'}\E/) {
+                $f->{$id} = $h->{$id};
+                $f->{$id}->{'favorite'} = 1;
+            }
         }
-        else {
-            $h->{$id}->{'favorite'} = 0;
-        }
+        $self->render( list => $f );
     }
-    p $h;
-    $self->render( list => $h );
+    else {
+        for my $id (keys %$h) {
+            if ($a->{'users'} and $a->{'users'} =~ /\Q$h->{$id}->{'username'}\E/) {
+                $h->{$id}->{'favorite'} = 1;
+            }
+            else {
+                $h->{$id}->{'favorite'} = 0;
+            }
+        }
+        #p $h;
+        $self->render( list => $h );
+    }
 }
 
+# Добавляет человека в избранных
 sub favadd {
     my $self = shift;
 
@@ -63,7 +79,7 @@ sub favadd {
 
     return 1;
 }
-
+# Убирает человека из избранных
 sub favdel {
     my $self = shift;
 
@@ -85,6 +101,7 @@ sub favdel {
     return 1;
 }
 
+# Регистрация нового пользователя
 sub create {
     my $self = shift;
 

@@ -1,22 +1,22 @@
 % layout 'defwall';
-% title "miniNote - Создание заметки";
+% title "miniNotes - Создание заметки";
 
 <div id="newnote" style="">
 	<h2>Новая заметка</h2>
 	<form method="POST" action="<%= url_for 'notes_create' %>" id="forma">
-		
+
 	<!--	<textarea name="users" class="sharedusers" placeholder="Кто будет видеть"></textarea> -->
-	
+
 
 	<div id="divfav">
 	<p style="font-size:13pt; text-align:center;">Кто будет видет ваши заметки</p>
 
 	<select multiple="" name="favs" id="favorites">
-	
+
 	<option value="ALL">Доступно всем</option>
 % for my $fav (@$favorites) {
 	<option value="<%= $fav %>"><%= $fav %></option>
-%}				
+%}
 	</select>
 	</div>
 	<input type="title" id="notetitle" name="title" placeholder="Заголовок" />

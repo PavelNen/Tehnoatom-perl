@@ -1,8 +1,7 @@
 % layout 'defwall';
-% title "miniNotes - Мир - " . session 'username';
-
+% title "miniNotes - Избранные - " . session 'username';
 <article>
-Всего авторов: <%= (keys %$list) %><br>
+	Всего избранных: <%= (keys %$list) %><br>
 % for my $id (keys %$list) {
 % 		my $me = '';
 %		if ($id eq session 'user_id') {$me = 'me';}
