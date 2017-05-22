@@ -1,9 +1,28 @@
 <!doctype html>
 <html>
-    <head><title>Not Found</title></head>
-    <body>
-        <center><h1>Страница
-        "<%= $self->req->url->path || '/' %>"
-        не найдена!</h1></center>
+    <head>
+        <title>Not Found</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono|Pangolin" rel="stylesheet">
+    </head>
+    <body style="vertical-align:center;
+                padding: 10px;
+                margin:0; height:100vh;
+                background: url(/images/tnc.jpg) no-repeat fixed #DFDDCD;
+                background-size: cover;">
+        <div style="margin:auto;top:20%;
+                    position:relative;
+                    color: #222222;
+                    font-family: 'PT Mono', monospace;
+                	font-size: 40pt;">
+        Страница    "<%= $self->req->url->path || '/' %>"
+        <br>не найдена!<br>
+    </div>
+    <div style="margin:auto;top:60%;
+                position:absolute;
+                color: #222222;
+                font-family: 'PT Mono', monospace;
+                font-size: 40pt;">
+    <a href="/" style="color: #222222">Перейти на главную страницу?</a>
+</div>
     </body>
 </html>

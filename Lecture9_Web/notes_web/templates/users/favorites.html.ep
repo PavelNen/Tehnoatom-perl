@@ -1,5 +1,5 @@
 % layout 'defwall';
-% title "miniNotes - Избранные - " . session 'username';
+% title "miniNotes - Подписки - " . session 'username';
 <article>
 	Всего избранных: <%= (keys %$list) %><br>
 % for my $id (keys %$list) {

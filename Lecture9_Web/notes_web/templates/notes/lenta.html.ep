@@ -5,21 +5,32 @@
 <article>
 % if ((keys %$fewnotes) == 0) {
 <center><h1 style="margin:auto; top:100px; position:relative">
-	Пользователь пока что не открыл<br>ни одной заметки для Тебя.
-	<br>Или их у него нет...
+	Никто пока что не открыл<br>ни одной заметки для Тебя.
+	<br>Или их нет...
 </h1></center>
 %} else {
 Всего заметок: <%= (keys %$fewnotes) %><br>
+% if ($who) {
+<%= join ' - ', ($who, join ' ', ($firstname, $lastname)) %><br>
+%} else {
+Все авторы<br>
+%}
 %}
 % for my $id (sort {$b<=>$a} keys %$fewnotes) {
 % 		my $mynote = '';
 %		if ($fewnotes->{$id}->{username} eq session 'username') {$mynote = 'mynote';}
 <div class="onenote <%= $mynote %>">
 	% if ($mynote) {
-	<div style="float:right; position:relative">
-		<a href="/notes/edit<%= $id %>"><img src="/images/Icon/pen.png" width="15px" alt="Редактировать"></a>
-		<a href="/notes/del<%= $id %>"><img src="/images/Icon/trash.png" width="20px" alt="Удалить"></a>
-	</div>
+		<div class="eddel">
+			<form method="post" action="<%= url_for('notes_delete') %>">
+				<input type="hidden" name="noteid" value="<%= $id %>">
+				<input type="image" src="/images/Icon/trash.png"  alt="Удалить" >
+			</form>
+			<form method="post" action="<%= url_for('notes_edit') %>">
+				<input type="hidden" name="noteid" value="<%= $id %>">
+				<input type="image" src="/images/Icon/pen.png" alt="Редактировать" >
+			</form>
+		</div>
 	% }
 	<div class="username">
 		<a href="/id<%= $fewnotes->{$id}->{userid} %>" class="apeople"><%= $fewnotes->{$id}->{username} %></a>

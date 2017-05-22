@@ -2,17 +2,18 @@
 % title 'miniNote';
 <h2><%= $msg %></h2>
 <div class="welcome" align="center">
-	
+
 	<div class="wform" >
 	<form method="POST" action="<%= url_for 'auths_create' %>">
+%= csrf_field
 		<table cellpadding="4px" height="300px" style="top: 50px">
-			<tr>        
+			<tr>
         		<td><h3>Вход в систему</h3></td>
-        	</tr>  
+        	</tr>
 			<tr>
         		<td><input type="text" autofocus name="username" placeholder="имя пользователя" /></td>
         	</tr>
-        
+
         	<tr>
         		<td><input type="password" name="password" placeholder="пароль" /></td>
 			</tr>
@@ -27,10 +28,11 @@
 	</div>
 	<div class="wform">
 	<form method="POST" action="<%= url_for 'users_create' %>">
+%= csrf_field
 		<table cellpadding="4px" height="400px">
 			<tr>
         		<td><h3>Регистрация</h3></td>
-	      </tr> 
+	      </tr>
 			<tr>
         		<td><input type="text" name="username" placeholder="имя пользователя" value="<%= flash 'username' %>" /></td>
 			</tr>
@@ -49,10 +51,10 @@
 			<tr>
         		<td><input type="password" name="password2" placeholder="повторите пароль" /></td>
 			</tr>
-			
-			<tr>			
+
+			<tr>
 				<td><input type="submit" value="Регистрация" /></td>
-			</tr>	    
+			</tr>
 		</table>
 	</form>
 	</div>

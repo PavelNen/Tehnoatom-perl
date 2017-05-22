@@ -2,7 +2,7 @@ package Notes::Controller::Users;
 
 use strict;
 use warnings;
-use 5.020;
+use 5.010;
 use DDP;
 
 use Mojo::Base 'Mojolicious::Controller';
@@ -16,10 +16,10 @@ sub show {
     my $favdel = $self->param('favdel');
     my $favmode = $self->param('fav');
 
-    if ($favadd and $favadd =~ /^\w+$/) {
+    if ($favadd and $favadd =~ /^\d+$/) {
         favadd($self, $favadd);
     }
-    if ($favdel and $favdel =~ /^\w+$/) {
+    if ($favdel and $favdel =~ /^\d+$/) {
         favdel($self, $favdel);
     }
 
@@ -31,16 +31,16 @@ sub show {
     if ($favmode) {
         my $f = {};
         for my $id (keys %$h) {
-            if ($a->{'users'} and $a->{'users'} =~ /\Q$h->{$id}->{'username'}\E/) {
+            if ($a->{'users'} and $a->{'users'} =~ /\Q$h->{$id}->{'id'}\E/) {
                 $f->{$id} = $h->{$id};
                 $f->{$id}->{'favorite'} = 1;
             }
         }
-        $self->render( list => $f );
+        $self->render( list => $f, page => 'Подписки' );
     }
     else {
         for my $id (keys %$h) {
-            if ($a->{'users'} and $a->{'users'} =~ /\Q$h->{$id}->{'username'}\E/) {
+            if ($a->{'users'} and $a->{'users'} =~ /\Q$h->{$id}->{'id'}\E/) {
                 $h->{$id}->{'favorite'} = 1;
             }
             else {
@@ -48,7 +48,7 @@ sub show {
             }
         }
         #p $h;
-        $self->render( list => $h );
+        $self->render( list => $h, page => 'Мир');
     }
 }
 
@@ -56,24 +56,24 @@ sub show {
 sub favadd {
     my $self = shift;
 
-    my $favname = shift;
+    my $favid = shift;
 
     my $user = Notes::Model::Favorites->select( {
         userid => $self->session('user_id'),
     } );
     say "user = $user";
     if ($user) {
-            unless ($user->{'users'} =~ /$favname/) {
-                Notes::Model::Favorites->update(
-                    'users', $user->{users} . "$favname,",
-                        {userid => $self->session('user_id'),}
-            );
+        unless ($user->{'users'} =~ /$favid/) {
+            Notes::Model::Favorites->update(
+                    {users  => $user->{users} . "$favid,"},
+                    {userid => $self->session('user_id'),}
+                                            );
         }
     }
     else {
         Notes::Model::Favorites->insert( {
             userid => $self->session('user_id'),
-            users => "$favname,"
+            users => "$favid,"
         } );
     }
 
@@ -83,18 +83,18 @@ sub favadd {
 sub favdel {
     my $self = shift;
 
-    my $favname = shift;
+    my $favid = shift;
 
     my $user = Notes::Model::Favorites->select( {
         userid => $self->session('user_id'),
     } );
     say "user = $user";
     if ($user) {
-            $user->{'users'} =~ s/,?\Q$favname\E,?//g;
-                Notes::Model::Favorites->update(
-                    'users', $user->{users},
-                        {userid => $self->session('user_id'),}
-            );
+        $user->{'users'} =~ s/\Q$favid\E,//g;
+            Notes::Model::Favorites->update(
+                    {users => $user->{users}},
+                    {userid => $self->session('user_id'),}
+                                            );
 
     }
 
@@ -113,6 +113,11 @@ sub create {
     my $email      = $self->param('email');
 
     # Validation
+
+    my $validation = $self->validation;
+    return $self->render(text => 'Bad CSRF token!', status => 403)
+    if $validation->csrf_protect->has_error('csrf_token');
+
     my $err_msg;
 CHECK: {
 
@@ -171,11 +176,97 @@ CHECK: {
 
     # Login User
     $self->session(
-        user_id => $user_id,
-        username   => $username
+        user_id    => $user_id,
+        username   => $username,
+        firstname  => $firstname,
+        lastname   => $lastname
     )->redirect_to('notes_show') if $user_id #TODO ;
 }
 
+sub settings {
+    my $self = shift;
+    my $noteid = $self->param('noteid');
 
+    my $h = Notes::Model::User->select( {id => $self->session('user_id')} );
+
+    $self->render( forms => $h );
+}
+
+sub update {
+    my $self = shift;
+    my $username      = $self->param('username');
+    my $firstname     = $self->param('firstname');
+    my $lastname      = $self->param('lastname');
+    my $password      = $self->param('password');
+    my $newpassword   = $self->param('newpassword');
+    my $newpassword2  = $self->param('newpassword2');
+    my $email         = $self->param('email');
+
+    # Validation
+    my $validation = $self->validation;
+    return $self->render(text => 'Bad CSRF token!', status => 403)
+    if $validation->csrf_protect->has_error('csrf_token');
+
+    my $err_msg;
+CHECK: {
+
+        unless ( $username && $password && $email ) {
+            $err_msg = 'Пожалуйста, заполните все поля слева! ';
+            last CHECK;
+        }
+
+        my $user = Notes::Model::User->select({username => $username});
+
+        if ( $user->{id} and $user->{username} ne $self->session('username') ) {
+            $err_msg = 'Такое имя пользователя уже занято!';
+            last CHECK;
+        }
+
+        unless ( $email =~ /^[a-z0-9.-]+\@[a-z0-9.-]+$/i ) {
+            $err_msg = 'Некорректный адресс электронной почты!';
+            last CHECK;
+        }
+
+        $user = Notes::Model::User->select({email => $email});
+
+        if ( $user->{id} and $user->{id} ne $self->session('user_id') ) {
+            $err_msg = 'Такая электронная почта уже зарегистрированна!';
+            last CHECK;
+        }
+
+        if ( $newpassword ne $newpassword2 ) {
+            $err_msg = 'Пароли не совпадают!';
+            last CHECK;
+        }
+
+    }
+
+    # Show error
+    if ($err_msg) {
+        $self->flash(
+            error        => $err_msg,
+        )->redirect_to('users_settings');
+
+        return;
+    }
+
+    # Save User
+    my %user = (
+        username     => $username,
+        firstname    => $firstname,
+        lastname     => $lastname,
+        password     => $password,
+        email        => $email
+    );
+
+    $self->session(
+        username   => $username,
+        firstname  => $firstname,
+        lastname   => $lastname
+    );
+    my $user_id = Notes::Model::User->update(\%user, { id => $self->session('user_id') } );
+
+    $self->redirect_to('notes_show');
+}
 
 1;

@@ -61,8 +61,7 @@ sub update {
             . " WHERE " .
                 join(' AND ',  map {"$_ = '" . quotemeta($fields->{$_}) . "'"} keys %$fields);
     say "$query";
-    $db->do($query)
-                    or die $db->errstr;
+    $db->do($query) or die $db->errstr;
 }
 
 sub delete {

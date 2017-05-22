@@ -3,10 +3,16 @@
 }
 
 #nav {
-	width: 360px;
-	height: 25px;
+	width: 100%;
+	left: 0;
+	height: 35px;
 	padding: 6px;
+	top: 0;
+	z-index: 5;
 	position: absolute;
+	display: block;
+	-webkit-transition: 2s;
+    transition: 2s;
 }
 
 #nav div {
@@ -86,6 +92,8 @@
 	/*border-collapse: collapse;*/
 	display: inline-block;
 	vertical-align: top;
+	z-index: 4;
+	position: relative;
 
 }
 
@@ -128,10 +136,38 @@
 
 }
 
+.eddel {
+	width: 100%;
+	left: 0;
+	top: 3px;
+	position:absolute;
+	visibility:visible;
+	margin: 0;
+	height: 16px;
+	padding-right: 3px;
+}
+.eddel form {
+	float:right;
+	height: 16px;
+	width: 16px;
+	padding: inherit;
+	visibility:inherit;
+	display: inline-block;
+	margin: 0 1px 0 1px;
+}
+.eddel input {
+	height: 16px;
+	width: 16px;
+	visibility:inherit;
+}
+
 .nick {
 	font-size: 20pt;
 	font-weight: bold;
 	text-decoration: none;
+	width: 100%;
+	text-align: center;
+	display: block;
 }
 
 .realname {

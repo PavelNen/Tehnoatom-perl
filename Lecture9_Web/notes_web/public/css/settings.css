@@ -1,0 +1,59 @@
+/* класс формы на странице настройки аккаунта*/
+
+.settings {
+	margin: auto;
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	text-align: center;
+	vertical-align: center;
+	display: inline-block;
+}
+.settings button {
+	width: 300px;
+	height: 30px;
+	font-size: 14pt;
+	font-family: 'PT Mono', monospace;
+	border-radius: 5px;
+	margin: 50px auto;
+	border-radius: 5px;
+}
+
+.anketa {
+	width: 100%;
+	position: relative;
+	margin: 2px;
+	border-radius: 2px;
+}
+
+.destroy {
+	width: 100%;
+
+	position: relative;
+	margin: 50px auto;
+	display: inline-block;
+}
+
+.destroy button {
+
+	width: 200px;
+	height: 20px;
+	font-size: 10pt;
+
+	margin: 0 auto;
+}
+
+.settings input {
+	width: 300px;
+	height: 30px;
+	font-size: 14pt;
+	font-family: 'PT Mono', monospace;
+	border-radius: 5px;
+	margin: 2px;
+}
+
+.settings input:invalid {
+	border-color: #ff9999;
+	background-color: #ff9999;
+}

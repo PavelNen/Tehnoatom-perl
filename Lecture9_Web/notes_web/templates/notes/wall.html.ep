@@ -1,14 +1,21 @@
 % layout 'defwall';
 % title "miniNotes - Мой стол - " . session 'username';
 <article>
-Всего заметок: <%= (keys %$fewnotes) %><br>
+Всего Твоих заметок: <%= (keys %$fewnotes) %><br>
+<strong><%= join ' - ', (session('username'), join ' ', (session('firstname'), session('lastname'))) %></strong><br>
 % if ($fewnotes) {
 % for my $id (sort {$b<=>$a} keys %$fewnotes) {
 
 <div class="onenote">
-	<div style="float:right; position:relative">
-		<a href="/notes/edit<%= $id %>"><img src="/images/Icon/pen.png" width="15px" alt="Редактировать"></a>
-		<a href="/notes/del<%= $id %>"><img src="/images/Icon/trash.png" width="20px" alt="Удалить"></a>
+	<div class="eddel">
+		<form method="post" action="<%= url_for('notes_delete') %>">
+			<input type="hidden" name="noteid" value="<%= $id %>">
+			<input type="image" src="/images/Icon/trash.png"  alt="Удалить" >
+		</form>
+		<form method="post" action="<%= url_for('notes_edit') %>">
+			<input type="hidden" name="noteid" value="<%= $id %>">
+			<input type="image" src="/images/Icon/pen.png" alt="Редактировать" >
+		</form>
 	</div>
 	<div class="title">
 		<%= $fewnotes->{$id}->{title} %>

@@ -11,37 +11,43 @@
 	width: 45%;
 	font-size: 20pt;
 	margin-bottom: 5px;
+	border-radius: 5px;
 }
 
 #notetext {
 	float: left;
-	width: 60%;
+	width: 55%;
+	/*min-width: 45%;*/
 	height: 200px;
 	font-size: 13pt;
 	resize: vertical;
+	border-radius: 5px;
 }
 /*
 .sharedusers {
 	font-size: 14pt;
 	width: 50%;
-	
+
 }*/
 
 #rec {
-	width: 400px;
+	margin: 15px 0 0 0;
+	width: 300px;
 	font-size: 14pt;
-	float: left;
+	float: right;
+	display: inline-block;
 }
 
 #divfav {
 	font-size: 18pt;
 	padding: 0;
 	float: right;
-	margin: 0 auto 5px 0;
+	margin: 0 auto 5px 15px;
 	width: 300px;
-	height: 400px;
+	height: 450px;
 	top: -40px;
 	position: relative;
+	display: inline-block;
 }
 
 #favorites {
@@ -54,5 +60,3 @@
 	width: 300px;
 	height: 400px;
 }
-
-

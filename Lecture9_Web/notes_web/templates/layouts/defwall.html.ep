@@ -5,12 +5,31 @@
 	<link type="text/css" href="/css/general.css" rel="stylesheet" />
 	<link type="text/css" href="/css/wall.css" rel="stylesheet" />
 	<link type="text/css" href="/css/newnote.css" rel="stylesheet" />
+	<link type="text/css" href="/css/settings.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=PT+Mono|Pangolin" rel="stylesheet">
 
 
 </head>
 % my $wallpaper = int(rand(5));
 <body style="background-image: url(/images/Wallpaper/<%= $wallpaper %>.jpg);">
+	<script>
+		window.onscroll = function vverh() {
+  			document.getElementById('vverh').style.display = (window.pageYOffset > '200' ? 'block' : 'none');
+			if (window.pageYOffset > '150') {
+			document.getElementById('nav').style.position = 'fixed';
+			document.getElementById('nav').style.top = '0';
+			document.getElementById('nav').style.background = '#fefcea';
+			document.getElementById('nav').style.border = '1px solid #333333';
+			}
+			else {
+				document.getElementById('nav').style.position = 'absolute';
+				document.getElementById('nav').style.top = '0';
+				document.getElementById('nav').style.background = 'none';
+				document.getElementById('nav').style.border = 'none';
+			}
+		 }
+	</script>
+	<a href='#' id='vverh'><img src="/images/Icon/vverh1.png" alt="ВВЕРХ" width="60px"></a>
 	<div id="hat">
 		<table id="that">
 			<tr>
@@ -23,6 +42,9 @@
 				<td width="20%">
 					<%= session 'username' %><br>
 					<a href="<%= url_for 'auths_delete' %>">Выйти</a>
+				</td>
+				<td>
+					<a href="<%= url_for 'users_settings' %>" title="Настройки аккаунта <%= session 'username' %>"><img src="/images/Icon/settings.png" alt="Настройки" height="30px"></a>
 				</td>
 			</tr>
 		</table>
@@ -40,11 +62,11 @@
 % }
 	<div class="board">
 		<div id="nav">
-			<a href="<%= url_for 'notes_show' %>"><div id="m1">Мой стол</div></a>
-			<a href="<%= url_for 'lenta_show' %>"><div id="m2">Лента</div></a>
-			<a href="<%= url_for 'people_show' %>"><div id="m3">Мир</div></a>
-			<a href="<%= url_for 'favorites_show' %>"><div id="m4">Избранные</div></a>
-			<a href="<%= url_for 'notes_form' %>"><div id="m5">Новая заметка</div></a>
+			<a href="<%= url_for 'notes_show' %>"><div id="m1" title="Все мои записки">Мой стол</div></a>
+			<a href="<%= url_for 'lenta_show' %>"><div id="m2" title="Лента записок выбранных людей">Лента</div></a>
+			<a href="<%= url_for 'people_show' %>"><div id="m3" title="Все пользователи сайта">Мир</div></a>
+			<a href="<%= url_for 'favorites_show' %>"><div id="m4" title="Авторы, чьи записки видны в Ленте">Подписки</div></a>
+			<a href="<%= url_for 'notes_form' %>"><div id="m5" title="Опубликуй свою мысль">Новая заметка</div></a>
 		</div>
 
 		<div id="content">

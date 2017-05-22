@@ -35,3 +35,8 @@ input {
 	font-size: 14pt;
 	font-family: 'PT Mono', monospace;
 }
+
+input:invalid {
+	border-color: #ff9999;
+	background-color: #ff9999;
+}

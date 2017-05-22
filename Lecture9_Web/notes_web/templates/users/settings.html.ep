@@ -1,0 +1,67 @@
+% layout 'defwall';
+% title "miniNotes - Кабинет - " . session 'username';
+<article>
+	<script type="text/javascript">
+	function destroy() {
+		if (confirm("Ты уверен, что хочешь уничтожить аккаунт и всё, что с ним связано?")) {
+			if (confirm("Ты АБСОЛЮТНО уверен, что хочешь УНИЧТОЖИТЬ АККАУНТ ?!")) {
+				return true;
+			}
+			else return false;
+		}
+    	else return false;
+	}
+	function upgrade() {
+		if (confirm("Обновить данные?"))
+		return true;
+    	else return false;
+	}
+	</script>
+<div class="settings">
+	<h2>Настройка аккаунта "<%= session 'username' %>"</h2>
+
+	<form method="post" action="<%= url_for 'users_update' %>" name="account">
+		<table class="anketa">
+			<tr>
+				<td>
+			Имя пользователя:<br>
+		<input type="text" name="username" value="<%= $forms->{username} %>" placeholder="Имя пользователя"><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+		Имя и фамилия:<br>
+		<input type="text" name="firstname" value="<%= $forms->{firstname} %>" placeholder="Имя (не обязательно)"><br>
+		<input type="text" name="lastname" value="<%= $forms->{lastname} %>" placeholder="Фамилия (не обязательно)">
+				</td>
+				<td>
+					Изменение пароля:<br>
+					<input type="password" name="newpassword" value="" placeholder="Введите пароль"><br>
+					<input type="password" name="newpassword2" value="" placeholder="Повторите пароль"><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Email:<br>
+					<input type="email" name="email" value="<%= $forms->{email} %>" placeholder="Электронная почта">
+				</td>
+			</tr>
+			<tr>
+				<td>
+		<input type="password" name="password" value="" placeholder="Введите текущий пароль">
+				</td>
+				<td>
+					<button type="submit" name="button" onclick="return upgrade();">Сохранить изменения</button>
+				</td>
+			</tr>
+	</table>
+
+	</form>
+
+	<div class="destroy">
+	<form action="<%= url_for 'users_delete' %>" method="post">
+		<button type="submit" name="button" onclick="return destroy();">Удалить аккаунт</button>
+	</form>
+	</div>
+</div>
+</article>

@@ -1,5 +1,5 @@
 % layout 'defwall';
-% title "miniNotes - Мир - " . session 'username';
+% title "miniNotes - $page - " . session 'username';
 
 <article>
 Всего авторов: <%= (keys %$list) %><br>
@@ -16,10 +16,10 @@
 %	if (!$me) {
 	<div class="add">
 % 		if ($list->{$id}->{'favorite'} == 0) {
-		<a href="<%= '/people?favadd=' . $list->{$id}->{username}; %>" class="apeople">Добавить в избранных</a>
+		<a href="<%= '/people?favadd=' . $id; %>" class="apeople">Подписаться</a>
 %		}
 %		else {
-		<a href="<%= '/people?favdel=' . $list->{$id}->{username}; %>" class="apeople">Отписаться</a>
+		<a href="<%= '/people?favdel=' . $id; %>" class="apeople">Не читать больше</a>
 %		}
 	</div>
 %	}

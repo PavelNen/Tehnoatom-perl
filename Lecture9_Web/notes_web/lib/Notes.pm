@@ -38,12 +38,13 @@ sub startup {
     $rc->route('/id:id', id => qr/\d+/)->via('get')->to('notes#lenta')->name('notes_individual');
 
     my $rn = $r->under('/notes')->to('auths#check');
-    $rn->route                       ->via('get')   ->to('notes#wall') ->name('notes_show');
-    $rn->route('/newnote')           ->via('get')   ->to('notes#create_form') ->name('notes_form');
-    $rn->route                       ->via('post')  ->to('notes#create')->name('notes_create');
-    $rn->route('/edit:noteid', noteid => qr/\d+/)->via('get')->to('notes#edit_form')->name('notes_edit');
-    $rn->route('/up')                ->via('post')  ->to('notes#update')->name('notes_update');
-    $rn->route('/del:noteid', noteid => qr/\d+/)->via('get')->to('notes#delete')->name('notes_delete');
+    $rn->route              ->via('get')   ->to('notes#wall')        ->name('notes_show');
+    $rn->route('/newnote')  ->via('get')   ->to('notes#create_form') ->name('notes_form');
+    $rn->route              ->via('post')  ->to('notes#create')      ->name('notes_create');
+    $rn->route('/edit')     ->via('post')  ->to('notes#edit_form')   ->name('notes_edit');
+    $rn->route('/up')       ->via('post')  ->to('notes#update')      ->name('notes_update');
+    $rn->route('/del')      ->via('post')  ->to('notes#delete')      ->name('notes_delete');
+    #$rn->route('/editdel')->via('post')->to('notes#editdel')->name('notes_edit_delete');
 
     my $rl = $r->under('/lenta')->to('auths#check');
     $rl->route->to('notes#lenta')->name('lenta_show');
@@ -53,8 +54,12 @@ sub startup {
     #$rp->route('', favname => qr/^[^\.\/\?]+$/)->via('get')->to('users#favadd')->name('favorite_add');
 
     my $rf = $r->under('/favorites')->to('auths#check');
-    $rf->route->to('users#show', fav => 1)->name('favorites_show');
+    $rf->route->to('users#show', fav => 1, title => 'Подписки')->name('favorites_show');
 
+    my $rs = $r->under('/settings')->to('auths#check');
+    $rs->route->to('users#settings')->name('users_settings');
+    $rs->route('/up')       ->via('post')  ->to('users#update')      ->name('users_update');
+    $rs->route('/del')      ->via('post')  ->to('users#delete')      ->name('users_delete');
     #Init Model
     #Инициализация базы данных
     Notes::Model->db();

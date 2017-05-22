@@ -4,10 +4,11 @@
 <div id="newnote" style="">
 	<h2>Редактирование заметки</h2>
 	<form method="POST" action="<%= url_for 'notes_update' %>" id="forma">
+%= csrf_field
 	<input type="text" name="nid" value="<%= $noteid %>" style="display:none">
 	<div id="divfav">
-	<p style="font-size:13pt; text-align:center;">Кто будет видеть Твои заметки</p>
-
+	<p style="font-size:13pt; text-align:center; margin-top:20px; margin-bottom:2px">Кто будет видеть Твои заметки</p>
+	<p style="font-size:10pt; text-align:center; margin-bottom: 5px; margin-top:3px;">Для выбора нескольих удерживайте Ctrl</p>
 	<select multiple="" name="favs" id="favorites">
 % my $selected = '';
 % if (exists $forms->{favs}->{'ALL'}) {

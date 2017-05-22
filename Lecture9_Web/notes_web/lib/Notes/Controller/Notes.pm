@@ -43,19 +43,37 @@ sub lenta {
         'lenta', $id
         );
 
+    my $d = Notes::Model::Favorites->select( {userid => $self->session('user_id')} );
+    my %subscr = map {($_ => 1)} (split(/,/, $d->{users}));
+    p %subscr;
     # Объединяем хэши
     my %a = (%$m, %$b, %$c);
+    my %willshow = ();
 
+    my $who = '';
+    my $firstname = '';
+    my $lastname = '';
     for (keys %a) {
-        my $idtoname = Notes::Model::User->select( {
-            id => $a{$_}->{userid},
-        } );
-        $a{$_}->{username} = $idtoname->{username};
+        if ( exists $subscr{$a{$_}->{userid}}  ) {
+            my $idtoname = Notes::Model::User->select( {
+                id => $a{$_}->{userid},
+            } );
+            $willshow{$_} = $a{$_};
+            $willshow{$_}->{username} = $idtoname->{username};
+            if ($id) {
+                $who = $idtoname->{username};
+                $firstname = $idtoname->{firstname};
+                $lastname = $idtoname->{lastname}
+            }
+        }
     }
 
-    say "Finish selecting";
+    #say "Finish selecting";
 
-    $self->render( fewnotes => \%a );
+    $self->render( fewnotes  => \%willshow,
+                   who       => $who,
+                   firstname => $firstname,
+                   lastname  => $lastname);
 }
 
 sub create_form {
@@ -71,7 +89,8 @@ sub create_form {
     my $f = {};
     $f = Notes::Model::User->selectall( {}, 'empty' );
     my @a = ();
-       @a = map {$f->{$_}->{username}} sort {$b cmp $a} keys %$f;
+       @a = map {$f->{$_}->{username} if $f->{$_}->{username} ne $self->session('username')}
+                    sort {$b cmp $a} keys %$f;
 
     $self->render( favorites => \@a );
 
@@ -80,10 +99,14 @@ sub create_form {
 sub create {
     my ($self) = @_;
 
-    my $title   = $self->param('title');
-    my $text  = $self->param('text');
-    my $users   = $self->param('users');
+    my $title     = $self->param('title');
+    my $text      = $self->param('text');
+    my $users     = $self->param('users');
     my @favorites = $self->req->params->every_param('favs');
+
+    my $validation = $self->validation;
+    return $self->render(text => 'Bad CSRF token!', status => 403)
+    if $validation->csrf_protect->has_error('csrf_token');
 
     my $err_msg = '';
     my $notice = '';
@@ -106,7 +129,8 @@ sub create {
     }
 
     for (@{$favorites[0]}) {
-        $users .= "$_,";
+        my $nicktoid = Notes::Model::User->select({username => $_});
+        $users .= "$nicktoid->{id},";
     }
 
     #$users =~ s/\s// if $users;
@@ -144,16 +168,17 @@ sub edit_form {
 #    my @a = ();
 #    @a = split /,/, $f->{users} if $f->{users};
 
-my $f = {};
-$f = Notes::Model::User->selectall( {}, 'empty' );
-my @a = ();
-   @a = map {$f->{$_}->{username}} sort {$b cmp $a} keys %$f;
+    my $f = {};
+    $f = Notes::Model::User->selectall( {}, 'empty' );
+    my @a = ();
+    @a = map {$f->{$_}->{username} if $f->{$_}->{username} ne $self->session('username')}
+                sort {$b cmp $a} keys %$f;
     my $h = Notes::Model::Note->select( {id => $noteid} );
     my %b = ();
     %b = map {$_ => 1} split /,/, $h->{users} if $h->{users};
     $h->{favs} = \%b;
 
-    $self->render( favorites => \@a, forms => $h);# , noteid => $noteid);
+    $self->render( favorites => \@a, forms => $h, noteid => $noteid);
 
 }
 
@@ -165,6 +190,10 @@ sub update {
     my $users     = $self->param('users');
     my @favorites = $self->req->params->every_param('favs');
     my $noteid    = $self->param('nid');
+
+    my $validation = $self->validation;
+    return $self->render(text => 'Bad CSRF token!', status => 403)
+    if $validation->csrf_protect->has_error('csrf_token');
 
     my $err_msg = '';
     my $notice  = '';
@@ -190,17 +219,21 @@ sub update {
     }
 
     for (@{$favorites[0]}) {
+        my $nicktoid = Notes::Model::User->select({username => $_});
+        $users .= "$nicktoid->{id},";
         $users .= "$_,";
     }
 
-    Notes::Model::Note->update({
+    if ( Notes::Model::Note->update({
         title => $title,
         text  => $text,
         users => $users,
-    }, { id => $noteid });
+    }, { id => $noteid }) ) {
+        $notice = join "\n" , ($notice, "Заметка обновлена");
+    }
     say "Заметка обновлена $noteid";
 
-    $self->flash(notice => 'Заметка обновлена')->redirect_to('notes_show');
+    $self->flash(notice => $notice)->redirect_to('notes_show');
 }
 
 sub delete {
