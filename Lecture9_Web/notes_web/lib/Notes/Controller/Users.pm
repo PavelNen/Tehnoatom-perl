@@ -238,6 +238,9 @@ CHECK: {
             $err_msg = 'Пароли не совпадают!';
             last CHECK;
         }
+        elsif ($newpassword ne '') {
+            $password = $newpassword;
+        }
 
     }
 
@@ -267,6 +270,44 @@ CHECK: {
     my $user_id = Notes::Model::User->update(\%user, { id => $self->session('user_id') } );
 
     $self->redirect_to('notes_show');
+}
+
+sub delete {
+    my $self = shift;
+    my $username      = $self->param('username');
+    my $firstname     = $self->param('firstname');
+    my $lastname      = $self->param('lastname');
+    my $password      = $self->param('password');
+    my $email         = $self->param('email');
+
+    # Validation
+    my $validation = $self->validation;
+    return $self->render(text => 'Bad CSRF token!', status => 403)
+    if $validation->csrf_protect->has_error('csrf_token');
+
+    my $err_msg;
+
+    unless ( $password ) {
+        $err_msg = "Пожалуйста, введите текущий пароль!";
+    }
+
+
+    # Show error
+    if ($err_msg) {
+        $self->flash(
+            error        => $err_msg,
+        )->redirect_to('users_settings');
+
+        return;
+    }
+
+    # Удаляем аккаунт и все записки пользователя
+
+    Notes::Model::User->delete({id => $self->session('user_id')});
+    Notes::Model::Note->delete({userid => $self->session('user_id')});
+
+    # Разлогиниваем
+    $self->Notes::Controller::Auths::delete();
 }
 
 1;

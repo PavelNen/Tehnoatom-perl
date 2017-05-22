@@ -25113,3 +25113,1758 @@ Compilation failed in require at (eval 116) line 1.
 [Mon May 22 00:57:39 2017] [debug] Rendering template "index/welcome.html.ep"
 [Mon May 22 00:57:39 2017] [debug] Rendering template "layouts/default.html.ep"
 [Mon May 22 00:57:39 2017] [debug] 200 OK (0.010369s, 96.441/s)
+[Mon May 22 12:35:04 2017] [debug] GET "/"
+[Mon May 22 12:35:04 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 22 12:35:04 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 12:35:04 2017] [debug] Rendering template "index/welcome.html.ep"
+[Mon May 22 12:35:04 2017] [debug] Rendering template "layouts/default.html.ep"
+[Mon May 22 12:35:04 2017] [debug] 200 OK (0.027604s, 36.227/s)
+[Mon May 22 12:35:09 2017] [debug] POST "/login"
+[Mon May 22 12:35:09 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 22 12:35:09 2017] [debug] 302 Found (0.006546s, 152.765/s)
+[Mon May 22 12:35:09 2017] [debug] GET "/notes"
+[Mon May 22 12:35:09 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:35:09 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 12:35:09 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 12:35:09 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 12:35:09 2017] [debug] 200 OK (0.020172s, 49.574/s)
+[Mon May 22 12:35:32 2017] [debug] POST "/notes/edit"
+[Mon May 22 12:35:32 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:35:32 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 12:35:32 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 12:35:32 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:35:32 2017] [debug] 200 OK (0.008135s, 122.926/s)
+[Mon May 22 12:35:44 2017] [debug] POST "/notes/up"
+[Mon May 22 12:35:44 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:35:44 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 12:35:44 2017] [debug] 302 Found (0.086611s, 11.546/s)
+[Mon May 22 12:35:44 2017] [debug] GET "/notes"
+[Mon May 22 12:35:44 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:35:44 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 12:35:44 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 12:35:44 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:35:44 2017] [debug] 200 OK (0.00702599999999998s, 142.328/s)
+[Mon May 22 12:36:22 2017] [debug] POST "/notes/edit"
+[Mon May 22 12:36:22 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:36:22 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 12:36:22 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 12:36:22 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:36:22 2017] [debug] 200 OK (0.004576s, 218.531/s)
+[Mon May 22 12:36:32 2017] [debug] POST "/notes/up"
+[Mon May 22 12:36:32 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:36:32 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 12:36:32 2017] [debug] 302 Found (0.08719s, 11.469/s)
+[Mon May 22 12:36:32 2017] [debug] GET "/notes"
+[Mon May 22 12:36:32 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:36:32 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 12:36:32 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 12:36:32 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:36:32 2017] [debug] 200 OK (0.00831s, 120.337/s)
+[Mon May 22 12:36:49 2017] [debug] GET "/notes/newnote"
+[Mon May 22 12:36:49 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:36:49 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "create_form"
+[Mon May 22 12:36:49 2017] [debug] Rendering template "notes/create_form.html.ep"
+[Mon May 22 12:36:49 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:36:49 2017] [debug] 200 OK (0.006684s, 149.611/s)
+[Mon May 22 12:44:52 2017] [debug] POST "/notes"
+[Mon May 22 12:44:52 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:44:52 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 12:44:52 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "create"
+[Mon May 22 12:44:52 2017] [debug] 302 Found (0.09804s, 10.200/s)
+[Mon May 22 12:44:52 2017] [debug] GET "/notes"
+[Mon May 22 12:44:52 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:44:52 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 12:44:52 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 12:44:53 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 12:44:53 2017] [debug] 200 OK (0.018284s, 54.693/s)
+[Mon May 22 12:45:02 2017] [debug] POST "/notes/edit"
+[Mon May 22 12:45:02 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:45:02 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 12:45:02 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 12:45:02 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:45:02 2017] [debug] 200 OK (0.009824s, 101.792/s)
+[Mon May 22 12:45:20 2017] [debug] GET "/notes"
+[Mon May 22 12:45:20 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:45:20 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 12:45:20 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 12:45:20 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:45:20 2017] [debug] 200 OK (0.005924s, 168.805/s)
+[Mon May 22 12:45:22 2017] [debug] POST "/notes/edit"
+[Mon May 22 12:45:22 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:45:22 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 12:45:22 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 12:45:22 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:45:22 2017] [debug] 200 OK (0.004798s, 208.420/s)
+[Mon May 22 12:45:24 2017] [debug] GET "/lenta"
+[Mon May 22 12:45:24 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:45:24 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 12:45:25 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 12:45:25 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:45:25 2017] [debug] 200 OK (0.013965s, 71.608/s)
+[Mon May 22 12:45:46 2017] [debug] GET "/favorites"
+[Mon May 22 12:45:46 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:45:46 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 12:45:46 2017] [debug] Rendering template "users/show.html.ep"
+[Mon May 22 12:45:46 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:45:46 2017] [debug] 200 OK (0.012708s, 78.691/s)
+[Mon May 22 12:45:49 2017] [debug] GET "/people"
+[Mon May 22 12:45:49 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:45:49 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 12:45:49 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 12:45:49 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:45:49 2017] [debug] 200 OK (0.004787s, 208.899/s)
+[Mon May 22 12:45:54 2017] [debug] GET "/people"
+[Mon May 22 12:45:54 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:45:54 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 12:45:54 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 12:45:54 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:45:54 2017] [debug] 200 OK (0.09386s, 10.654/s)
+[Mon May 22 12:45:55 2017] [debug] GET "/lenta"
+[Mon May 22 12:45:55 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:45:55 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 12:45:55 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 12:45:55 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:45:55 2017] [debug] 200 OK (0.012964s, 77.137/s)
+[Mon May 22 12:45:58 2017] [debug] GET "/id2"
+[Mon May 22 12:45:58 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:45:58 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 12:45:58 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 12:45:58 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:45:58 2017] [debug] 200 OK (0.008099s, 123.472/s)
+[Mon May 22 12:46:07 2017] [debug] GET "/id5"
+[Mon May 22 12:46:07 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:46:07 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 12:46:07 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 12:46:07 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:46:07 2017] [debug] 200 OK (0.008476s, 117.980/s)
+[Mon May 22 12:46:13 2017] [debug] GET "/notes"
+[Mon May 22 12:46:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:46:13 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 12:46:13 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 12:46:13 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:46:13 2017] [debug] 200 OK (0.006824s, 146.542/s)
+[Mon May 22 12:46:17 2017] [debug] POST "/notes/edit"
+[Mon May 22 12:46:17 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:46:17 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 12:46:17 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 12:46:17 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:46:17 2017] [debug] 200 OK (0.005919s, 168.947/s)
+[Mon May 22 12:47:37 2017] [debug] GET "/people"
+[Mon May 22 12:47:37 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:47:37 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 12:47:37 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 12:47:37 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:47:37 2017] [debug] 200 OK (0.005581s, 179.179/s)
+[Mon May 22 12:47:38 2017] [debug] GET "/id6"
+[Mon May 22 12:47:38 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 12:47:38 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 12:47:38 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 12:47:38 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 12:47:38 2017] [debug] 200 OK (0.005812s, 172.058/s)
+[Mon May 22 13:15:06 2017] [debug] GET "/id6"
+[Mon May 22 13:15:06 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:15:06 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:15:06 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 13:15:06 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 13:15:06 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:15:06 2017] [debug] 200 OK (0.021827s, 45.815/s)
+[Mon May 22 13:15:07 2017] [debug] GET "/people"
+[Mon May 22 13:15:07 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:15:07 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 13:15:07 2017] [debug] Rendering template "users/show.html.ep"
+[Mon May 22 13:15:07 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:15:07 2017] [debug] 200 OK (0.010863s, 92.056/s)
+[Mon May 22 13:15:08 2017] [debug] GET "/lenta"
+[Mon May 22 13:15:08 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:15:08 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 13:15:08 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 13:15:08 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:15:08 2017] [debug] 200 OK (0.008554s, 116.904/s)
+[Mon May 22 13:16:38 2017] [debug] GET "/notes"
+[Mon May 22 13:16:38 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:16:38 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:16:38 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 13:16:38 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:16:38 2017] [debug] 200 OK (0.009373s, 106.689/s)
+[Mon May 22 13:17:04 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:17:04 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:17:04 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:17:04 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:17:04 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:17:04 2017] [debug] 200 OK (0.010538s, 94.895/s)
+[Mon May 22 13:17:13 2017] [debug] POST "/notes/up"
+[Mon May 22 13:17:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:17:13 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:17:13 2017] [debug] 302 Found (0.05238s, 19.091/s)
+[Mon May 22 13:17:13 2017] [debug] GET "/notes"
+[Mon May 22 13:17:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:17:13 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:17:13 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:17:13 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:17:13 2017] [debug] 200 OK (0.007945s, 125.865/s)
+[Mon May 22 13:18:13 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:18:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:18:13 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:18:13 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:18:13 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:18:13 2017] [debug] 200 OK (0.004559s, 219.346/s)
+[Mon May 22 13:18:37 2017] [debug] GET "/notes"
+[Mon May 22 13:18:37 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:18:37 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:18:37 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:18:37 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:18:37 2017] [debug] 200 OK (0.006828s, 146.456/s)
+[Mon May 22 13:20:07 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:20:07 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:20:07 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:20:07 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:20:07 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:20:07 2017] [debug] 200 OK (0.004617s, 216.591/s)
+[Mon May 22 13:20:13 2017] [debug] POST "/notes/up"
+[Mon May 22 13:20:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:20:13 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:20:13 2017] [debug] 302 Found (0.051055s, 19.587/s)
+[Mon May 22 13:20:13 2017] [debug] GET "/notes"
+[Mon May 22 13:20:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:20:13 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:20:13 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:20:13 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:20:13 2017] [debug] 200 OK (0.008773s, 113.986/s)
+[Mon May 22 13:20:20 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:20:20 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:20:20 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:20:20 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:20:20 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:20:20 2017] [debug] 200 OK (0.00448s, 223.214/s)
+[Mon May 22 13:20:23 2017] [debug] POST "/notes/up"
+[Mon May 22 13:20:23 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:20:23 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:20:23 2017] [debug] 302 Found (0.041763s, 23.945/s)
+[Mon May 22 13:20:23 2017] [debug] GET "/notes"
+[Mon May 22 13:20:23 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:20:23 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:20:23 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:20:23 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:20:23 2017] [debug] 200 OK (0.005689s, 175.778/s)
+[Mon May 22 13:22:58 2017] [debug] GET "/lenta"
+[Mon May 22 13:22:58 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:22:58 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 13:22:58 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 13:22:58 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:22:58 2017] [debug] 200 OK (0.00829s, 120.627/s)
+[Mon May 22 13:22:59 2017] [debug] GET "/notes"
+[Mon May 22 13:22:59 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:22:59 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:22:59 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:22:59 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:22:59 2017] [debug] 200 OK (0.006784s, 147.406/s)
+[Mon May 22 13:23:02 2017] [debug] GET "/favorites"
+[Mon May 22 13:23:02 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:23:02 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 13:23:03 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 13:23:03 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:23:03 2017] [debug] 200 OK (0.004731s, 211.372/s)
+[Mon May 22 13:23:03 2017] [debug] GET "/people"
+[Mon May 22 13:23:03 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:23:03 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 13:23:03 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 13:23:03 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:23:03 2017] [debug] 200 OK (0.004295s, 232.829/s)
+[Mon May 22 13:23:04 2017] [debug] GET "/people"
+[Mon May 22 13:23:04 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:23:04 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 13:23:04 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 13:23:04 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:23:04 2017] [debug] 200 OK (0.004044s, 247.280/s)
+[Mon May 22 13:23:05 2017] [debug] GET "/lenta"
+[Mon May 22 13:23:05 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:23:05 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 13:23:05 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 13:23:05 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:23:05 2017] [debug] 200 OK (0.008381s, 119.318/s)
+[Mon May 22 13:23:06 2017] [debug] GET "/notes"
+[Mon May 22 13:23:06 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:23:06 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:23:06 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:23:06 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:23:06 2017] [debug] 200 OK (0.006211s, 161.005/s)
+[Mon May 22 13:24:27 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:24:27 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:24:27 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:24:27 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:24:27 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:24:27 2017] [debug] 200 OK (0.00908s, 110.132/s)
+[Mon May 22 13:24:30 2017] [debug] POST "/notes/up"
+[Mon May 22 13:24:30 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:24:30 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:24:30 2017] [debug] 302 Found (0.039653s, 25.219/s)
+[Mon May 22 13:24:30 2017] [debug] GET "/notes"
+[Mon May 22 13:24:30 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:24:30 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:24:30 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:24:30 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:24:30 2017] [debug] 200 OK (0.008543s, 117.055/s)
+[Mon May 22 13:27:07 2017] [debug] GET "/notes"
+[Mon May 22 13:27:07 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:27:07 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:27:07 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:27:07 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 13:27:07 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:27:07 2017] [debug] 200 OK (0.025358s, 39.435/s)
+[Mon May 22 13:27:08 2017] [debug] GET "/lenta"
+[Mon May 22 13:27:08 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:27:08 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 13:27:08 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 13:27:08 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:27:08 2017] [debug] 200 OK (0.012546s, 79.707/s)
+[Mon May 22 13:29:22 2017] [debug] GET "/notes"
+[Mon May 22 13:29:22 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:29:22 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:29:22 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:29:22 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 13:29:22 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:29:22 2017] [debug] 200 OK (0.021895s, 45.673/s)
+[Mon May 22 13:29:24 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:29:24 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:29:24 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:29:24 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:29:24 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:29:24 2017] [debug] 200 OK (0.010459s, 95.611/s)
+[Mon May 22 13:29:33 2017] [debug] POST "/notes/up"
+[Mon May 22 13:29:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:29:33 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:29:33 2017] [debug] 302 Found (0.042857s, 23.333/s)
+[Mon May 22 13:29:33 2017] [debug] GET "/notes"
+[Mon May 22 13:29:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:29:33 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:29:33 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:29:33 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:29:33 2017] [debug] 200 OK (0.006117s, 163.479/s)
+[Mon May 22 13:30:16 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:30:16 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:30:16 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:30:16 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:30:16 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:30:16 2017] [debug] 200 OK (0.004639s, 215.564/s)
+[Mon May 22 13:30:29 2017] [debug] POST "/notes/up"
+[Mon May 22 13:30:29 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:30:29 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:30:29 2017] [debug] 302 Found (0.058505s, 17.093/s)
+[Mon May 22 13:30:29 2017] [debug] GET "/notes"
+[Mon May 22 13:30:29 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:30:29 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:30:29 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:30:29 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:30:29 2017] [debug] 200 OK (0.00689s, 145.138/s)
+[Mon May 22 13:30:33 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:30:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:30:33 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:30:33 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:30:33 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:30:33 2017] [debug] 200 OK (0.004832s, 206.954/s)
+[Mon May 22 13:30:37 2017] [debug] POST "/notes/up"
+[Mon May 22 13:30:37 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:30:37 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:30:37 2017] [debug] 302 Found (0.041498s, 24.098/s)
+[Mon May 22 13:30:37 2017] [debug] GET "/notes"
+[Mon May 22 13:30:37 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:30:37 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:30:37 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:30:37 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:30:37 2017] [debug] 200 OK (0.008729s, 114.561/s)
+[Mon May 22 13:30:39 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:30:39 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:30:39 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:30:39 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:30:39 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:30:39 2017] [debug] 200 OK (0.005051s, 197.981/s)
+[Mon May 22 13:42:09 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:42:09 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:42:09 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:42:09 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:42:09 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:42:09 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:42:09 2017] [debug] 200 OK (0.020653s, 48.419/s)
+[Mon May 22 13:45:27 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:45:27 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:45:27 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:45:27 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:45:27 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:45:27 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:45:27 2017] [debug] 200 OK (0.024383s, 41.012/s)
+[Mon May 22 13:45:34 2017] [debug] POST "/notes/up"
+[Mon May 22 13:45:34 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:45:34 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:45:34 2017] [debug] 302 Found (0.050015s, 19.994/s)
+[Mon May 22 13:45:34 2017] [debug] GET "/notes"
+[Mon May 22 13:45:34 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:45:34 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:45:34 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 13:45:34 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:45:34 2017] [debug] 200 OK (0.0094s, 106.383/s)
+[Mon May 22 13:45:55 2017] [debug] GET "/lenta"
+[Mon May 22 13:45:55 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:45:55 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 13:45:55 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 13:45:55 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:45:55 2017] [debug] 200 OK (0.012412s, 80.567/s)
+[Mon May 22 13:45:58 2017] [debug] GET "/notes"
+[Mon May 22 13:45:58 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:45:58 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:45:58 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:45:58 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:45:58 2017] [debug] 200 OK (0.007879s, 126.920/s)
+[Mon May 22 13:46:00 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:46:00 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:46:00 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:46:00 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:46:00 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:46:00 2017] [debug] 200 OK (0.004531s, 220.702/s)
+[Mon May 22 13:46:11 2017] [debug] POST "/notes/up"
+[Mon May 22 13:46:11 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:46:11 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:46:11 2017] [debug] 302 Found (0.092441s, 10.818/s)
+[Mon May 22 13:46:11 2017] [debug] GET "/notes"
+[Mon May 22 13:46:11 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:46:11 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:46:11 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:46:11 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:46:11 2017] [debug] 200 OK (0.008807s, 113.546/s)
+[Mon May 22 13:46:13 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:46:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:46:13 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:46:13 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:46:13 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:46:13 2017] [debug] 200 OK (0.00591s, 169.205/s)
+[Mon May 22 13:46:56 2017] [debug] POST "/notes/up"
+[Mon May 22 13:46:56 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:46:56 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:46:56 2017] [debug] 302 Found (0.04488s, 22.282/s)
+[Mon May 22 13:46:56 2017] [debug] GET "/notes"
+[Mon May 22 13:46:56 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:46:56 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:46:56 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:46:56 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:46:56 2017] [debug] 200 OK (0.006628s, 150.875/s)
+[Mon May 22 13:48:33 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:48:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:48:33 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:48:33 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:48:33 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:48:33 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:48:33 2017] [debug] 200 OK (0.024331s, 41.100/s)
+[Mon May 22 13:48:39 2017] [debug] POST "/notes/up"
+[Mon May 22 13:48:39 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:48:39 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:48:39 2017] [debug] 302 Found (0.051894s, 19.270/s)
+[Mon May 22 13:48:39 2017] [debug] GET "/notes"
+[Mon May 22 13:48:39 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:48:39 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:48:39 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 13:48:39 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:48:39 2017] [debug] 200 OK (0.009651s, 103.616/s)
+[Mon May 22 13:48:42 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:48:42 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:48:42 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:48:42 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:48:42 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:48:42 2017] [debug] 200 OK (0.007325s, 136.519/s)
+[Mon May 22 13:49:04 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:49:04 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:49:04 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:49:04 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:49:04 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:49:04 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:49:04 2017] [debug] 200 OK (0.026652s, 37.521/s)
+[Mon May 22 13:49:59 2017] [debug] POST "/notes/up"
+[Mon May 22 13:49:59 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:49:59 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:49:59 2017] [debug] 302 Found (0.071065s, 14.072/s)
+[Mon May 22 13:49:59 2017] [debug] GET "/notes"
+[Mon May 22 13:49:59 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:49:59 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:49:59 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 13:49:59 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:49:59 2017] [debug] 200 OK (0.009925s, 100.756/s)
+[Mon May 22 13:50:05 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:50:05 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:50:05 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:50:05 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:50:05 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:50:05 2017] [debug] 200 OK (0.146467s, 6.827/s)
+[Mon May 22 13:50:15 2017] [debug] POST "/notes/up"
+[Mon May 22 13:50:15 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:50:15 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 13:50:16 2017] [debug] 302 Found (0.038994s, 25.645/s)
+[Mon May 22 13:50:16 2017] [debug] GET "/notes"
+[Mon May 22 13:50:16 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:50:16 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 13:50:16 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 13:50:16 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:50:16 2017] [debug] 200 OK (0.008223s, 121.610/s)
+[Mon May 22 13:50:19 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:50:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:50:19 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:50:19 2017] [debug] Rendering cached template "notes/edit_form.html.ep"
+[Mon May 22 13:50:19 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 13:50:19 2017] [debug] 200 OK (0.008498s, 117.675/s)
+[Mon May 22 13:53:15 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:53:15 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:53:15 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:53:15 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:53:15 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:53:15 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:53:15 2017] [debug] 200 OK (0.046429s, 21.538/s)
+[Mon May 22 13:55:19 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:55:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:55:19 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:55:19 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:55:19 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:55:19 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:55:19 2017] [debug] 200 OK (0.039858s, 25.089/s)
+[Mon May 22 13:58:23 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:58:23 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:58:23 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:58:23 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:58:23 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:58:23 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:58:23 2017] [debug] 200 OK (0.026419s, 37.852/s)
+[Mon May 22 13:59:13 2017] [debug] POST "/notes/edit"
+[Mon May 22 13:59:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 13:59:13 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 13:59:13 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 13:59:13 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 13:59:13 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 13:59:13 2017] [debug] 200 OK (0.024935s, 40.104/s)
+[Mon May 22 14:00:25 2017] [debug] POST "/notes/edit"
+[Mon May 22 14:00:25 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:00:25 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:00:25 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 14:00:25 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 14:00:25 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:00:25 2017] [debug] 200 OK (0.019809s, 50.482/s)
+[Mon May 22 14:00:56 2017] [debug] POST "/notes/edit"
+[Mon May 22 14:00:56 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:00:56 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:00:56 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 14:00:56 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 14:00:56 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:00:56 2017] [debug] 200 OK (0.021127s, 47.333/s)
+[Mon May 22 14:01:40 2017] [debug] POST "/notes/edit"
+[Mon May 22 14:01:40 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:01:40 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:01:40 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 14:01:40 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 14:01:40 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:01:40 2017] [debug] 200 OK (0.020325s, 49.200/s)
+[Mon May 22 14:02:00 2017] [debug] POST "/notes/edit"
+[Mon May 22 14:02:00 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:02:00 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:02:00 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 14:02:00 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 14:02:00 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:02:00 2017] [debug] 200 OK (0.020556s, 48.648/s)
+[Mon May 22 14:03:12 2017] [debug] POST "/notes/up"
+[Mon May 22 14:03:12 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:03:12 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 14:03:12 2017] [debug] 302 Found (0.064576s, 15.486/s)
+[Mon May 22 14:03:12 2017] [debug] GET "/notes"
+[Mon May 22 14:03:12 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:03:12 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:03:12 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 14:03:12 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:03:12 2017] [debug] 200 OK (0.012072s, 82.836/s)
+[Mon May 22 14:03:43 2017] [debug] POST "/notes/edit"
+[Mon May 22 14:03:43 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:03:43 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:03:43 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "edit_form"
+[Mon May 22 14:03:43 2017] [debug] Rendering template "notes/edit_form.html.ep"
+[Mon May 22 14:03:43 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:03:43 2017] [debug] 200 OK (0.023158s, 43.182/s)
+[Mon May 22 14:03:52 2017] [debug] POST "/notes/up"
+[Mon May 22 14:03:52 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:03:52 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "update"
+[Mon May 22 14:03:52 2017] [debug] 302 Found (0.003924s, 254.842/s)
+[Mon May 22 14:03:52 2017] [debug] GET "/notes"
+[Mon May 22 14:03:52 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:03:52 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:03:52 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 14:03:52 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:03:52 2017] [debug] 200 OK (0.012334s, 81.077/s)
+[Mon May 22 14:04:21 2017] [debug] GET "/settings"
+[Mon May 22 14:04:21 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:04:21 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:04:21 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 14:04:21 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:04:21 2017] [debug] 200 OK (0.010453s, 95.666/s)
+[Mon May 22 14:04:35 2017] [debug] POST "/settings/up"
+[Mon May 22 14:04:35 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:04:35 2017] [debug] Routing to controller "Notes::Controller::Users" and action "update"
+[Mon May 22 14:04:35 2017] [debug] 403 Forbidden (0.001963s, 509.424/s)
+[Mon May 22 14:05:38 2017] [debug] GET "/settings"
+[Mon May 22 14:05:38 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:05:38 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:05:38 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:05:38 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 14:05:38 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:05:38 2017] [debug] 200 OK (0.019774s, 50.571/s)
+[Mon May 22 14:05:48 2017] [debug] POST "/settings/up"
+[Mon May 22 14:05:48 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:05:48 2017] [debug] Routing to controller "Notes::Controller::Users" and action "update"
+[Mon May 22 14:05:49 2017] [debug] 302 Found (0.075631s, 13.222/s)
+[Mon May 22 14:05:49 2017] [debug] GET "/notes"
+[Mon May 22 14:05:49 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:05:49 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:05:49 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 14:05:49 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:05:49 2017] [debug] 200 OK (0.011965s, 83.577/s)
+[Mon May 22 14:05:51 2017] [debug] GET "/logout"
+[Mon May 22 14:05:51 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Mon May 22 14:05:51 2017] [debug] 302 Found (0.001177s, 849.618/s)
+[Mon May 22 14:05:51 2017] [debug] GET "/"
+[Mon May 22 14:05:51 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 22 14:05:51 2017] [debug] Rendering template "index/welcome.html.ep"
+[Mon May 22 14:05:51 2017] [debug] Rendering template "layouts/default.html.ep"
+[Mon May 22 14:05:51 2017] [debug] 200 OK (0.00776s, 128.866/s)
+[Mon May 22 14:05:59 2017] [debug] POST "/login"
+[Mon May 22 14:05:59 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 22 14:05:59 2017] [debug] 302 Found (0.001743s, 573.723/s)
+[Mon May 22 14:05:59 2017] [debug] GET "/notes"
+[Mon May 22 14:05:59 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:05:59 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:05:59 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 14:05:59 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:05:59 2017] [debug] 200 OK (0.005378s, 185.943/s)
+[Mon May 22 14:07:37 2017] [debug] GET "/settings"
+[Mon May 22 14:07:37 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:07:37 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:07:37 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:07:37 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 14:07:37 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:07:37 2017] [debug] 200 OK (0.021429s, 46.666/s)
+[Mon May 22 14:07:57 2017] [debug] POST "/settings/up"
+[Mon May 22 14:07:57 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:07:57 2017] [debug] Routing to controller "Notes::Controller::Users" and action "update"
+[Mon May 22 14:07:57 2017] [debug] 302 Found (0.045976s, 21.750/s)
+[Mon May 22 14:07:57 2017] [debug] GET "/notes"
+[Mon May 22 14:07:57 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:07:57 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:07:57 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 14:07:57 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:07:57 2017] [debug] 200 OK (0.012021s, 83.188/s)
+[Mon May 22 14:09:05 2017] [debug] GET "/logout"
+[Mon May 22 14:09:05 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Mon May 22 14:09:05 2017] [debug] 302 Found (0.001532s, 652.742/s)
+[Mon May 22 14:09:05 2017] [debug] GET "/"
+[Mon May 22 14:09:05 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 22 14:09:05 2017] [debug] Rendering template "index/welcome.html.ep"
+[Mon May 22 14:09:05 2017] [debug] Rendering template "layouts/default.html.ep"
+[Mon May 22 14:09:05 2017] [debug] 200 OK (0.007972s, 125.439/s)
+[Mon May 22 14:09:11 2017] [debug] POST "/login"
+[Mon May 22 14:09:11 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 22 14:09:11 2017] [debug] 302 Found (0.001707s, 585.823/s)
+[Mon May 22 14:09:11 2017] [debug] GET "/"
+[Mon May 22 14:09:11 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 22 14:09:11 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Mon May 22 14:09:11 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Mon May 22 14:09:11 2017] [debug] 200 OK (0.0021s, 476.190/s)
+[Mon May 22 14:09:15 2017] [debug] POST "/login"
+[Mon May 22 14:09:15 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 22 14:09:15 2017] [debug] 302 Found (0.00172s, 581.395/s)
+[Mon May 22 14:09:15 2017] [debug] GET "/notes"
+[Mon May 22 14:09:15 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:09:15 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:09:15 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 14:09:15 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:09:15 2017] [debug] 200 OK (0.006558s, 152.486/s)
+[Mon May 22 14:09:17 2017] [debug] GET "/settings"
+[Mon May 22 14:09:17 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:09:17 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:09:17 2017] [debug] Rendering cached template "users/settings.html.ep"
+[Mon May 22 14:09:17 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:09:17 2017] [debug] 200 OK (0.004464s, 224.014/s)
+[Mon May 22 14:09:24 2017] [debug] POST "/settings/up"
+[Mon May 22 14:09:24 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:09:24 2017] [debug] Routing to controller "Notes::Controller::Users" and action "update"
+[Mon May 22 14:09:24 2017] [debug] 302 Found (0.0024s, 416.667/s)
+[Mon May 22 14:09:24 2017] [debug] GET "/settings"
+[Mon May 22 14:09:24 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:09:24 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:09:24 2017] [debug] Rendering cached template "users/settings.html.ep"
+[Mon May 22 14:09:24 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:09:24 2017] [debug] 200 OK (0.003694s, 270.709/s)
+[Mon May 22 14:09:34 2017] [debug] POST "/settings/up"
+[Mon May 22 14:09:34 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:09:34 2017] [debug] Routing to controller "Notes::Controller::Users" and action "update"
+[Mon May 22 14:09:34 2017] [debug] 302 Found (0.050805s, 19.683/s)
+[Mon May 22 14:09:34 2017] [debug] GET "/notes"
+[Mon May 22 14:09:34 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:09:34 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:09:34 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 14:09:34 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:09:34 2017] [debug] 200 OK (0.006076s, 164.582/s)
+[Mon May 22 14:17:31 2017] [debug] GET "/logout"
+[Mon May 22 14:17:31 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Mon May 22 14:17:31 2017] [debug] 302 Found (0.00077s, 1298.701/s)
+[Mon May 22 14:17:31 2017] [debug] GET "/"
+[Mon May 22 14:17:31 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 22 14:17:31 2017] [debug] Rendering cached template "index/welcome.html.ep"
+[Mon May 22 14:17:31 2017] [debug] Rendering cached template "layouts/default.html.ep"
+[Mon May 22 14:17:31 2017] [debug] 200 OK (0.001845s, 542.005/s)
+[Mon May 22 14:17:36 2017] [debug] POST "/login"
+[Mon May 22 14:17:36 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 22 14:17:36 2017] [debug] 302 Found (0.001775s, 563.380/s)
+[Mon May 22 14:17:36 2017] [debug] GET "/notes"
+[Mon May 22 14:17:36 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:17:36 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:17:36 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 14:17:36 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:17:36 2017] [debug] 200 OK (0.004024s, 248.509/s)
+[Mon May 22 14:17:38 2017] [debug] GET "/settings"
+[Mon May 22 14:17:38 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:17:38 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:17:38 2017] [debug] Rendering cached template "users/settings.html.ep"
+[Mon May 22 14:17:38 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:17:38 2017] [debug] 200 OK (0.004045s, 247.219/s)
+[Mon May 22 14:17:43 2017] [debug] POST "/settings/del"
+[Mon May 22 14:17:43 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:17:43 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 14:17:43 2017] [debug] Action not found in controller
+[Mon May 22 14:17:43 2017] [debug] Template "users/delete.html.ep" not found
+[Mon May 22 14:17:43 2017] [debug] Template "not_found.development.html.ep" not found
+[Mon May 22 14:17:43 2017] [debug] Rendering template "not_found.html.ep"
+[Mon May 22 14:17:43 2017] [debug] 404 Not Found (0.003615s, 276.625/s)
+[Mon May 22 14:34:41 2017] [debug] GET "/lenta"
+[Mon May 22 14:34:41 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:34:41 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:34:41 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:34:41 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:34:41 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:34:41 2017] [debug] 200 OK (0.02351s, 42.535/s)
+[Mon May 22 14:34:44 2017] [debug] GET "/favorites"
+[Mon May 22 14:34:44 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:34:44 2017] [error] Global symbol "$newpassword" requires explicit package name (did you forget to declare "my $newpassword"?) at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Users.pm line 315.
+Global symbol "$newpassword2" requires explicit package name (did you forget to declare "my $newpassword2"?) at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Users.pm line 315.
+Global symbol "$newpassword" requires explicit package name (did you forget to declare "my $newpassword"?) at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Users.pm line 319.
+Global symbol "$newpassword" requires explicit package name (did you forget to declare "my $newpassword"?) at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Users.pm line 320.
+Compilation failed in require at (eval 119) line 1.
+
+[Mon May 22 14:34:44 2017] [debug] Template "exception.development.html.ep" not found
+[Mon May 22 14:34:44 2017] [debug] Template "exception.html.ep" not found
+[Mon May 22 14:34:44 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Mon May 22 14:34:44 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Mon May 22 14:34:44 2017] [debug] 500 Internal Server Error (0.061679s, 16.213/s)
+[Mon May 22 14:34:50 2017] [debug] GET "/notes"
+[Mon May 22 14:34:50 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:34:50 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:34:50 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 14:34:50 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:34:50 2017] [debug] 200 OK (0.007939s, 125.960/s)
+[Mon May 22 14:34:52 2017] [debug] GET "/people"
+[Mon May 22 14:34:52 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:34:52 2017] [error] Attempt to reload Notes/Controller/Users.pm aborted.
+Compilation failed in require at (eval 123) line 1.
+
+[Mon May 22 14:34:52 2017] [debug] Template "exception.development.html.ep" not found
+[Mon May 22 14:34:52 2017] [debug] Template "exception.html.ep" not found
+[Mon May 22 14:34:52 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Mon May 22 14:34:52 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Mon May 22 14:34:52 2017] [debug] 500 Internal Server Error (0.011888s, 84.118/s)
+[Mon May 22 14:35:53 2017] [debug] GET "/notes"
+[Mon May 22 14:35:53 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:35:53 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:35:53 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 14:35:53 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:35:53 2017] [debug] 200 OK (0.004875s, 205.128/s)
+[Mon May 22 14:35:54 2017] [debug] GET "/lenta"
+[Mon May 22 14:35:54 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:35:54 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:35:54 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:35:54 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:35:54 2017] [debug] 200 OK (0.004379s, 228.363/s)
+[Mon May 22 14:35:55 2017] [debug] GET "/people"
+[Mon May 22 14:35:55 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:35:55 2017] [error] Attempt to reload Notes/Controller/Users.pm aborted.
+Compilation failed in require at (eval 124) line 1.
+
+[Mon May 22 14:35:55 2017] [debug] Template "exception.development.html.ep" not found
+[Mon May 22 14:35:55 2017] [debug] Template "exception.html.ep" not found
+[Mon May 22 14:35:55 2017] [debug] Rendering cached template "mojo/debug.html.ep"
+[Mon May 22 14:35:55 2017] [debug] Rendering cached template "mojo/menubar.html.ep"
+[Mon May 22 14:35:55 2017] [debug] 500 Internal Server Error (0.009298s, 107.550/s)
+[Mon May 22 14:36:05 2017] [debug] GET "/people"
+[Mon May 22 14:36:05 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:36:05 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:36:05 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:36:05 2017] [debug] Rendering template "users/show.html.ep"
+[Mon May 22 14:36:05 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:36:05 2017] [debug] 200 OK (0.019857s, 50.360/s)
+[Mon May 22 14:36:06 2017] [debug] GET "/favorites"
+[Mon May 22 14:36:06 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:36:06 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:36:06 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:36:06 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:36:06 2017] [debug] 200 OK (0.004263s, 234.577/s)
+[Mon May 22 14:36:08 2017] [debug] GET "/people"
+[Mon May 22 14:36:08 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:36:08 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:36:08 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:36:08 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:36:08 2017] [debug] 200 OK (0.003753s, 266.454/s)
+[Mon May 22 14:36:12 2017] [debug] GET "/favorites"
+[Mon May 22 14:36:12 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:36:12 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:36:12 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:36:12 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:36:12 2017] [debug] 200 OK (0.003807s, 262.674/s)
+[Mon May 22 14:36:14 2017] [debug] GET "/people"
+[Mon May 22 14:36:14 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:36:14 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:36:14 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:36:14 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:36:14 2017] [debug] 200 OK (0.004638s, 215.610/s)
+[Mon May 22 14:36:15 2017] [debug] GET "/id5"
+[Mon May 22 14:36:15 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:36:15 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:36:15 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:36:15 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:36:15 2017] [debug] 200 OK (0.010676s, 93.668/s)
+[Mon May 22 14:37:16 2017] [debug] GET "/id5"
+[Mon May 22 14:37:16 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:37:16 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:37:16 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:37:16 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:37:16 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:37:16 2017] [debug] 200 OK (0.021662s, 46.164/s)
+[Mon May 22 14:37:30 2017] [debug] GET "/id5"
+[Mon May 22 14:37:30 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:37:30 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:37:30 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:37:30 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:37:30 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:37:30 2017] [debug] 200 OK (0.019151s, 52.217/s)
+[Mon May 22 14:37:58 2017] [debug] GET "/id5"
+[Mon May 22 14:37:58 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:37:58 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:37:58 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:37:58 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:37:58 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:37:58 2017] [debug] 200 OK (0.022655s, 44.140/s)
+[Mon May 22 14:38:15 2017] [debug] GET "/id5"
+[Mon May 22 14:38:15 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:38:15 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:38:15 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:38:15 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:38:15 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:38:15 2017] [debug] 200 OK (0.021549s, 46.406/s)
+[Mon May 22 14:38:41 2017] [debug] GET "/id5"
+[Mon May 22 14:38:41 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:38:41 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:38:41 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:38:41 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:38:41 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:38:41 2017] [debug] 200 OK (0.022683s, 44.086/s)
+[Mon May 22 14:38:43 2017] [debug] GET "/id5"
+[Mon May 22 14:38:43 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:38:43 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:38:43 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:38:43 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:38:43 2017] [debug] 200 OK (0.004659s, 214.638/s)
+[Mon May 22 14:39:38 2017] [debug] GET "/id5"
+[Mon May 22 14:39:38 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:39:38 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:39:38 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:39:38 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:39:38 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:39:38 2017] [debug] 200 OK (0.02661s, 37.580/s)
+[Mon May 22 14:39:46 2017] [debug] GET "/favorites"
+[Mon May 22 14:39:46 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:39:46 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:39:46 2017] [debug] Rendering template "users/show.html.ep"
+[Mon May 22 14:39:46 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:39:46 2017] [debug] 200 OK (0.011915s, 83.928/s)
+[Mon May 22 14:39:47 2017] [debug] GET "/people"
+[Mon May 22 14:39:47 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:39:47 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:39:47 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:39:47 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:39:47 2017] [debug] 200 OK (0.004414s, 226.552/s)
+[Mon May 22 14:39:49 2017] [debug] GET "/lenta"
+[Mon May 22 14:39:49 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:39:49 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:39:49 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:39:49 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:39:49 2017] [debug] 200 OK (0.005824s, 171.703/s)
+[Mon May 22 14:39:50 2017] [debug] GET "/lenta"
+[Mon May 22 14:39:50 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:39:50 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:39:50 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:39:50 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:39:50 2017] [debug] 200 OK (0.005028s, 198.886/s)
+[Mon May 22 14:39:50 2017] [debug] GET "/notes"
+[Mon May 22 14:39:50 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:39:50 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:39:50 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 14:39:50 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:39:50 2017] [debug] 200 OK (0.007415s, 134.862/s)
+[Mon May 22 14:39:52 2017] [debug] GET "/lenta"
+[Mon May 22 14:39:52 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:39:52 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:39:52 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:39:52 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:39:52 2017] [debug] 200 OK (0.005075s, 197.044/s)
+[Mon May 22 14:40:32 2017] [debug] GET "/lenta"
+[Mon May 22 14:40:32 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:40:32 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:40:32 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:40:32 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:40:32 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:40:32 2017] [debug] 200 OK (0.019287s, 51.848/s)
+[Mon May 22 14:40:50 2017] [debug] GET "/lenta"
+[Mon May 22 14:40:50 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:40:50 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:40:50 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:40:50 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 14:40:50 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:40:50 2017] [debug] 200 OK (0.022741s, 43.973/s)
+[Mon May 22 14:41:07 2017] [debug] GET "/favorites"
+[Mon May 22 14:41:07 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:07 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:41:07 2017] [debug] Rendering template "users/show.html.ep"
+[Mon May 22 14:41:07 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:07 2017] [debug] 200 OK (0.010402s, 96.135/s)
+[Mon May 22 14:41:08 2017] [debug] GET "/people"
+[Mon May 22 14:41:08 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:08 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:41:08 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:41:08 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:08 2017] [debug] 200 OK (0.004279s, 233.699/s)
+[Mon May 22 14:41:08 2017] [debug] GET "/lenta"
+[Mon May 22 14:41:08 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:08 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:41:08 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:41:08 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:08 2017] [debug] 200 OK (0.004575s, 218.579/s)
+[Mon May 22 14:41:09 2017] [debug] GET "/notes"
+[Mon May 22 14:41:09 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:09 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 14:41:09 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 14:41:09 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:09 2017] [debug] 200 OK (0.00753s, 132.802/s)
+[Mon May 22 14:41:10 2017] [debug] GET "/lenta"
+[Mon May 22 14:41:10 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:10 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:41:10 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:41:10 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:10 2017] [debug] 200 OK (0.004359s, 229.410/s)
+[Mon May 22 14:41:16 2017] [debug] GET "/people"
+[Mon May 22 14:41:16 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:16 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:41:16 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:41:16 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:16 2017] [debug] 200 OK (0.003951s, 253.100/s)
+[Mon May 22 14:41:18 2017] [debug] GET "/people"
+[Mon May 22 14:41:18 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:18 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:41:18 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:41:18 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:18 2017] [debug] 200 OK (0.057589s, 17.364/s)
+[Mon May 22 14:41:19 2017] [debug] GET "/lenta"
+[Mon May 22 14:41:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:19 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:41:19 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:41:19 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:19 2017] [debug] 200 OK (0.006994s, 142.980/s)
+[Mon May 22 14:41:25 2017] [debug] GET "/favorites"
+[Mon May 22 14:41:25 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:25 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:41:25 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:41:25 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:25 2017] [debug] 200 OK (0.004161s, 240.327/s)
+[Mon May 22 14:41:26 2017] [debug] GET "/people"
+[Mon May 22 14:41:26 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:26 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:41:26 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:41:26 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:26 2017] [debug] 200 OK (0.003972s, 251.762/s)
+[Mon May 22 14:41:29 2017] [debug] GET "/people"
+[Mon May 22 14:41:29 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:29 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:41:29 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:41:29 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:29 2017] [debug] 200 OK (0.051065s, 19.583/s)
+[Mon May 22 14:41:30 2017] [debug] GET "/lenta"
+[Mon May 22 14:41:30 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:30 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:41:30 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:41:30 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:30 2017] [debug] 200 OK (0.005931s, 168.606/s)
+[Mon May 22 14:41:31 2017] [debug] GET "/people"
+[Mon May 22 14:41:31 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:31 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:41:31 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:41:31 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:31 2017] [debug] 200 OK (0.004563s, 219.154/s)
+[Mon May 22 14:41:34 2017] [debug] GET "/people"
+[Mon May 22 14:41:34 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:34 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 14:41:34 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 14:41:34 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:34 2017] [debug] 200 OK (0.048689s, 20.539/s)
+[Mon May 22 14:41:35 2017] [debug] GET "/lenta"
+[Mon May 22 14:41:35 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:35 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:41:35 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:41:35 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:35 2017] [debug] 200 OK (0.006088s, 164.258/s)
+[Mon May 22 14:41:41 2017] [debug] GET "/lenta"
+[Mon May 22 14:41:41 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:41:41 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 14:41:41 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 14:41:41 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:41:41 2017] [debug] 200 OK (0.006658s, 150.195/s)
+[Mon May 22 14:42:19 2017] [debug] GET "/settings"
+[Mon May 22 14:42:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:42:19 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:42:19 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 14:42:19 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:42:19 2017] [debug] 200 OK (0.00979s, 102.145/s)
+[Mon May 22 14:52:24 2017] [debug] POST "/settings/del"
+[Mon May 22 14:52:24 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:52:24 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:52:24 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 14:52:24 2017] [error] Label not found for "last CHECK" at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Users.pm line 292.
+
+[Mon May 22 14:52:24 2017] [debug] Template "exception.development.html.ep" not found
+[Mon May 22 14:52:24 2017] [debug] Template "exception.html.ep" not found
+[Mon May 22 14:52:24 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Mon May 22 14:52:24 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Mon May 22 14:52:24 2017] [debug] 500 Internal Server Error (0.047688s, 20.970/s)
+[Mon May 22 14:52:42 2017] [debug] POST "/settings/del"
+[Mon May 22 14:52:42 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:52:42 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:52:42 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 14:52:42 2017] [debug] 302 Found (0.006657s, 150.218/s)
+[Mon May 22 14:52:42 2017] [debug] GET "/settings"
+[Mon May 22 14:52:42 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:52:42 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:52:42 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 14:52:42 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:52:42 2017] [debug] 200 OK (0.014758s, 67.760/s)
+[Mon May 22 14:53:43 2017] [debug] GET "/settings"
+[Mon May 22 14:53:43 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:53:43 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:53:43 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:53:43 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 14:53:43 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:53:43 2017] [debug] 200 OK (0.022064s, 45.323/s)
+[Mon May 22 14:53:51 2017] [debug] POST "/settings/del"
+[Mon May 22 14:53:51 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:53:51 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 14:53:51 2017] [debug] 302 Found (0.001866s, 535.906/s)
+[Mon May 22 14:53:51 2017] [debug] GET "/settings"
+[Mon May 22 14:53:51 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:53:51 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:53:51 2017] [debug] Rendering cached template "users/settings.html.ep"
+[Mon May 22 14:53:51 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:53:51 2017] [debug] 200 OK (0.004248s, 235.405/s)
+[Mon May 22 14:54:19 2017] [debug] POST "/settings/del"
+[Mon May 22 14:54:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:54:19 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 14:54:19 2017] [debug] 302 Found (0.001282s, 780.031/s)
+[Mon May 22 14:54:19 2017] [debug] GET "/settings"
+[Mon May 22 14:54:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:54:19 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:54:19 2017] [debug] Rendering cached template "users/settings.html.ep"
+[Mon May 22 14:54:19 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 14:54:19 2017] [debug] 200 OK (0.004199s, 238.152/s)
+[Mon May 22 14:55:19 2017] [debug] POST "/settings/del"
+[Mon May 22 14:55:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:55:19 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:55:19 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 14:55:19 2017] [debug] 302 Found (0.00702s, 142.450/s)
+[Mon May 22 14:55:19 2017] [debug] GET "/settings"
+[Mon May 22 14:55:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:55:19 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:55:19 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 14:55:19 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:55:19 2017] [debug] 200 OK (0.018332s, 54.549/s)
+[Mon May 22 14:57:07 2017] [debug] GET "/settings"
+[Mon May 22 14:57:07 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:57:07 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:57:07 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 14:57:07 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 14:57:07 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 14:57:07 2017] [debug] 200 OK (0.020201s, 49.502/s)
+[Mon May 22 14:57:12 2017] [debug] POST "/settings/up"
+[Mon May 22 14:57:12 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:57:12 2017] [debug] Routing to controller "Notes::Controller::Users" and action "update"
+[Mon May 22 14:57:12 2017] [debug] 403 Forbidden (0.001767s, 565.931/s)
+[Mon May 22 14:57:21 2017] [debug] POST "/settings/up"
+[Mon May 22 14:57:21 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:57:21 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 14:57:21 2017] [debug] Routing to controller "Notes::Controller::Users" and action "update"
+[Mon May 22 14:57:21 2017] [debug] 403 Forbidden (0.008364s, 119.560/s)
+[Mon May 22 14:57:28 2017] [debug] POST "/settings/up"
+[Mon May 22 14:57:28 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 14:57:28 2017] [debug] Routing to controller "Notes::Controller::Users" and action "update"
+[Mon May 22 14:57:28 2017] [debug] 403 Forbidden (0.001262s, 792.393/s)
+[Mon May 22 15:03:18 2017] [debug] GET "/settings"
+[Mon May 22 15:03:18 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:03:18 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:03:18 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:03:18 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 15:03:18 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:03:18 2017] [debug] 200 OK (0.023317s, 42.887/s)
+[Mon May 22 15:03:24 2017] [debug] POST "/settings/del"
+[Mon May 22 15:03:24 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:03:24 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:03:24 2017] [debug] 302 Found (0.001754s, 570.125/s)
+[Mon May 22 15:03:24 2017] [debug] GET "/settings"
+[Mon May 22 15:03:24 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:03:24 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:03:24 2017] [debug] Rendering cached template "users/settings.html.ep"
+[Mon May 22 15:03:24 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:03:24 2017] [debug] 200 OK (0.004475s, 223.464/s)
+[Mon May 22 15:03:58 2017] [debug] GET "/settings"
+[Mon May 22 15:03:58 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:03:58 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:03:58 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:03:58 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 15:03:58 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:03:58 2017] [debug] 200 OK (0.018482s, 54.107/s)
+[Mon May 22 15:04:03 2017] [debug] POST "/settings/del"
+[Mon May 22 15:04:03 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:04:03 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:04:03 2017] [debug] 302 Found (0.002131s, 469.263/s)
+[Mon May 22 15:04:03 2017] [debug] GET "/settings"
+[Mon May 22 15:04:03 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:04:03 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:04:03 2017] [debug] Rendering cached template "users/settings.html.ep"
+[Mon May 22 15:04:03 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:04:03 2017] [debug] 200 OK (0.005789s, 172.741/s)
+[Mon May 22 15:05:41 2017] [debug] GET "/settings"
+[Mon May 22 15:05:41 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:05:41 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:05:41 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:05:41 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 15:05:41 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:05:41 2017] [debug] 200 OK (0.018158s, 55.072/s)
+[Mon May 22 15:05:48 2017] [debug] POST "/settings/del"
+[Mon May 22 15:05:48 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:05:48 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:05:48 2017] [debug] 302 Found (0.002156s, 463.822/s)
+[Mon May 22 15:05:48 2017] [debug] GET "/settings"
+[Mon May 22 15:05:48 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:05:48 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:05:48 2017] [debug] Rendering cached template "users/settings.html.ep"
+[Mon May 22 15:05:48 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:05:48 2017] [debug] 200 OK (0.003718s, 268.962/s)
+[Mon May 22 15:07:08 2017] [debug] POST "/settings/del"
+[Mon May 22 15:07:08 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:07:08 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:07:08 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:07:08 2017] [debug] 302 Found (0.00633s, 157.978/s)
+[Mon May 22 15:07:08 2017] [debug] GET "/settings"
+[Mon May 22 15:07:08 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:07:08 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:07:08 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 15:07:08 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:07:08 2017] [debug] 200 OK (0.017327s, 57.713/s)
+[Mon May 22 15:07:12 2017] [debug] POST "/settings/del"
+[Mon May 22 15:07:12 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:07:12 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:07:12 2017] [debug] 302 Found (0.001199s, 834.028/s)
+[Mon May 22 15:07:12 2017] [debug] GET "/settings"
+[Mon May 22 15:07:12 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:07:12 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:07:12 2017] [debug] Rendering cached template "users/settings.html.ep"
+[Mon May 22 15:07:12 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:07:12 2017] [debug] 200 OK (0.00509s, 196.464/s)
+[Mon May 22 15:07:28 2017] [debug] GET "/settings"
+[Mon May 22 15:07:28 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:07:28 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:07:28 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:07:28 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 15:07:28 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:07:28 2017] [debug] 200 OK (0.02094s, 47.755/s)
+[Mon May 22 15:07:33 2017] [debug] POST "/settings/del"
+[Mon May 22 15:07:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:07:33 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:07:33 2017] [debug] 302 Found (0.087963s, 11.368/s)
+[Mon May 22 15:07:33 2017] [debug] GET "/"
+[Mon May 22 15:07:33 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 22 15:07:33 2017] [debug] 302 Found (0.002045s, 488.998/s)
+[Mon May 22 15:07:33 2017] [debug] Rendering template "index/welcome.html.ep"
+[Mon May 22 15:07:33 2017] [debug] Rendering template "layouts/default.html.ep"
+[Mon May 22 15:07:33 2017] [debug] GET "/notes"
+[Mon May 22 15:07:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:07:33 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 15:07:33 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 15:07:33 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:07:33 2017] [debug] 200 OK (0.009457s, 105.742/s)
+[Mon May 22 15:10:45 2017] [debug] GET "/notes"
+[Mon May 22 15:10:45 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:10:45 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:10:45 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 15:10:45 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 15:10:45 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:10:45 2017] [debug] 200 OK (0.015994s, 62.523/s)
+[Mon May 22 15:10:46 2017] [debug] GET "/logout"
+[Mon May 22 15:10:46 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "delete"
+[Mon May 22 15:10:46 2017] [debug] 302 Found (0.000923s, 1083.424/s)
+[Mon May 22 15:10:46 2017] [debug] GET "/"
+[Mon May 22 15:10:46 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 22 15:10:46 2017] [debug] Rendering template "index/welcome.html.ep"
+[Mon May 22 15:10:46 2017] [debug] Rendering template "layouts/default.html.ep"
+[Mon May 22 15:10:46 2017] [debug] 200 OK (0.00966s, 103.520/s)
+[Mon May 22 15:11:38 2017] [debug] POST "/signup"
+[Mon May 22 15:11:38 2017] [debug] Routing to controller "Notes::Controller::Users" and action "create"
+[Mon May 22 15:11:38 2017] [debug] 302 Found (0.086392s, 11.575/s)
+[Mon May 22 15:11:38 2017] [debug] GET "/notes"
+[Mon May 22 15:11:38 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:11:38 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 15:11:38 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 15:11:38 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:11:38 2017] [debug] 200 OK (0.003442s, 290.529/s)
+[Mon May 22 15:11:43 2017] [debug] GET "/lenta"
+[Mon May 22 15:11:43 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:11:43 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:11:43 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 15:11:43 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:11:43 2017] [debug] 200 OK (0.008726s, 114.600/s)
+[Mon May 22 15:11:46 2017] [debug] GET "/people"
+[Mon May 22 15:11:46 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:11:46 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:11:46 2017] [debug] Rendering template "users/show.html.ep"
+[Mon May 22 15:11:46 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:11:46 2017] [debug] 200 OK (0.009625s, 103.896/s)
+[Mon May 22 15:11:51 2017] [debug] GET "/notes"
+[Mon May 22 15:11:51 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:11:51 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 15:11:51 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 15:11:51 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:11:51 2017] [debug] 200 OK (0.004267s, 234.357/s)
+[Mon May 22 15:13:23 2017] [debug] GET "/notes"
+[Mon May 22 15:13:23 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:13:23 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:13:23 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 15:13:23 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 15:13:23 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:13:23 2017] [debug] 200 OK (0.016603s, 60.230/s)
+[Mon May 22 15:13:46 2017] [debug] GET "/notes"
+[Mon May 22 15:13:46 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:13:46 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:13:46 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 15:13:46 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 15:13:46 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:13:46 2017] [debug] 200 OK (0.018785s, 53.234/s)
+[Mon May 22 15:13:56 2017] [debug] GET "/notes"
+[Mon May 22 15:13:56 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:13:56 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:13:56 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 15:13:56 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 15:13:56 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:13:56 2017] [debug] 200 OK (0.01726s, 57.937/s)
+[Mon May 22 15:14:00 2017] [debug] GET "/people"
+[Mon May 22 15:14:00 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:00 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:00 2017] [debug] Rendering template "users/show.html.ep"
+[Mon May 22 15:14:00 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:00 2017] [debug] 200 OK (0.01122s, 89.127/s)
+[Mon May 22 15:14:01 2017] [debug] GET "/lenta"
+[Mon May 22 15:14:01 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:01 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:14:01 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 15:14:01 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:01 2017] [debug] 200 OK (0.009136s, 109.457/s)
+[Mon May 22 15:14:03 2017] [debug] GET "/favorites"
+[Mon May 22 15:14:03 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:03 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:03 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:03 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:03 2017] [debug] 200 OK (0.004961s, 201.572/s)
+[Mon May 22 15:14:05 2017] [debug] GET "/people"
+[Mon May 22 15:14:05 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:05 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:05 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:05 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:05 2017] [debug] 200 OK (0.003583s, 279.096/s)
+[Mon May 22 15:14:06 2017] [debug] GET "/people"
+[Mon May 22 15:14:06 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:06 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:07 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:07 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:07 2017] [debug] 200 OK (0.13371s, 7.479/s)
+[Mon May 22 15:14:08 2017] [debug] GET "/lenta"
+[Mon May 22 15:14:08 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:08 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:14:08 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:14:08 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:08 2017] [debug] 200 OK (0.007053s, 141.784/s)
+[Mon May 22 15:14:12 2017] [debug] GET "/favorites"
+[Mon May 22 15:14:12 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:12 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:12 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:12 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:12 2017] [debug] 200 OK (0.004834s, 206.868/s)
+[Mon May 22 15:14:13 2017] [debug] GET "/people"
+[Mon May 22 15:14:13 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:13 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:13 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:13 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:13 2017] [debug] 200 OK (0.005324s, 187.829/s)
+[Mon May 22 15:14:17 2017] [debug] GET "/people"
+[Mon May 22 15:14:17 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:17 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:17 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:17 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:17 2017] [debug] 200 OK (0.085681s, 11.671/s)
+[Mon May 22 15:14:18 2017] [debug] GET "/lenta"
+[Mon May 22 15:14:18 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:18 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:14:18 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:14:18 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:18 2017] [debug] 200 OK (0.005465s, 182.983/s)
+[Mon May 22 15:14:19 2017] [debug] GET "/favorites"
+[Mon May 22 15:14:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:19 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:19 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:19 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:19 2017] [debug] 200 OK (0.004295s, 232.829/s)
+[Mon May 22 15:14:21 2017] [debug] GET "/people"
+[Mon May 22 15:14:21 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:21 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:21 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:21 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:21 2017] [debug] 200 OK (0.004282s, 233.536/s)
+[Mon May 22 15:14:23 2017] [debug] GET "/id2"
+[Mon May 22 15:14:23 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:23 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:14:23 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:14:23 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:23 2017] [debug] 200 OK (0.005495s, 181.984/s)
+[Mon May 22 15:14:25 2017] [debug] GET "/lenta"
+[Mon May 22 15:14:25 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:25 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:14:25 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:14:25 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:25 2017] [debug] 200 OK (0.006006s, 166.500/s)
+[Mon May 22 15:14:26 2017] [debug] GET "/people"
+[Mon May 22 15:14:26 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:26 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:26 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:26 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:26 2017] [debug] 200 OK (0.003736s, 267.666/s)
+[Mon May 22 15:14:28 2017] [debug] GET "/favorites"
+[Mon May 22 15:14:28 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:28 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:28 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:28 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:28 2017] [debug] 200 OK (0.004204s, 237.869/s)
+[Mon May 22 15:14:29 2017] [debug] GET "/id5"
+[Mon May 22 15:14:29 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:29 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:14:29 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:14:29 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:29 2017] [debug] 200 OK (0.006188s, 161.603/s)
+[Mon May 22 15:14:35 2017] [debug] GET "/people"
+[Mon May 22 15:14:35 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:35 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:35 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:35 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:35 2017] [debug] 200 OK (0.004314s, 231.803/s)
+[Mon May 22 15:14:37 2017] [debug] GET "/id1"
+[Mon May 22 15:14:37 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:37 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:14:37 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:14:37 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:37 2017] [debug] 200 OK (0.005343s, 187.161/s)
+[Mon May 22 15:14:38 2017] [debug] GET "/people"
+[Mon May 22 15:14:38 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:38 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:38 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:38 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:38 2017] [debug] 200 OK (0.00405s, 246.914/s)
+[Mon May 22 15:14:40 2017] [debug] GET "/id2"
+[Mon May 22 15:14:40 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:40 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:14:40 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:14:40 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:40 2017] [debug] 200 OK (0.004099s, 243.962/s)
+[Mon May 22 15:14:42 2017] [debug] GET "/people"
+[Mon May 22 15:14:42 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:14:42 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:14:42 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:14:42 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:14:42 2017] [debug] 200 OK (0.004318s, 231.589/s)
+[Mon May 22 15:15:33 2017] [debug] GET "/id2"
+[Mon May 22 15:15:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:15:33 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:15:33 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:15:33 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:15:33 2017] [debug] 200 OK (0.004984s, 200.642/s)
+[Mon May 22 15:15:36 2017] [debug] GET "/people"
+[Mon May 22 15:15:36 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:15:36 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:15:36 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:15:36 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:15:36 2017] [debug] 200 OK (0.004108s, 243.427/s)
+[Mon May 22 15:15:40 2017] [debug] GET "/id1"
+[Mon May 22 15:15:40 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:15:40 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:15:40 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:15:40 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:15:40 2017] [debug] 200 OK (0.004244s, 235.627/s)
+[Mon May 22 15:17:48 2017] [debug] GET "/lenta"
+[Mon May 22 15:17:48 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:17:48 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:17:48 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:17:48 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:17:48 2017] [debug] 200 OK (0.006607s, 151.355/s)
+[Mon May 22 15:17:49 2017] [debug] GET "/people"
+[Mon May 22 15:17:49 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:17:49 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:17:49 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:17:49 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:17:49 2017] [debug] 200 OK (0.004148s, 241.080/s)
+[Mon May 22 15:17:51 2017] [debug] GET "/lenta"
+[Mon May 22 15:17:51 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:17:51 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:17:51 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:17:51 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:17:51 2017] [debug] 200 OK (0.006146s, 162.707/s)
+[Mon May 22 15:17:52 2017] [debug] GET "/favorites"
+[Mon May 22 15:17:52 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:17:52 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:17:52 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:17:52 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:17:52 2017] [debug] 200 OK (0.003701s, 270.197/s)
+[Mon May 22 15:17:53 2017] [debug] GET "/people"
+[Mon May 22 15:17:53 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:17:53 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:17:53 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:17:53 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:17:53 2017] [debug] 200 OK (0.004571s, 218.771/s)
+[Mon May 22 15:17:54 2017] [debug] GET "/id2"
+[Mon May 22 15:17:54 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:17:54 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:17:54 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:17:54 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:17:54 2017] [debug] 200 OK (0.004426s, 225.938/s)
+[Mon May 22 15:17:56 2017] [debug] GET "/favorites"
+[Mon May 22 15:17:56 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:17:56 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:17:56 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:17:56 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:17:56 2017] [debug] 200 OK (0.004458s, 224.316/s)
+[Mon May 22 15:17:57 2017] [debug] GET "/people"
+[Mon May 22 15:17:57 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:17:57 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:17:57 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:17:57 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:17:57 2017] [debug] 200 OK (0.004042s, 247.402/s)
+[Mon May 22 15:17:59 2017] [debug] GET "/people"
+[Mon May 22 15:17:59 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:17:59 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:17:59 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:17:59 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:17:59 2017] [debug] 200 OK (0.061668s, 16.216/s)
+[Mon May 22 15:18:01 2017] [debug] GET "/id2"
+[Mon May 22 15:18:01 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:18:01 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:18:01 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:18:01 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:18:01 2017] [debug] 200 OK (0.004667s, 214.270/s)
+[Mon May 22 15:26:46 2017] [debug] GET "/id2"
+[Mon May 22 15:26:46 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:26:46 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:26:46 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:26:46 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:26:46 2017] [debug] 200 OK (0.005971s, 167.476/s)
+[Mon May 22 15:27:00 2017] [debug] GET "/favorites"
+[Mon May 22 15:27:00 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:27:00 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:27:00 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:27:00 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:27:00 2017] [debug] 200 OK (0.003712s, 269.397/s)
+[Mon May 22 15:27:02 2017] [debug] GET "/people"
+[Mon May 22 15:27:02 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:27:02 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:27:02 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:27:02 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:27:02 2017] [debug] 200 OK (0.060442s, 16.545/s)
+[Mon May 22 15:27:02 2017] [debug] GET "/lenta"
+[Mon May 22 15:27:02 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:27:02 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:27:02 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:27:02 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:27:02 2017] [debug] 200 OK (0.005856s, 170.765/s)
+[Mon May 22 15:27:04 2017] [debug] GET "/people"
+[Mon May 22 15:27:04 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:27:04 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:27:04 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:27:04 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:27:04 2017] [debug] 200 OK (0.006656s, 150.240/s)
+[Mon May 22 15:27:06 2017] [debug] GET "/id2"
+[Mon May 22 15:27:06 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:27:06 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:27:06 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:27:06 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:27:06 2017] [debug] 200 OK (0.006002s, 166.611/s)
+[Mon May 22 15:29:53 2017] [debug] GET "/id2"
+[Mon May 22 15:29:53 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:29:53 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:29:53 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:29:53 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 15:29:53 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:29:53 2017] [debug] 200 OK (0.019163s, 52.184/s)
+[Mon May 22 15:29:59 2017] [debug] GET "/lenta"
+[Mon May 22 15:29:59 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:29:59 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:29:59 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:29:59 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:29:59 2017] [debug] 200 OK (0.006538s, 152.952/s)
+[Mon May 22 15:30:01 2017] [debug] GET "/people"
+[Mon May 22 15:30:01 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:01 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:01 2017] [debug] Rendering template "users/show.html.ep"
+[Mon May 22 15:30:01 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:01 2017] [debug] 200 OK (0.010373s, 96.404/s)
+[Mon May 22 15:30:02 2017] [debug] GET "/id6"
+[Mon May 22 15:30:02 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:02 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:02 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:02 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:02 2017] [debug] 200 OK (0.004164s, 240.154/s)
+[Mon May 22 15:30:03 2017] [debug] GET "/people"
+[Mon May 22 15:30:03 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:03 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:03 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:03 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:03 2017] [debug] 200 OK (0.004063s, 246.124/s)
+[Mon May 22 15:30:04 2017] [debug] GET "/id1"
+[Mon May 22 15:30:04 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:04 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:04 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:04 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:04 2017] [debug] 200 OK (0.005096s, 196.232/s)
+[Mon May 22 15:30:05 2017] [debug] GET "/lenta"
+[Mon May 22 15:30:05 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:05 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:05 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:05 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:05 2017] [debug] 200 OK (0.006163s, 162.259/s)
+[Mon May 22 15:30:08 2017] [debug] GET "/id5"
+[Mon May 22 15:30:08 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:08 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:08 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:08 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:08 2017] [debug] 200 OK (0.005277s, 189.502/s)
+[Mon May 22 15:30:10 2017] [debug] GET "/favorites"
+[Mon May 22 15:30:10 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:10 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:10 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:10 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:10 2017] [debug] 200 OK (0.004388s, 227.894/s)
+[Mon May 22 15:30:11 2017] [debug] GET "/people"
+[Mon May 22 15:30:11 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:11 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:11 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:11 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:11 2017] [debug] 200 OK (0.004396s, 227.480/s)
+[Mon May 22 15:30:11 2017] [debug] GET "/favorites"
+[Mon May 22 15:30:11 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:11 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:11 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:11 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:11 2017] [debug] 200 OK (0.003655s, 273.598/s)
+[Mon May 22 15:30:12 2017] [debug] GET "/people"
+[Mon May 22 15:30:12 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:12 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:12 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:12 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:12 2017] [debug] 200 OK (0.073241s, 13.654/s)
+[Mon May 22 15:30:15 2017] [debug] GET "/people"
+[Mon May 22 15:30:15 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:15 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:15 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:15 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:15 2017] [debug] 200 OK (0.092389s, 10.824/s)
+[Mon May 22 15:30:16 2017] [debug] GET "/people"
+[Mon May 22 15:30:16 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:16 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:16 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:16 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:16 2017] [debug] 200 OK (0.083198s, 12.020/s)
+[Mon May 22 15:30:17 2017] [debug] GET "/people"
+[Mon May 22 15:30:17 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:17 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:18 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:18 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:18 2017] [debug] 200 OK (0.083681s, 11.950/s)
+[Mon May 22 15:30:19 2017] [debug] GET "/lenta"
+[Mon May 22 15:30:19 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:19 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:19 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:19 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:19 2017] [debug] 200 OK (0.005192s, 192.604/s)
+[Mon May 22 15:30:20 2017] [debug] GET "/lenta"
+[Mon May 22 15:30:20 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:20 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:20 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:20 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:20 2017] [debug] 200 OK (0.004346s, 230.097/s)
+[Mon May 22 15:30:30 2017] [debug] GET "/favorites"
+[Mon May 22 15:30:30 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:30 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:30 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:30 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:30 2017] [debug] 200 OK (0.003871s, 258.331/s)
+[Mon May 22 15:30:31 2017] [debug] GET "/people"
+[Mon May 22 15:30:31 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:31 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:31 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:31 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:31 2017] [debug] 200 OK (0.004102s, 243.784/s)
+[Mon May 22 15:30:33 2017] [debug] GET "/id1"
+[Mon May 22 15:30:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:33 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:33 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:33 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:33 2017] [debug] 200 OK (0.004867s, 205.465/s)
+[Mon May 22 15:30:34 2017] [debug] GET "/people"
+[Mon May 22 15:30:34 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:34 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:34 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:34 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:34 2017] [debug] 200 OK (0.003758s, 266.099/s)
+[Mon May 22 15:30:35 2017] [debug] GET "/id1"
+[Mon May 22 15:30:35 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:35 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:35 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:35 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:35 2017] [debug] 200 OK (0.00475s, 210.526/s)
+[Mon May 22 15:30:36 2017] [debug] GET "/people"
+[Mon May 22 15:30:36 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:36 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:36 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:36 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:36 2017] [debug] 200 OK (0.004374s, 228.624/s)
+[Mon May 22 15:30:37 2017] [debug] GET "/id2"
+[Mon May 22 15:30:37 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:37 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:37 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:37 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:37 2017] [debug] 200 OK (0.006059s, 165.044/s)
+[Mon May 22 15:30:38 2017] [debug] GET "/people"
+[Mon May 22 15:30:38 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:38 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:30:38 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:30:38 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:38 2017] [debug] 200 OK (0.004341s, 230.362/s)
+[Mon May 22 15:30:40 2017] [debug] GET "/id5"
+[Mon May 22 15:30:40 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:40 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:30:40 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:30:40 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:40 2017] [debug] 200 OK (0.005469s, 182.849/s)
+[Mon May 22 15:30:44 2017] [debug] GET "/settings"
+[Mon May 22 15:30:44 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:44 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:30:44 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 15:30:44 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:30:44 2017] [debug] 200 OK (0.010132s, 98.697/s)
+[Mon May 22 15:30:51 2017] [debug] POST "/settings/del"
+[Mon May 22 15:30:51 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:30:51 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:30:51 2017] [error] Can't use string ("Notes::Controller::Auths") as a HASH ref while "strict refs" in use at /usr/local/share/perl/5.24.1/Mojo/Util.pm line 422.
+
+[Mon May 22 15:30:51 2017] [debug] Template "exception.development.html.ep" not found
+[Mon May 22 15:30:51 2017] [debug] Template "exception.html.ep" not found
+[Mon May 22 15:30:51 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Mon May 22 15:30:51 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Mon May 22 15:30:51 2017] [debug] 500 Internal Server Error (0.083522s, 11.973/s)
+[Mon May 22 15:33:28 2017] [debug] POST "/settings/del"
+[Mon May 22 15:33:28 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:33:28 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:33:28 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:33:28 2017] [error] Can't use string ("Notes::Controller::Auths") as a HASH ref while "strict refs" in use at /usr/local/share/perl/5.24.1/Mojo/Util.pm line 422.
+
+[Mon May 22 15:33:28 2017] [debug] Template "exception.development.html.ep" not found
+[Mon May 22 15:33:28 2017] [debug] Template "exception.html.ep" not found
+[Mon May 22 15:33:28 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Mon May 22 15:33:28 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Mon May 22 15:33:28 2017] [debug] 500 Internal Server Error (0.04495s, 22.247/s)
+[Mon May 22 15:36:54 2017] [debug] POST "/settings/del"
+[Mon May 22 15:36:54 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:36:54 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:36:54 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:36:54 2017] [error] Can't locate object method "Auths" via package "Notes::Controller" at /home/pasha/Tehnoatom-perl/Lecture9_Web/notes_web/script/../lib/Notes/Controller/Users.pm line 310.
+
+[Mon May 22 15:36:54 2017] [debug] Template "exception.development.html.ep" not found
+[Mon May 22 15:36:54 2017] [debug] Template "exception.html.ep" not found
+[Mon May 22 15:36:54 2017] [debug] Rendering template "mojo/debug.html.ep"
+[Mon May 22 15:36:54 2017] [debug] Rendering template "mojo/menubar.html.ep"
+[Mon May 22 15:36:54 2017] [debug] 500 Internal Server Error (0.044242s, 22.603/s)
+[Mon May 22 15:37:11 2017] [debug] POST "/settings/del"
+[Mon May 22 15:37:11 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:37:11 2017] [debug] Your secret passphrase needs to be changed
+[Mon May 22 15:37:11 2017] [debug] Routing to controller "Notes::Controller::Users" and action "delete"
+[Mon May 22 15:37:11 2017] [debug] 302 Found (0.009998s, 100.020/s)
+[Mon May 22 15:37:11 2017] [debug] GET "/"
+[Mon May 22 15:37:11 2017] [debug] Routing to controller "Notes::Controller::Index" and action "welcome"
+[Mon May 22 15:37:11 2017] [debug] Rendering template "index/welcome.html.ep"
+[Mon May 22 15:37:11 2017] [debug] Rendering template "layouts/default.html.ep"
+[Mon May 22 15:37:11 2017] [debug] 200 OK (0.011997s, 83.354/s)
+[Mon May 22 15:37:33 2017] [debug] POST "/login"
+[Mon May 22 15:37:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "create"
+[Mon May 22 15:37:33 2017] [debug] 302 Found (0.002087s, 479.157/s)
+[Mon May 22 15:37:33 2017] [debug] GET "/notes"
+[Mon May 22 15:37:33 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:37:33 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 15:37:33 2017] [debug] Rendering template "notes/wall.html.ep"
+[Mon May 22 15:37:33 2017] [debug] Rendering template "layouts/defwall.html.ep"
+[Mon May 22 15:37:33 2017] [debug] 200 OK (0.016177s, 61.816/s)
+[Mon May 22 15:37:35 2017] [debug] GET "/notes/newnote"
+[Mon May 22 15:37:35 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:37:35 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "create_form"
+[Mon May 22 15:37:35 2017] [debug] Rendering template "notes/create_form.html.ep"
+[Mon May 22 15:37:35 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:37:35 2017] [debug] 200 OK (0.008262s, 121.036/s)
+[Mon May 22 15:37:39 2017] [debug] GET "/people"
+[Mon May 22 15:37:39 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:37:39 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:37:39 2017] [debug] Rendering template "users/show.html.ep"
+[Mon May 22 15:37:39 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:37:39 2017] [debug] 200 OK (0.006911s, 144.697/s)
+[Mon May 22 15:37:51 2017] [debug] GET "/lenta"
+[Mon May 22 15:37:51 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:37:51 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:37:51 2017] [debug] Rendering template "notes/lenta.html.ep"
+[Mon May 22 15:37:51 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:37:51 2017] [debug] 200 OK (0.011092s, 90.155/s)
+[Mon May 22 15:37:57 2017] [debug] GET "/notes"
+[Mon May 22 15:37:57 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:37:57 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "wall"
+[Mon May 22 15:37:57 2017] [debug] Rendering cached template "notes/wall.html.ep"
+[Mon May 22 15:37:57 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:37:57 2017] [debug] 200 OK (0.007783s, 128.485/s)
+[Mon May 22 15:37:59 2017] [debug] GET "/lenta"
+[Mon May 22 15:37:59 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:37:59 2017] [debug] Routing to controller "Notes::Controller::Notes" and action "lenta"
+[Mon May 22 15:37:59 2017] [debug] Rendering cached template "notes/lenta.html.ep"
+[Mon May 22 15:37:59 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:37:59 2017] [debug] 200 OK (0.006946s, 143.968/s)
+[Mon May 22 15:42:12 2017] [debug] GET "/settings"
+[Mon May 22 15:42:12 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:42:12 2017] [debug] Routing to controller "Notes::Controller::Users" and action "settings"
+[Mon May 22 15:42:12 2017] [debug] Rendering template "users/settings.html.ep"
+[Mon May 22 15:42:12 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:42:12 2017] [debug] 200 OK (0.010253s, 97.532/s)
+[Mon May 22 15:42:14 2017] [debug] GET "/people"
+[Mon May 22 15:42:14 2017] [debug] Routing to controller "Notes::Controller::Auths" and action "check"
+[Mon May 22 15:42:14 2017] [debug] Routing to controller "Notes::Controller::Users" and action "show"
+[Mon May 22 15:42:14 2017] [debug] Rendering cached template "users/show.html.ep"
+[Mon May 22 15:42:14 2017] [debug] Rendering cached template "layouts/defwall.html.ep"
+[Mon May 22 15:42:14 2017] [debug] 200 OK (0.00363s, 275.482/s)

@@ -4,6 +4,8 @@ use 5.010;
 use Mojo::Base 'Mojolicious::Controller';
 use DDP;
 use utf8;
+binmode(STDOUT,':utf8');
+no warnings 'layer';
 
 sub wall {
     my $self = shift;
@@ -26,26 +28,26 @@ sub lenta {
     my $m = {};
     #say "Start selecting id => " .$self->session('user_id');
     if (!$id) {
-    # Ищем свои записки по колонке users
+    # Ищем свои записки по колонке userid в таблице notes
     $m = Notes::Model::Note->selectall(
         { userid => $self->session('user_id') }
         );
     }
 
-    # Ищем доступные мне записки по колонке
+    # Ищем доступные мне записки по колонке users в таблице notes
     my $b = Notes::Model::Note->selectall(
-        { username => $self->session('username') },
+        { favid => $self->session('user_id') },
         'lenta', $id
         );
-    # Ищем доступные всем записки по колонке
+    # Ищем доступные всем записки по колонке users
     my $c = Notes::Model::Note->selectall(
-        { username => 'ALL' },
+        { favid => 'ALL' },
         'lenta', $id
         );
 
     my $d = Notes::Model::Favorites->select( {userid => $self->session('user_id')} );
     my %subscr = map {($_ => 1)} (split(/,/, $d->{users}));
-    p %subscr;
+    #p %subscr;
     # Объединяем хэши
     my %a = (%$m, %$b, %$c);
     my %willshow = ();
@@ -54,7 +56,7 @@ sub lenta {
     my $firstname = '';
     my $lastname = '';
     for (keys %a) {
-        if ( exists $subscr{$a{$_}->{userid}}  ) {
+        if ($id or exists $subscr{$a{$_}->{userid}}  ) {
             my $idtoname = Notes::Model::User->select( {
                 id => $a{$_}->{userid},
             } );
@@ -129,8 +131,11 @@ sub create {
     }
 
     for (@{$favorites[0]}) {
-        my $nicktoid = Notes::Model::User->select({username => $_});
-        $users .= "$nicktoid->{id},";
+        if ($_ eq 'ALL') { $users .= "ALL,"; }
+        else {
+            my $nicktoid = Notes::Model::User->select({username => $_});
+            $users .= "$nicktoid->{id},";
+        }
     }
 
     #$users =~ s/\s// if $users;
@@ -170,14 +175,16 @@ sub edit_form {
 
     my $f = {};
     $f = Notes::Model::User->selectall( {}, 'empty' );
-    my @a = ();
-    @a = map {$f->{$_}->{username} if $f->{$_}->{username} ne $self->session('username')}
-                sort {$b cmp $a} keys %$f;
+    my @a = grep { $_ ne $self->session('username') }
+                map { $f->{$_}->{username} }
+                    sort {$b cmp $a} keys %$f;
     my $h = Notes::Model::Note->select( {id => $noteid} );
     my %b = ();
-    %b = map {$_ => 1} split /,/, $h->{users} if $h->{users};
+    %b = map { if ($_ eq 'ALL') {$_ => 1}
+                else { $f->{$_}->{username} => 1 }
+        } split /,/, $h->{users} if $h->{users};
     $h->{favs} = \%b;
-
+    p @a;
     $self->render( favorites => \@a, forms => $h, noteid => $noteid);
 
 }
@@ -219,9 +226,11 @@ sub update {
     }
 
     for (@{$favorites[0]}) {
-        my $nicktoid = Notes::Model::User->select({username => $_});
-        $users .= "$nicktoid->{id},";
-        $users .= "$_,";
+        if ($_ eq 'ALL') {$users .= "ALL,";}
+        else {
+            my $nicktoid = Notes::Model::User->select({username => $_});
+            $users .= "$nicktoid->{id},";
+        }
     }
 
     if ( Notes::Model::Note->update({

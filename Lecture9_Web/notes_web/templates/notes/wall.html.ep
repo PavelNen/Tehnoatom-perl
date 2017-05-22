@@ -3,7 +3,7 @@
 <article>
 Всего Твоих заметок: <%= (keys %$fewnotes) %><br>
 <strong><%= join ' - ', (session('username'), join ' ', (session('firstname'), session('lastname'))) %></strong><br>
-% if ($fewnotes) {
+% if (0 < keys %$fewnotes) {
 % for my $id (sort {$b<=>$a} keys %$fewnotes) {
 
 <div class="onenote">
@@ -29,6 +29,6 @@
 </div>
 % }
 %} else {
-<center> Создавайте заметки, чтобы увидеть их здесь!</center>
+<br><h1><center> Создавай заметки, чтобы увидеть их здесь!</center></h2>
 %}
 </article>

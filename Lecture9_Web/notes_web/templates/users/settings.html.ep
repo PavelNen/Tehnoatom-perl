@@ -3,7 +3,7 @@
 <article>
 	<script type="text/javascript">
 	function destroy() {
-		if (confirm("Ты уверен, что хочешь уничтожить аккаунт и всё, что с ним связано?")) {
+		if (confirm("Ты уверен, что хочешь уничтожить аккаунт и все свои записки?")) {
 			if (confirm("Ты АБСОЛЮТНО уверен, что хочешь УНИЧТОЖИТЬ АККАУНТ ?!")) {
 				return true;
 			}
@@ -21,6 +21,7 @@
 	<h2>Настройка аккаунта "<%= session 'username' %>"</h2>
 
 	<form method="post" action="<%= url_for 'users_update' %>" name="account">
+%= csrf_field
 		<table class="anketa">
 			<tr>
 				<td>
@@ -48,7 +49,7 @@
 			</tr>
 			<tr>
 				<td>
-		<input type="password" name="password" value="" placeholder="Введите текущий пароль">
+		<input type="password" id="psw" name="password" value="" placeholder="Введите текущий пароль">
 				</td>
 				<td>
 					<button type="submit" name="button" onclick="return upgrade();">Сохранить изменения</button>
@@ -58,9 +59,18 @@
 
 	</form>
 
+	<script>
+	function someFunc(){
+	document.getElementById("dlpsw").value = document.getElementById("psw").value;
+	return destroy();
+	}
+	</script>
+
 	<div class="destroy">
 	<form action="<%= url_for 'users_delete' %>" method="post">
-		<button type="submit" name="button" onclick="return destroy();">Удалить аккаунт</button>
+%= csrf_field
+		<input type="hidden" name="password" id="dlpsw" value="">
+		<button type="submit" id="dlbtn" name="button" onclick="someFunc();">Удалить аккаунт</button>
 	</form>
 	</div>
 </div>

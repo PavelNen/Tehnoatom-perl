@@ -2,6 +2,8 @@ package Notes::Model::Base;
 
 use 5.010;
 use Mojo::Base;
+binmode(STDOUT,':utf8');
+no warnings 'layer';
 
 #### Class Methods ####
 
@@ -9,8 +11,8 @@ sub select {
     my $class = shift;
     my $h = shift;
     #say "select";
-    my $query = "SELECT * FROM " . $class->table_name . " WHERE "
-        . join (' AND ', map {"$_ = '" . quotemeta($h->{$_}) ."'"; } keys %$h);
+    my $query = "SELECT * FROM `" . $class->table_name . "` WHERE "
+        . join (' AND ', map {"`$_` = '" . quotemeta($h->{$_}) ."'"; } keys %$h);
     #say "$query";
     Notes::Model->db->selectrow_hashref($query, undef) or undef;
 }
@@ -21,9 +23,10 @@ sub selectall {
     my $mode = shift;
     my $id = shift;
     #say "selectall";
-    my $query = "SELECT * FROM " . $class->table_name;
+    my $query = "SELECT * FROM `" . $class->table_name . "`";
+    # В режиме "лента" ищутся
     if ($mode eq 'lenta') {
-        $query .= " WHERE users LIKE '\%$h->{username}\%'";
+        $query .= " WHERE users LIKE '\%$h->{favid}\%'";
     }
     elsif ($mode ne 'empty') {
         $query .= " WHERE ";
@@ -56,10 +59,10 @@ sub update {
     my $fields = shift;
 
     my $db = Notes::Model->db;
-    my $query = "UPDATE " . $class->table_name . " SET "
-            . join(', ',  map {"$_ = '" . quotemeta($new->{$_}) . "'"} keys %$new)
+    my $query = "UPDATE `" . $class->table_name . "` SET "
+            . join(', ',  map {"`$_` = '" . quotemeta($new->{$_}) . "'"} keys %$new)
             . " WHERE " .
-                join(' AND ',  map {"$_ = '" . quotemeta($fields->{$_}) . "'"} keys %$fields);
+                join(' AND ',  map {"`$_` = '" . quotemeta($fields->{$_}) . "'"} keys %$fields);
     say "$query";
     $db->do($query) or die $db->errstr;
 }
@@ -68,8 +71,8 @@ sub delete {
     my $class = shift;
     my $h = shift;
     my $db = Notes::Model->db;
-    $db->do("DELETE FROM "  . $class->table_name . " WHERE  "
-            . join(' AND ',  map {"$_ = '" . quotemeta($h->{$_}) . "'"} keys %$h) )
+    $db->do("DELETE FROM `" . $class->table_name . "` WHERE  "
+            . join(' AND ',  map {"`$_` = '" . quotemeta($h->{$_}) . "'"} keys %$h) )
                 or die $db->errstr;
 }
 

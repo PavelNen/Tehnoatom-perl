@@ -5,8 +5,7 @@
 <article>
 % if ((keys %$fewnotes) == 0) {
 <center><h1 style="margin:auto; top:100px; position:relative">
-	Никто пока что не открыл<br>ни одной заметки для Тебя.
-	<br>Или их нет...
+Пока что нет<br>открытых заметок<br>для Тебя...<br><br>Или ты ни на кого не подписан/а.
 </h1></center>
 %} else {
 Всего заметок: <%= (keys %$fewnotes) %><br>
