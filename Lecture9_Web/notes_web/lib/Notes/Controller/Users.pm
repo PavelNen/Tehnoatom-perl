@@ -52,7 +52,7 @@ sub show {
     }
 }
 
-# Добавляет человека в избранных
+# Добавляет человека в подписки
 sub favadd {
     my $self = shift;
 
@@ -79,7 +79,7 @@ sub favadd {
 
     return 1;
 }
-# Убирает человека из избранных
+# Убирает человека из подписок
 sub favdel {
     my $self = shift;
 
@@ -183,6 +183,7 @@ CHECK: {
     )->redirect_to('notes_show') if $user_id #TODO ;
 }
 
+# Страница настроек аккаунта
 sub settings {
     my $self = shift;
     my $noteid = $self->param('noteid');
@@ -192,6 +193,7 @@ sub settings {
     $self->render( forms => $h );
 }
 
+# Обновление данных пользователя
 sub update {
     my $self = shift;
     my $username      = $self->param('username');
@@ -272,6 +274,7 @@ CHECK: {
     $self->redirect_to('notes_show');
 }
 
+# Уничтожение аккаунта и его заметок, кроме 'w'
 sub delete {
     my $self = shift;
     my $username      = $self->param('username');
@@ -304,7 +307,10 @@ sub delete {
     # Удаляем аккаунт и все записки пользователя
 
     Notes::Model::User->delete({id => $self->session('user_id')});
-    Notes::Model::Note->delete({userid => $self->session('user_id')});
+    Notes::Model::Note->delete({userid => $self->session('user_id'),
+                                rights => 'r'});
+
+    #TODO Сохранять ник в записках, а то они все привязаны только к userid
 
     # Разлогиниваем
     $self->Notes::Controller::Auths::delete();

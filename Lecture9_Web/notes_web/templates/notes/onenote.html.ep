@@ -1,0 +1,31 @@
+% layout 'defwall';
+% title "miniNotes - " . $note->{title} . " - " . session 'username';
+<article>
+<strong><%= join ' - ', ($note->{username}, join ' ', ($note->{firstname}, $note->{lastname})) %></strong><br>
+% if (0 < keys %$note) {
+
+<div class="onenote" style="margin: 0 auto; width: 500px">
+	<div class="eddel">
+		<form method="post" action="<%= url_for('notes_delete') %>">
+			<input type="hidden" name="noteid" value="<%= $note->{id} %>">
+			<input type="image" src="/images/Icon/trash.png"  alt="Удалить" >
+		</form>
+		<form method="post" action="<%= url_for('notes_edit') %>">
+			<input type="hidden" name="noteid" value="<%= $note->{id} %>">
+			<input type="image" src="/images/Icon/pen.png" alt="Редактировать" >
+		</form>
+	</div>
+	<div class="title">
+		<%= $note->{title} %>
+	</div>
+	<div class="time">
+		&#8986; <%= $note->{time} %>
+	</div>
+	<div class="text">
+<%= $note->{text} %>
+	</div>
+</div>
+%} else {
+<br><h1><center> Создавай заметки, чтобы увидеть их здесь!</center></h2>
+%}
+</article>

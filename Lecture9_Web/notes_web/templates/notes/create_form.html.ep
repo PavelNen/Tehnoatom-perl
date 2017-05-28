@@ -15,9 +15,16 @@
 	<option value="<%= $fav %>"><%= $fav %></option>
 %}
 	</select>
+
 	</div>
 	<input type="title" id="notetitle" name="title" placeholder="Заголовок" />
 		<textarea name="text" id="notetext" placeholder="Текст заметки"></textarea>
 		<input type="submit" id="rec" value="Записать" />
+
+	<p style="font-size:13pt; text-align:left; float:left;">
+		Права доступа к этой заметке для выбранных:<br>
+		<input type="radio" name="rights" value="r">Только чтение<br>
+		<input type="radio" name="rights" value="w">Разрешить редактирование<br>
+	</p>
 	</form>
 </div>

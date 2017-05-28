@@ -19,8 +19,14 @@
 % 		my $mynote = '';
 %		if ($fewnotes->{$id}->{username} eq session 'username') {$mynote = 'mynote';}
 <div class="onenote <%= $mynote %>">
-	% if ($mynote) {
+
 		<div class="eddel">
+
+			<form method="post" action="<%= url_for('notes_one') %>" style="float:left;">
+				<input type="hidden" name="noteid" value="<%= $id %>">
+				<input type="image" src="/images/Icon/eye.png" style="margin-left:3px; width: 24px;height:24px;" alt="Посмотреть" >
+			</form>
+			% if ($mynote or $fewnotes->{$id}->{rights} eq 'w') {
 			<form method="post" action="<%= url_for('notes_delete') %>">
 				<input type="hidden" name="noteid" value="<%= $id %>">
 				<input type="image" src="/images/Icon/trash.png"  alt="Удалить" >
@@ -29,13 +35,14 @@
 				<input type="hidden" name="noteid" value="<%= $id %>">
 				<input type="image" src="/images/Icon/pen.png" alt="Редактировать" >
 			</form>
+		% }
 		</div>
-	% }
+
 	<div class="username">
 		<a href="/id<%= $fewnotes->{$id}->{userid} %>" class="apeople"><%= $fewnotes->{$id}->{username} %></a>
 	</div>
 	<div class="title">
-		<%= $fewnotes->{$id}->{title} %>
+<%= $fewnotes->{$id}->{title} %>
 	</div>
 	<div class="time">
 &#8986; <%= $fewnotes->{$id}->{time} %>
@@ -43,6 +50,9 @@
 	<div class="text">
 <%= $fewnotes->{$id}->{text} %>
 	</div>
+
 </div>
+
 % }
-</article
+
+</article>

@@ -62,10 +62,10 @@
 % }
 	<div class="board">
 		<div id="nav">
-			<a href="<%= url_for 'notes_show' %>"><div id="m1" title="Все мои записки">Мой стол</div></a>
-			<a href="<%= url_for 'lenta_show' %>"><div id="m2" title="Лента записок выбранных людей">Лента</div></a>
+			<a href="<%= url_for 'notes_show' %>"><div id="m1" title="Все мои заметки">Мой стол</div></a>
+			<a href="<%= url_for 'lenta_show' %>"><div id="m2" title="Лента заметок выбранных людей">Лента</div></a>
 			<a href="<%= url_for 'people_show' %>"><div id="m3" title="Все пользователи сайта">Мир</div></a>
-			<a href="<%= url_for 'favorites_show' %>"><div id="m4" title="Авторы, чьи записки видны в Ленте">Подписки</div></a>
+			<a href="<%= url_for 'favorites_show' %>"><div id="m4" title="Авторы, чьи заметки видны в Ленте">Подписки</div></a>
 			<a href="<%= url_for 'notes_form' %>"><div id="m5" title="Опубликуй свою мысль">Новая заметка</div></a>
 		</div>
 

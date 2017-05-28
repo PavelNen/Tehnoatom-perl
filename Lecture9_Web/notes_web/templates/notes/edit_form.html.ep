@@ -3,12 +3,16 @@
 
 <div id="newnote" style="">
 	<h2>Редактирование заметки</h2>
+	<h4>Автор: <%= $forms->{username} %></h4>
+% if ($warning) {
+	<h5><%= $warning %></h5><br>
+% }
 	<form method="POST" action="<%= url_for 'notes_update' %>" id="forma">
 %= csrf_field
 	<input type="text" name="nid" value="<%= $noteid %>" style="display:none">
 	<div id="divfav">
 	<p style="font-size:13pt; text-align:center; margin-top:20px; margin-bottom:2px">Кто будет видеть Твои заметки</p>
-	<p style="font-size:10pt; text-align:center; margin-bottom: 5px; margin-top:3px;">Для выбора нескольих удерживайте Ctrl</p>
+	<p style="font-size:10pt; text-align:center; margin-bottom: 5px; margin-top:3px;">Для выбора нескольких удерживайте Ctrl</p>
 	<select multiple="" name="favs" id="favorites">
 % my $selected = '';
 % if (exists $forms->{favs}->{'ALL'}) {
@@ -29,7 +33,18 @@
 	</select>
 	</div>
 	<input type="title" id="notetitle" name="title" value="<%= $forms->{title} %>" placeholder="Заголовок" />
-		<textarea name="text" id="notetext" placeholder="Текст заметки"><%= $forms->{text} %></textarea>
-		<input type="submit" id="rec" value="Обновить заметку" />
+	<textarea name="text" id="notetext" placeholder="Текст заметки"><%= $forms->{text} %></textarea>
+	<input type="submit" id="rec" value="Обновить заметку" />
+
+	% my ($rchecked, $wchecked) = ('','');
+	% if ($forms->{rights} eq 'r') { $rchecked = 'checked' }
+	% 						else { $wchecked = 'checked'}
+% my $disp = 'none';
+% if ($forms->{username} eq $self->session('username')) { $disp = 'inline';}
+	<p style="font-size:13pt; width: 300px; text-align:left; float:right; display:<%= $disp %>">
+		Права доступа к этой заметке для выбранных:<br>
+		<input type="radio" name="rights" value="r" style="width:16px" <%= $rchecked %>>Только чтение<br>
+		<input type="radio" name="rights" value="w" style="width:16px" <%= $wchecked %>>Разрешить редактирование<br>
+	</p>
 	</form>
 </div>

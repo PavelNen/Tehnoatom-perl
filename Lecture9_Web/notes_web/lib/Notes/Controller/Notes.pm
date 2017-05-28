@@ -7,6 +7,24 @@ use utf8;
 binmode(STDOUT,':utf8');
 no warnings 'layer';
 
+sub onenote {
+    my $self = shift;
+    my $noteid = $self->param('noteid');
+
+    my $h = Notes::Model::Note->select({id => $noteid});
+
+    my $idtoname = Notes::Model::User->select( {
+                id => $h->{userid},
+            } );
+    $h->{username} = $idtoname->{username};
+    $h->{firstname} = $idtoname->{firstname};
+    $h->{lastname} = $idtoname->{lastname};
+
+    #TODO Оформить историю, в таблице уже созданы поля под неё
+
+    $self->render( note => $h );
+}
+
 sub wall {
     my $self = shift;
     my $a = {};
@@ -81,12 +99,13 @@ sub lenta {
 sub create_form {
     my $self = shift;
 
-#    my $user = Notes::Model::Favorites->select( {
-#        userid => $self->session('user_id'),
-#    } );
-#
-#    my @a = ();
-#    @a = split /,/, $user->{users} if $user->{users};
+    #    Этот кусок для отображения в списке только людей из подписок
+    #    my $user = Notes::Model::Favorites->select( {
+    #        userid => $self->session('user_id'),
+    #    } );
+    #
+    #    my @a = ();
+    #    @a = split /,/, $user->{users} if $user->{users};
 
     my $f = {};
     $f = Notes::Model::User->selectall( {}, 'empty' );
@@ -104,6 +123,7 @@ sub create {
     my $title     = $self->param('title');
     my $text      = $self->param('text');
     my $users     = $self->param('users');
+    my $rights    = $self->param('rights');
     my @favorites = $self->req->params->every_param('favs');
 
     my $validation = $self->validation;
@@ -151,11 +171,12 @@ sub create {
     $time[0] += 1900;
     #print "Создаю заметку за @time -> ";
     my $note_id = Notes::Model::Note->insert({
-        title => $title,
-        text => $text,
-        users => $users,
-        userid => $self->session('user_id'),
-        time    => join '', @time
+        title   => $title,
+        text    => $text,
+        users   => $users,
+        userid  => $self->session('user_id'),
+        time    => join('', @time),
+        rights  => $rights,
     });
     say "Заметка создана";
 
@@ -166,12 +187,12 @@ sub edit_form {
     my $self = shift;
     my $noteid = $self->param('noteid');
 
-#    my $f = Notes::Model::Favorites->select( {
-#       userid => $self->session('user_id'),
-#    } );
-#
-#    my @a = ();
-#    @a = split /,/, $f->{users} if $f->{users};
+    #    my $f = Notes::Model::Favorites->select( {
+    #    userid => $self->session('user_id'),
+    #    } );
+    #
+    #    my @a = ();
+    #    @a = split /,/, $f->{users} if $f->{users};
 
     my $f = {};
     $f = Notes::Model::User->selectall( {}, 'empty' );
@@ -184,8 +205,30 @@ sub edit_form {
                 else { $f->{$_}->{username} => 1 }
         } split /,/, $h->{users} if $h->{users};
     $h->{favs} = \%b;
-    p @a;
-    $self->render( favorites => \@a, forms => $h, noteid => $noteid);
+    $h->{username} = $f->{$h->{userid}}->{username};
+    #p @a;
+    my $warning = '';
+    if ($h->{editing} eq '') {
+        Notes::Model::Note->update(
+            {editing => $self->session('username') . ", "},
+            {id => $noteid});
+    }
+    else {
+        my $un = $self->session('username');
+        if (! ($h->{editing} =~ /$un/) ) {
+            Notes::Model::Note->update(
+                {editing => $h->{editing} . $self->session('username') . ", "},
+                {id => $noteid} );
+        }
+        substr $h->{editing}, -2, 2, '';
+        $warning = "Пользователи " . $h->{editing} . " редактируют сейчас эту заметку";
+    }
+
+    $self->render( favorites => \@a, forms => $h, noteid => $noteid, warning => $warning );
+
+    #TODO Добавить стирание пользователя из списка редактирующих заметку,
+    # в случае ухода со страницы редактирования любым спсобом,
+    # не только после сохранения изменений
 
 }
 
@@ -197,6 +240,7 @@ sub update {
     my $users     = $self->param('users');
     my @favorites = $self->req->params->every_param('favs');
     my $noteid    = $self->param('nid');
+    my $rights    = $self->param('rights');
 
     my $validation = $self->validation;
     return $self->render(text => 'Bad CSRF token!', status => 403)
@@ -220,6 +264,7 @@ sub update {
             text  => $text,
             users => $users,
             error => $err_msg,
+            rights => $rights,
         )->redirect_to('edit_form');
 
         return;
@@ -233,10 +278,16 @@ sub update {
         }
     }
 
+    my $h = Notes::Model::Note->select( {id => $noteid} );
+    my $un = $self->session('username');
+    $h->{editing} =~ s/\Q$un\E,\s//g;
+
     if ( Notes::Model::Note->update({
-        title => $title,
-        text  => $text,
-        users => $users,
+        title   => $title,
+        text    => $text,
+        users   => $users,
+        rights  => $rights,
+        editing => $h->{editing},
     }, { id => $noteid }) ) {
         $notice = join "\n" , ($notice, "Заметка обновлена");
     }

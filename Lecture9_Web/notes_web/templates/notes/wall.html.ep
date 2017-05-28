@@ -8,6 +8,10 @@
 
 <div class="onenote">
 	<div class="eddel">
+	<form method="post" action="<%= url_for('notes_one') %>" style="float:left;">
+		<input type="hidden" name="noteid" value="<%= $id %>">
+		<input type="image" src="/images/Icon/eye.png" style="margin-left:3px; width: 24px;height:24px;" alt="Посмотреть" >
+	</form>
 		<form method="post" action="<%= url_for('notes_delete') %>">
 			<input type="hidden" name="noteid" value="<%= $id %>">
 			<input type="image" src="/images/Icon/trash.png"  alt="Удалить" >

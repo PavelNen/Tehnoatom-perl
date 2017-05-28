@@ -36,6 +36,7 @@ sub startup {
 
     my $rc = $r->under('/')->to('auths#check');
     $rc->route('/id:id', id => qr/\d+/)->via('get')->to('notes#lenta')->name('notes_individual');
+    $rc->route('/noteid')->via('post')->to('notes#onenote')->name('notes_one');
 
     my $rn = $r->under('/notes')->to('auths#check');
     $rn->route              ->via('get')   ->to('notes#wall')        ->name('notes_show');
